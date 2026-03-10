@@ -1,0 +1,37 @@
+{
+  "ironspider": {
+    "name": "Iron Spider",
+    "bossImage": "assets/guide/ironspider.png",
+    "avatar": "eve",
+    "pet": "is_pet.png",
+    "skill": "is_skill.png",
+    "special": "is_special.png",
+    "rune": "is_rune.png",
+    "relic": "is_relic.png",
+    "forge": "FINAL COUNTER DMG"
+  },
+
+  "abyssaltyrant": {
+    "name": "Abyssal Tyrant",
+    "bossImage": "assets/guide/abyssaltyrant.png",
+    "avatar": "erian",
+    "pet": "at_pet.png",
+    "skill": "at_skill.png",
+    "special": "at_special.png",
+    "rune": "at_rune.png",
+    "relic": "at_relic.png",
+    "forge": "FINAL SKILL CRIT DMG"
+  },
+
+  "poisonivy": {
+    "name": "Poison Ivy",
+    "bossImage": "assets/guide/poisonivy.png",
+    "avatar": "elysia",
+    "pet": "pi_pet.png",
+    "skill": "pi_skill.png",
+    "special": "pi_special.png",
+    "rune": "pi_rune.png",
+    "relic": "pi_relic.png",
+    "forge": "FINAL DOUBLE COMBO DMG"
+  }
+}
