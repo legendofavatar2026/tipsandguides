@@ -1,30 +1,36 @@
-This list are the mythic divine weapon, 
-archdukesfrostblade
-axeofthehero
-blazefury
-caladbolg
-clawoffrost
-demonhunter
-dragonseye
-durandal
-epeefleur
-evilmoon
-executioner
-frostfang
-glacion
-grimreaper
-guidingswordofvictory
-katanaoftheblackfalcon
-knightswarhammer
-muramasa
-nidhogg
-plasmaedge
-ragingbeast
-reddragon
-shadowthorn
-shootingstar
-solarhalo
-swordprincessthundersword
-tydalwave
-whisperingshadowdagger
-worldbreaker
+{
+  "combinations":[
+
+    {"items":["Executor","Solar Halo"],"effect":"Ultimate Attack","value":"20%"},
+    {"items":["Muramasa","Glacion"],"effect":"Ultimate Attack","value":"20%"},
+    {"items":["Nidhogg","Solar Halo","Muramasa","Glacion"],"effect":"Ultimate Damage Increase","value":"3.50%"},
+    {"items":["World Breaker","Blaze Fury"],"effect":"Ultimate Skill Damage","value":"2.50%"},
+    {"items":["Shadow Thorn","Grim Reaper"],"effect":"Ultimate Defense","value":"3%"},
+    {"items":["Caladbolg","Durandal"],"effect":"Ultimate HP","value":"8%"},
+    {"items":["Dragon Eye","Frost Fang"],"effect":"Ultimate Normal Attack Damage","value":"2.50%"},
+    {"items":["Nidhogg","Shooting Star","Evil Moon"],"effect":"Ultimate Damage Increase","value":"2.90%"},
+    {"items":["Nidhogg","Executioner","Plasma Edge"],"effect":"Ultimate Skill Damage","value":"3.60%"},
+    {"items":["Glacion","Caladbolg"],"effect":"Ultimate HP","value":"8%"},
+    {"items":["Muramasa","Durandal"],"effect":"Ultimate Defense","value":"3%"},
+    {"items":["Evil Moon","Solar Halo"],"effect":"Ultimate Combo Triple Damage","value":"2.50%"},
+    {"items":["Red Dragon","Shooting Star"],"effect":"Ultimate ATK/DEF/HP","value":"3%"},
+    {"items":["World Breaker","Shadow Thorn","Dragon Eye"],"effect":"Ultimate Damage Increase","value":"2.90%"},
+    {"items":["Blaze Fury","Grim Reaper","Frost Fang"],"effect":"Ultimate Damage Increase","value":"2.90%"},
+    {"items":["Glacion","Caladbolg","Epee Fleure"],"effect":"Ultimate Counterattack Damage","value":"6.20%"},
+    {"items":["Nidhogg","Executioner"],"effect":"Ultimate Skill Critical Damage","value":"6.20%"},
+    {"items":["Plasma Edge","Epee Fleure"],"effect":"Ultimate Combo Double Damage","value":"6.20%"},
+
+    {"items":["World Breaker","Shooting Star"],"effect":"Ultimate Attack","value":"20%","level":"Lv.0"},
+    {"items":["Blaze Fury","Shadow Thorn"],"effect":"Ultimate Defense","value":"3%","level":"Lv.0"},
+    {"items":["Durandal","Grim Reaper"],"effect":"Ultimate ATK/DEF/HP","value":"3%","level":"Lv.0"},
+    {"items":["Shooting Star","Evil Moon"],"effect":"Ultimate HP","value":"8%","level":"Lv.0"},
+    {"items":["Shadow Thorn","World Breaker"],"effect":"Ultimate Defense","value":"3%","level":"Lv.0"},
+    {"items":["Grim Reaper","Blaze Fury"],"effect":"Ultimate ATK/DEF/HP","value":"3%","level":"Lv.0"},
+    {"items":["Evil Moon","Durandal"],"effect":"Ultimate HP","value":"8%","level":"Lv.0"},
+    {"items":["Caladbolg","Dragon Eye","Frost Fang"],"effect":"Ultimate Damage Increase","value":"2.90%","level":"Lv.0"},
+    {"items":["Nidhogg","Caladbolg","Shadow Thorn"],"effect":"Ultimate Damage Increase","value":"2.90%","level":"Lv.0"},
+    {"items":["World Breaker","Shooting Star","Evil Moon"],"effect":"Ultimate Damage Increase","value":"2.90%","level":"Lv.0"},
+    {"items":["Blaze Fury","Frost Fang","Durandal"],"effect":"Ultimate Damage Increase","value":"2.90%","level":"Lv.0"}
+
+  ]
+}

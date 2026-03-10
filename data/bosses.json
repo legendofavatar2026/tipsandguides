@@ -1,7 +1,7 @@
 {
   "ironspider": {
     "name": "Iron Spider",
-    "bossImage": "assets/guide/ironspider.png",
+    "image": "ironspider.png",
     "avatar": "eve",
     "pet": "is_pet.png",
     "skill": "is_skill.png",
@@ -13,7 +13,7 @@
 
   "abyssaltyrant": {
     "name": "Abyssal Tyrant",
-    "bossImage": "assets/guide/abyssaltyrant.png",
+    "image": "abyssaltyrant.png",
     "avatar": "erian",
     "pet": "at_pet.png",
     "skill": "at_skill.png",
@@ -25,7 +25,7 @@
 
   "poisonivy": {
     "name": "Poison Ivy",
-    "bossImage": "assets/guide/poisonivy.png",
+    "image": "poisonivy.png",
     "avatar": "elysia",
     "pet": "pi_pet.png",
     "skill": "pi_skill.png",

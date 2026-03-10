@@ -1,0 +1,19 @@
+{
+  "towers": [
+    {
+      "name": "Tower of Steel",
+      "boss": "ironspider",
+      "image": "tower_steel.png"
+    },
+    {
+      "name": "Tower of Rift",
+      "boss": "abyssaltyrant",
+      "image": "tower_rift.png"
+    },
+    {
+      "name": "Tower of Gale",
+      "boss": "poisonivy",
+      "image": "tower_gale.png"
+    }
+  ]
+}
