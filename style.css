@@ -1,8 +1,10 @@
 body{
+
 margin:0;
 font-family:Arial;
-background:#0c0c0c;
+background:#0e0e0e;
 color:white;
+
 }
 
 .banner{
@@ -14,17 +16,6 @@ text-align:center;
 margin:15px;
 }
 
-#searchBar{
-width:90%;
-margin:10px auto;
-display:block;
-padding:10px;
-border-radius:8px;
-border:none;
-background:#1c1c1c;
-color:white;
-}
-
 #bossContainer{
 
 display:grid;
@@ -34,23 +25,23 @@ padding:12px;
 
 }
 
-.boss-card{
+.boss{
 
 text-align:center;
 cursor:pointer;
-transition:transform .2s;
+transition:0.2s;
 
 }
 
-.boss-card:hover{
+.boss:hover{
 transform:scale(1.05);
 }
 
-.boss-card img{
+.boss img{
 
 width:100%;
-border-radius:12px;
-border:2px solid #3a3a3a;
+border-radius:10px;
+border:2px solid #444;
 
 }
 
@@ -61,74 +52,37 @@ grid-template-columns:repeat(3,1fr);
 gap:10px;
 padding:15px;
 
-animation:slideUp .3s ease;
+animation:slide .25s ease;
 
 }
 
-.guide-icon{
-
-border:2px solid #555;
-border-radius:10px;
-overflow:hidden;
-
-}
-
-.guide-icon img{
+.guideIcon img{
 
 width:100%;
-display:block;
+border-radius:8px;
+border:2px solid #555;
 
 }
 
-#guideViewer{
+#viewer{
 
 padding:15px;
 
 }
 
-#guideViewer img{
+#viewer img{
 
 width:100%;
 border-radius:10px;
-border:2px solid #444;
+border:2px solid #333;
 
 }
 
-.bottom-nav{
-
-position:fixed;
-bottom:0;
-width:100%;
-background:#141414;
-display:flex;
-justify-content:space-around;
-padding:10px 0;
-border-top:1px solid #333;
-
-}
-
-.nav-btn{
-
-background:none;
-border:none;
-color:#bbb;
-font-size:14px;
-
-}
-
-.nav-btn.active{
-color:white;
-}
-
-.hidden{
-display:none;
-}
-
-@keyframes slideUp{
+@keyframes slide{
 
 from{
 opacity:0;
-transform:translateY(20px);
+transform:translateY(10px);
 }
 
 to{
