@@ -23,11 +23,6 @@
 <button class="tab" onclick="openTab(event,'weapons')">Divine Weapons</button>
 <button class="tab" onclick="openTab(event,'wings')">Wings</button>
 </nav>
-  
-<!-- Visitor Counter -->
-<p style="text-align:center; margin-top:10px;">
-  Visitor Count: <span id="visitor-count">0</span>
-</p>
 
 </header>
 
@@ -141,6 +136,10 @@
 
 </section>
 
+<footer class="site-footer">
+  <p>Visitor Count: <span id="visitor-count">0</span></p>
+</footer>
+
 <script>
 const counterSlug = 'first-counter-3238';
 const apiURL = `https://api.countapi.xyz/hit/${counterSlug}?amount=1`;
@@ -167,9 +166,11 @@ async function updateCounter() {
   }
 }
 
+// Update counter on page load
 updateCounter();
 </script>
   
 </body>
 </html>
+
 
