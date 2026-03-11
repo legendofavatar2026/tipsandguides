@@ -1,35 +1,44 @@
-body{
+/* ===== GLOBAL ===== */
 
+body{
 margin:0;
-font-family:Arial;
+font-family:Arial, Helvetica, sans-serif;
 background:#0e0e0e;
 color:white;
-
-}
-
-.banner{
-width:100%;
 }
 
 h2{
 text-align:center;
-margin:15px;
+margin-top:20px;
+margin-bottom:10px;
+font-weight:600;
 }
 
-#bossContainer{
+/* ===== BANNER ===== */
+
+.banner{
+width:100%;
+display:block;
+}
+
+/* ===== GRID LAYOUT (Dynamic) ===== */
+
+.grid{
 
 display:grid;
-grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(auto-fit,minmax(110px,1fr));
 gap:12px;
 padding:12px;
 
 }
 
+/* ===== BOSS / TOWER ICON ===== */
+
 .boss{
 
 text-align:center;
 cursor:pointer;
-transition:0.2s;
+transition:transform .2s ease;
 
 }
 
@@ -40,15 +49,30 @@ transform:scale(1.05);
 .boss img{
 
 width:100%;
-border-radius:10px;
+aspect-ratio:1/1;
+object-fit:cover;
+
+border-radius:12px;
 border:2px solid #444;
 
+box-shadow:0 0 6px rgba(0,0,0,.6);
+
 }
+
+.boss p{
+
+margin-top:6px;
+font-size:14px;
+color:#ddd;
+
+}
+
+/* ===== GUIDE MENU ===== */
 
 #guideMenu{
 
 display:grid;
-grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(auto-fit,minmax(80px,1fr));
 gap:10px;
 padding:15px;
 
@@ -56,13 +80,27 @@ animation:slide .25s ease;
 
 }
 
+/* ===== GUIDE ICON ===== */
+
 .guideIcon img{
 
 width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+
 border-radius:8px;
 border:2px solid #555;
 
+cursor:pointer;
+transition:transform .15s ease;
+
 }
+
+.guideIcon img:hover{
+transform:scale(1.08);
+}
+
+/* ===== GUIDE VIEWER ===== */
 
 #viewer{
 
@@ -73,10 +111,19 @@ padding:15px;
 #viewer img{
 
 width:100%;
-border-radius:10px;
+max-width:900px;
+
+display:block;
+margin:auto;
+
+border-radius:12px;
 border:2px solid #333;
 
+box-shadow:0 0 10px rgba(0,0,0,.7);
+
 }
+
+/* ===== ANIMATION ===== */
 
 @keyframes slide{
 
@@ -92,11 +139,12 @@ transform:translateY(0);
 
 }
 
-#towerContainer{
+/* ===== MOBILE OPTIMIZATION ===== */
 
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:12px;
-padding:12px;
+@media (max-width:480px){
+
+.boss p{
+font-size:12px;
+}
 
 }
