@@ -108,8 +108,6 @@ container.appendChild(group)
 
 }
 
-/* TRAINING TOOL */
-
 const tiers = [
 
 "T","Qa","Qi","Sx","Sp","Oc","No","De",
@@ -118,64 +116,76 @@ const tiers = [
 
 ]
 
-
-function toggleTrainingTool(){
-
-const panel=document.getElementById("trainingPanel")
-
-panel.style.display =
-panel.style.display==="block" ? "none" : "block"
-
-}
-
-
-
-function calculateTraining(){
+function calculateProgress(){
 
 const expPerMin=parseFloat(document.getElementById("expPerMin").value)
+const currentTier=document.getElementById("currentTier").value
+const targetTier=document.getElementById("targetTier").value
+const currentAmount=parseFloat(document.getElementById("currentAmount").value)
 
-if(!expPerMin){
+if(!expPerMin || !currentAmount){
 
-document.getElementById("trainingResult").innerHTML="Enter EXP per minute"
-
+document.getElementById("trainingResult").innerHTML="Fill all fields"
 return
 
 }
 
-const tier=document.getElementById("tierSelect").value
+const currentIndex=tiers.indexOf(currentTier)
+const targetIndex=tiers.indexOf(targetTier)
 
-const tierIndex=tiers.indexOf(tier)
+if(targetIndex<=currentIndex){
 
+document.getElementById("trainingResult").innerHTML="Target tier must be higher"
+return
 
+}
 
-/* BASE CALCULATIONS */
+/* EXP PRODUCTION */
 
 const perHour=expPerMin*60
-
 const perDay=perHour*24
 
 
+/* REQUIRED EXP */
 
-let results=`<b>EXP per hour</b><br>${perHour.toLocaleString()} ${tier}<br><br>`
-results+=`<b>EXP per day</b><br>${perDay.toLocaleString()} ${tier}<br><br>`
+let required=1-currentAmount
 
-results+=`<b>Converted tiers</b><br>`
+for(let i=currentIndex;i<targetIndex;i++){
 
-
-
-let value=perDay
-
-for(let i=tierIndex+1;i<tiers.length;i++){
-
-value=value/1000
-
-results+=`${value.toFixed(6)} ${tiers[i]}<br>`
+required=(required+1)*1000
 
 }
 
+/* TIME */
+
+const minutes=required/expPerMin
+const hours=minutes/60
+const days=hours/24
 
 
-document.getElementById("trainingResult").innerHTML=results
+document.getElementById("trainingResult").innerHTML=`
+
+<b>Production</b>
+
+EXP/hour: ${perHour.toLocaleString()} ${currentTier}<br>
+EXP/day: ${perDay.toLocaleString()} ${currentTier}
+
+<br><br>
+
+<b>Required EXP</b>
+
+${required.toLocaleString()} ${currentTier}
+
+<br><br>
+
+<b>Estimated Time</b>
+
+${minutes.toFixed(2)} minutes<br>
+${hours.toFixed(2)} hours<br>
+${days.toFixed(2)} days
+
+`
 
 }
+
 
