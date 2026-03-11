@@ -108,84 +108,85 @@ container.appendChild(group)
 
 }
 
-const tiers = [
+/* EXP TIERS */
 
+const tiers = [
 "T","Qa","Qi","Sx","Sp","Oc","No","De",
 "Ud","Dd","Td","Qad","Qid","Sxd","Spd",
 "Ocd","Nod","Vg","C"
-
 ]
+
+/* populate dropdowns */
+
+const currentTierSelect=document.getElementById("currentTier")
+const targetTierSelect=document.getElementById("targetTier")
+
+if(currentTierSelect){
+
+tiers.forEach(t=>{
+
+let o1=document.createElement("option")
+let o2=document.createElement("option")
+
+o1.text=t
+o2.text=t
+
+currentTierSelect.add(o1)
+targetTierSelect.add(o2)
+
+})
+
+}
+
+/* convert tier value to base */
+
+function toBase(value,tier){
+
+const index=tiers.indexOf(tier)
+
+return value*Math.pow(1000,index)
+
+}
+
+/* calculator */
 
 function calculateProgress(){
 
-const expPerMin=parseFloat(document.getElementById("expPerMin").value)
-const currentTier=document.getElementById("currentTier").value
-const targetTier=document.getElementById("targetTier").value
-const currentAmount=parseFloat(document.getElementById("currentAmount").value)
+const rate=parseFloat(document.getElementById("expPerMin").value)
+const rateTier=document.getElementById("currentTier").value
 
-if(!expPerMin || !currentAmount){
+const targetValue=parseFloat(document.getElementById("targetAmount").value)
+const targetTier=document.getElementById("targetTier").value
+
+if(!rate || !targetValue){
 
 document.getElementById("trainingResult").innerHTML="Fill all fields"
 return
 
 }
 
-const currentIndex=tiers.indexOf(currentTier)
-const targetIndex=tiers.indexOf(targetTier)
+/* convert everything to base */
 
-if(targetIndex<=currentIndex){
+const rateBase=toBase(rate,rateTier)
+const targetBase=toBase(targetValue,targetTier)
 
-document.getElementById("trainingResult").innerHTML="Target tier must be higher"
-return
+/* time */
 
-}
-
-/* EXP PRODUCTION */
-
-const perHour=expPerMin*60
-const perDay=perHour*24
-
-
-/* REQUIRED EXP */
-
-let required=1-currentAmount
-
-for(let i=currentIndex;i<targetIndex;i++){
-
-required=(required+1)*1000
-
-}
-
-/* TIME */
-
-const minutes=required/expPerMin
+const minutes=targetBase/rateBase
 const hours=minutes/60
 const days=hours/24
 
-
 document.getElementById("trainingResult").innerHTML=`
 
-<b>Production</b>
+<b>Estimated Time</b><br><br>
 
-EXP/hour: ${perHour.toLocaleString()} ${currentTier}<br>
-EXP/day: ${perDay.toLocaleString()} ${currentTier}
-
-<br><br>
-
-<b>Required EXP</b>
-
-${required.toLocaleString()} ${currentTier}
-
-<br><br>
-
-<b>Estimated Time</b>
-
-${minutes.toFixed(2)} minutes<br>
-${hours.toFixed(2)} hours<br>
-${days.toFixed(2)} days
+${minutes.toLocaleString(undefined,{maximumFractionDigits:2})} minutes<br>
+${hours.toLocaleString(undefined,{maximumFractionDigits:2})} hours<br>
+${days.toLocaleString(undefined,{maximumFractionDigits:2})} days
 
 `
 
 }
+
 
 
