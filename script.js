@@ -1,82 +1,89 @@
-const app = document.getElementById('app');
+let bosses = []
 
-let bossesData = {};
-let avatarsData = {};
-let guidesData = {};
-let weaponsData = {};
+const guideTypes = [
+"pet",
+"skill",
+"relic",
+"rune",
+"special",
+"forge"
+]
 
-async function loadData() {
-  bossesData = await fetch('data/bosses.json').then(r => r.json());
-  avatarsData = await fetch('data/avatars.json').then(r => r.json());
-  guidesData = await fetch('data/guides.json').then(r => r.json());
-  weaponsData = await fetch('data/divineweapons.json').then(r => r.json());
+async function loadBosses(){
+
+const res = await fetch("data/bosses.json")
+bosses = await res.json()
+
+renderBosses(bosses)
+
 }
 
-// NAVIGATION
-function navigate(page) {
-  if(page === 'home') renderHome();
-  if(page === 'bosses') renderBosses();
-  if(page === 'towers') renderTowers();
-  if(page === 'weapons') renderWeapons();
+function renderBosses(list){
+
+const container = document.getElementById("bossContainer")
+container.innerHTML=""
+
+list.forEach(boss=>{
+
+const card = document.createElement("div")
+card.className="boss-card"
+
+card.innerHTML=`
+
+<img src="assets/guide/${boss.image}">
+<p>${boss.name}</p>
+
+`
+
+card.onclick=()=>openBoss(boss.id)
+
+container.appendChild(card)
+
+})
+
 }
 
-// HOME PAGE
-function renderHome() {
-  app.innerHTML = `<h2>Welcome to the Legend of Avatar Guide</h2>
-  <p>Explore bosses, towers, divine weapons, and strategies for your favorite avatars.</p>`;
+function openBoss(boss){
+
+const menu = document.getElementById("guideMenu")
+menu.classList.remove("hidden")
+menu.innerHTML=""
+
+guideTypes.forEach(type=>{
+
+const div = document.createElement("div")
+div.className="guide-icon"
+
+const img=`assets/guide/${boss}_${type}.png`
+
+div.innerHTML=`<img src="${img}" loading="lazy">`
+
+div.onclick=()=>showGuide(img)
+
+menu.appendChild(div)
+
+})
+
 }
 
-// BOSSES PAGE
-function renderBosses() {
-  app.innerHTML = '';
-  Object.values(bossesData).forEach(boss => {
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.innerHTML = `
-      <img src="assets/guide/${boss.image}.png" alt="${boss.name}">
-      <h3>${boss.name}</h3>
-      <p>Avatar: ${boss.avatar}</p>
-      <p>Forge: ${boss.forge}</p>
-      <img src="assets/guide/${boss.skill}.png" alt="Skill">
-      <img src="assets/guide/${boss.special}.png" alt="Special">
-      <img src="assets/guide/${boss.pet}.png" alt="Pet">
-      <img src="assets/guide/${boss.rune}.png" alt="Rune">
-      <img src="assets/guide/${boss.relic}.png" alt="Relic">
-    `;
-    app.appendChild(card);
-  });
+function showGuide(img){
+
+document.getElementById("guideImage").src=img
+
 }
 
-// TOWERS PAGE
-function renderTowers() {
-  app.innerHTML = '';
-  guidesData.towers.forEach(tower => {
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.innerHTML = `
-      <img src="assets/guide/${tower.image}" alt="${tower.name}">
-      <h3>${tower.name}</h3>
-      <p>Boss: ${bossesData[tower.boss].name}</p>
-    `;
-    app.appendChild(card);
-  });
+document.getElementById("searchBar").addEventListener("input",e=>{
+
+const text=e.target.value.toLowerCase()
+
+const filtered=bosses.filter(boss=>boss.name.toLowerCase().includes(text))
+
+renderBosses(filtered)
+
+})
+
+loadBosses()
+
+if("serviceWorker" in navigator){
+navigator.serviceWorker.register("service-worker.js")
 }
-
-// DIVINE WEAPONS PAGE
-function renderWeapons() {
-  app.innerHTML = '';
-  weaponsData.combinations.forEach(combo => {
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.innerHTML = `
-      <h3>${combo.effect} (${combo.value})</h3>
-      <p>Items:</p>
-      ${combo.items.map(item => `<img src="assets/divineweapons/${item.toLowerCase().replace(/\s/g,'')}.png" alt="${item}">`).join('')}
-      ${combo.level ? `<p>${combo.level}</p>` : ''}
-    `;
-    app.appendChild(card);
-  });
-}
-
-loadData().then(renderHome);
-
