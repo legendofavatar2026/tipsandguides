@@ -1,61 +1,139 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: #eee;
+body{
+margin:0;
+font-family:Arial;
+background:#0c0c0c;
+color:white;
 }
 
-header {
-  background: #222;
-  padding: 10px;
-  text-align: center;
+.banner{
+width:100%;
 }
 
-header h1 {
-  margin: 5px 0;
-  font-size: 1.5em;
+h2{
+text-align:center;
+margin:15px;
 }
 
-nav {
-  margin-top: 5px;
+#searchBar{
+width:90%;
+margin:10px auto;
+display:block;
+padding:10px;
+border-radius:8px;
+border:none;
+background:#1c1c1c;
+color:white;
 }
 
-nav button {
-  margin: 2px;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 5px;
-  background: #444;
-  color: #eee;
-  cursor: pointer;
+#bossContainer{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:12px;
+padding:12px;
+
 }
 
-nav button:hover {
-  background: #666;
+.boss-card{
+
+text-align:center;
+cursor:pointer;
+transition:transform .2s;
+
 }
 
-main {
-  padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 12px;
+.boss-card:hover{
+transform:scale(1.05);
 }
 
-.card {
-  background: #222;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 8px;
-  text-align: center;
+.boss-card img{
+
+width:100%;
+border-radius:12px;
+border:2px solid #3a3a3a;
+
 }
 
-.card img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
+#guideMenu{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+padding:15px;
+
+animation:slideUp .3s ease;
+
 }
 
-.card h3 {
-  margin: 5px 0;
-  font-size: 1em;
+.guide-icon{
+
+border:2px solid #555;
+border-radius:10px;
+overflow:hidden;
+
+}
+
+.guide-icon img{
+
+width:100%;
+display:block;
+
+}
+
+#guideViewer{
+
+padding:15px;
+
+}
+
+#guideViewer img{
+
+width:100%;
+border-radius:10px;
+border:2px solid #444;
+
+}
+
+.bottom-nav{
+
+position:fixed;
+bottom:0;
+width:100%;
+background:#141414;
+display:flex;
+justify-content:space-around;
+padding:10px 0;
+border-top:1px solid #333;
+
+}
+
+.nav-btn{
+
+background:none;
+border:none;
+color:#bbb;
+font-size:14px;
+
+}
+
+.nav-btn.active{
+color:white;
+}
+
+.hidden{
+display:none;
+}
+
+@keyframes slideUp{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
 }
