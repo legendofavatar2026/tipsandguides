@@ -18,12 +18,10 @@
 <img src="assets/banner.png" class="banner">
 
 <nav class="tabs">
-
-<button onclick="openTab('guides')" class="tab active">Guides</button>
-<button onclick="openTab('avatars')" class="tab">Avatar Tier List</button>
-<button onclick="openTab('weapons')" class="tab">Divine Weapons</button>
-<button onclick="openTab('wings')" class="tab">Wings</button>
-
+<button class="tab active" onclick="openTab(event,'guides')">Guides</button>
+<button class="tab" onclick="openTab(event,'avatars')">Avatar Tier List</button>
+<button class="tab" onclick="openTab(event,'weapons')">Divine Weapons</button>
+<button class="tab" onclick="openTab(event,'wings')">Wings</button>
 </nav>
 
 </header>
@@ -52,6 +50,7 @@
 </div>
 
 </div>
+
 
 <h2>Infinite Tower Guides</h2>
 
@@ -82,36 +81,62 @@
 
 </section>
 
+
 <!-- AVATAR -->
 
 <section id="avatars" class="tabContent">
 
 <h2>Avatar Tier List</h2>
 
-<div id="avatarList"></div>
+<h3>Combo</h3>
+<div class="grid">
+
+<div class="avatar"><img src="assets/avatars/elysia.png"><p>1 Elysia</p></div>
+<div class="avatar"><img src="assets/avatars/naktia.png"><p>2 Naktia</p></div>
+
+</div>
+
+<h3>Skill</h3>
+<div class="grid">
+
+<div class="avatar"><img src="assets/avatars/erian.png"><p>1 Erian</p></div>
+<div class="avatar"><img src="assets/avatars/serena.png"><p>2 Serena</p></div>
+<div class="avatar"><img src="assets/avatars/blake.png"><p>3 Blake</p></div>
+
+</div>
+
+<h3>Counter</h3>
+<div class="grid">
+
+<div class="avatar"><img src="assets/avatars/eve.png"><p>1 Eve</p></div>
+<div class="avatar"><img src="assets/avatars/yoran.png"><p>2 Yoran</p></div>
+<div class="avatar"><img src="assets/avatars/raiden.png"><p>3 Raiden</p></div>
+
+</div>
 
 </section>
 
-<!-- WEAPONS -->
+
+<!-- DIVINE WEAPONS -->
 
 <section id="weapons" class="tabContent">
 
 <h2>Divine Weapon Combinations</h2>
 
-<div id="weaponList"></div>
+<div id="weaponContainer"></div>
 
 </section>
+
 
 <!-- WINGS -->
 
 <section id="wings" class="tabContent">
 
-<h2 style="text-align:center;margin-top:60px;">COMING SOON</h2>
+<h2 style="text-align:center;margin-top:80px">COMING SOON</h2>
 
 </section>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
