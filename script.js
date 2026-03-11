@@ -33,15 +33,15 @@ function renderBosses() {
     const card = document.createElement('div');
     card.className = 'card';
     card.innerHTML = `
-      <img src="assets/guide/${boss.image}" alt="${boss.name}">
+      <img src="assets/guide/${boss.image}.png" alt="${boss.name}">
       <h3>${boss.name}</h3>
       <p>Avatar: ${boss.avatar}</p>
       <p>Forge: ${boss.forge}</p>
-      <img src="assets/guide/${boss.skill}" alt="Skill">
-      <img src="assets/guide/${boss.special}" alt="Special">
-      <img src="assets/guide/${boss.pet}" alt="Pet">
-      <img src="assets/guide/${boss.rune}" alt="Rune">
-      <img src="assets/guide/${boss.relic}" alt="Relic">
+      <img src="assets/guide/${boss.skill}.png" alt="Skill">
+      <img src="assets/guide/${boss.special}.png" alt="Special">
+      <img src="assets/guide/${boss.pet}.png" alt="Pet">
+      <img src="assets/guide/${boss.rune}.png" alt="Rune">
+      <img src="assets/guide/${boss.relic}.png" alt="Relic">
     `;
     app.appendChild(card);
   });
@@ -79,3 +79,4 @@ function renderWeapons() {
 }
 
 loadData().then(renderHome);
+
