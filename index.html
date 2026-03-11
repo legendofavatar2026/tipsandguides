@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,8 +14,23 @@
 <body>
 
 <header>
+
 <img src="assets/banner.png" class="banner">
+
+<nav class="tabs">
+
+<button onclick="openTab('guides')" class="tab active">Guides</button>
+<button onclick="openTab('avatars')" class="tab">Avatar Tier List</button>
+<button onclick="openTab('weapons')" class="tab">Divine Weapons</button>
+<button onclick="openTab('wings')" class="tab">Wings</button>
+
+</nav>
+
 </header>
+
+<!-- GUIDES -->
+
+<section id="guides" class="tabContent active">
 
 <h2>World Boss Guides</h2>
 
@@ -38,7 +52,6 @@
 </div>
 
 </div>
-
 
 <h2>Infinite Tower Guides</h2>
 
@@ -67,9 +80,38 @@
 <img id="guideImage">
 </div>
 
+</section>
+
+<!-- AVATAR -->
+
+<section id="avatars" class="tabContent">
+
+<h2>Avatar Tier List</h2>
+
+<div id="avatarList"></div>
+
+</section>
+
+<!-- WEAPONS -->
+
+<section id="weapons" class="tabContent">
+
+<h2>Divine Weapon Combinations</h2>
+
+<div id="weaponList"></div>
+
+</section>
+
+<!-- WINGS -->
+
+<section id="wings" class="tabContent">
+
+<h2 style="text-align:center;margin-top:60px;">COMING SOON</h2>
+
+</section>
+
 <script src="script.js"></script>
 
 </body>
 
 </html>
-
