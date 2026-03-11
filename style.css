@@ -1,269 +1,157 @@
-/* ===== GLOBAL ===== */
-
 body{
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
+font-family:Arial,Helvetica,sans-serif;
 background:#0e0e0e;
 color:white;
+}
+
+.banner{
+width:100%;
 }
 
 h2{
 text-align:center;
 margin-top:20px;
-margin-bottom:10px;
-font-weight:600;
 }
 
-/* ===== BANNER ===== */
-
-.banner{
-width:100%;
-display:block;
+h3{
+margin-left:15px;
 }
 
-/* ===== GRID LAYOUT (Dynamic) ===== */
-
-.grid{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(110px,1fr));
-gap:12px;
-padding:12px;
-
-}
-
-/* ===== BOSS / TOWER ICON ===== */
-
-.boss{
-
-text-align:center;
-cursor:pointer;
-transition:transform .2s ease;
-
-}
-
-.boss:hover{
-transform:scale(1.05);
-}
-
-.boss img{
-
-width:100%;
-aspect-ratio:1/1;
-object-fit:cover;
-
-border-radius:12px;
-border:2px solid #444;
-
-box-shadow:0 0 6px rgba(0,0,0,.6);
-
-}
-
-.boss p{
-
-margin-top:6px;
-font-size:14px;
-color:#ddd;
-
-}
-
-/* ===== GUIDE MENU ===== */
-
-#guideMenu{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(80px,1fr));
-gap:10px;
-padding:15px;
-
-animation:slide .25s ease;
-
-}
-
-/* ===== GUIDE ICON ===== */
-
-.guideIcon img{
-
-width:100%;
-aspect-ratio:1/1;
-object-fit:cover;
-
-border-radius:8px;
-border:2px solid #555;
-
-cursor:pointer;
-transition:transform .15s ease;
-
-}
-
-.guideIcon img:hover{
-transform:scale(1.08);
-}
-
-/* ===== GUIDE VIEWER ===== */
-
-#viewer{
-
-padding:15px;
-
-}
-
-#viewer img{
-
-width:100%;
-max-width:900px;
-
-display:block;
-margin:auto;
-
-border-radius:12px;
-border:2px solid #333;
-
-box-shadow:0 0 10px rgba(0,0,0,.7);
-
-}
-
-/* ===== ANIMATION ===== */
-
-@keyframes slide{
-
-from{
-opacity:0;
-transform:translateY(10px);
-}
-
-to{
-opacity:1;
-transform:translateY(0);
-}
-
-}
-
-#towerContainer{
-
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:12px;
-padding:12px;
-
-}
-
-/* ===== HEADER TABS ===== */
+/* TABS */
 
 .tabs{
-
 display:flex;
-justify-content:space-around;
 background:#111;
 border-bottom:1px solid #333;
-
 }
 
 .tab{
-
 flex:1;
 padding:12px;
 background:none;
 border:none;
 color:#aaa;
-font-size:14px;
 cursor:pointer;
-
+font-size:14px;
 }
 
 .tab.active{
-
 color:white;
-border-bottom:2px solid #fff;
-
+border-bottom:2px solid white;
 }
 
-/* ===== TAB CONTENT ===== */
+/* TAB CONTENT */
 
 .tabContent{
-
 display:none;
-
 }
 
 .tabContent.active{
-
 display:block;
-
 }
 
-/* ===== AVATAR LIST ===== */
+/* GRID */
 
-#avatarList{
-
-padding:15px;
-
-}
-
-.avatarCategory{
-
-margin-bottom:25px;
-
-}
-
-.avatarGrid{
-
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(90px,1fr));
-gap:10px;
-
+grid-template-columns:repeat(auto-fit,minmax(110px,1fr));
+gap:12px;
+padding:12px;
 }
 
-.avatarGrid img{
+/* BOSS */
 
+.boss{
+text-align:center;
+cursor:pointer;
+}
+
+.boss img{
 width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
 border-radius:10px;
 border:2px solid #444;
-
 }
 
-/* ===== WEAPON LIST ===== */
+.boss p{
+margin-top:6px;
+font-size:13px;
+}
 
-#weaponList{
+/* AVATAR */
 
+.avatar{
+text-align:center;
+}
+
+.avatar img{
+width:100%;
+aspect-ratio:1/1;
+border-radius:10px;
+border:2px solid #444;
+}
+
+.avatar p{
+margin-top:5px;
+font-size:13px;
+}
+
+/* GUIDE MENU */
+
+#guideMenu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(80px,1fr));
+gap:10px;
 padding:15px;
+}
 
+.guideIcon img{
+width:100%;
+aspect-ratio:1/1;
+border-radius:8px;
+border:2px solid #555;
+cursor:pointer;
+}
+
+/* GUIDE VIEWER */
+
+#viewer{
+padding:15px;
+}
+
+#viewer img{
+width:100%;
+max-width:900px;
+display:block;
+margin:auto;
+border-radius:10px;
+border:2px solid #333;
+}
+
+/* WEAPONS */
+
+.weaponGroup{
+margin:20px;
 }
 
 .weaponCombo{
-
 background:#141414;
-padding:12px;
-margin-bottom:12px;
-border-radius:8px;
 border:1px solid #333;
-
+border-radius:8px;
+padding:10px;
+margin-bottom:10px;
 }
 
 .weaponItems{
-
 display:flex;
 gap:6px;
-margin-bottom:8px;
-
+margin-bottom:6px;
 }
 
 .weaponItems img{
-
 width:40px;
 height:40px;
 border-radius:6px;
-
 }
-
-/* ===== MOBILE OPTIMIZATION ===== */
-
-@media (max-width:480px){
-
-.boss p{
-font-size:12px;
-}
-
-}
-
-
