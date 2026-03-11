@@ -21,6 +21,7 @@
 <button class="tab active" onclick="openTab(event,'guides')">Guides</button>
 <button class="tab" onclick="openTab(event,'avatars')">Avatar Tier List</button>
 <button class="tab" onclick="openTab(event,'weapons')">Divine Weapons</button>
+<button class="tab" onclick="openTab(event,'calculator')">EXP Calculator</button>
 <button class="tab" onclick="openTab(event,'wings')">Wings</button>
 </nav>
 
@@ -127,6 +128,33 @@
 
 </section>
 
+  <!-- EXP CALCULATOR -->
+
+<section id="calculator" class="tabContent">
+
+<h2>EXP Progress Calculator</h2>
+
+<div class="training-box">
+
+<label>EXP Gain per Minute</label>
+<input id="expPerMin" placeholder="Example: 143">
+
+<label>EXP Tier</label>
+<select id="currentTier"></select>
+
+<label>Target EXP</label>
+<input id="targetAmount" placeholder="Example: 25.6">
+
+<label>Target Tier</label>
+<select id="targetTier"></select>
+
+<button onclick="calculateProgress()">Calculate</button>
+
+<div id="trainingResult"></div>
+
+</div>
+
+</section>
 
 <!-- WINGS -->
 
@@ -145,3 +173,4 @@
 
 </body>
 </html>
+
