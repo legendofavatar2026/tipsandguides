@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Legend of Avatar Guide</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Game Guides</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link rel="manifest" href="manifest.json">
+
 </head>
+
 <body>
+
 <header>
-  <h1>Legend of Avatar: Tips & Guides</h1>
-  <nav>
-    <button onclick="navigate('home')">Home</button>
-    <button onclick="navigate('bosses')">Bosses</button>
-    <button onclick="navigate('towers')">Towers</button>
-    <button onclick="navigate('weapons')">Divine Weapons</button>
-  </nav>
+
+<img src="assets/banner.png" class="banner">
+
 </header>
 
-<main id="app">
-  <!-- Content rendered here -->
+<main>
+
+<section id="guidePage">
+
+<h2>World Boss Guides</h2>
+
+<input type="text" id="searchBar" placeholder="Search boss..." />
+
+<div id="bossContainer"></div>
+
+<div id="guideMenu" class="hidden"></div>
+
+<div id="guideViewer">
+<img id="guideImage">
+</div>
+
+</section>
+
 </main>
 
+<nav class="bottom-nav">
+
+<button class="nav-btn active">Guide</button>
+<button class="nav-btn">Weapons</button>
+<button class="nav-btn">Avatars</button>
+
+</nav>
+
 <script src="script.js"></script>
+
 </body>
 </html>
