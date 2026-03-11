@@ -15,16 +15,89 @@
 
 <header>
 
-<img src="assets/banner.png" class="banner">
+<nav>
 
-<nav class="tabs">
-<button class="tab active" onclick="openTab(event,'guides')">Guides</button>
-<button class="tab" onclick="openTab(event,'avatars')">Avatar Tier List</button>
-<button class="tab" onclick="openTab(event,'weapons')">Divine Weapons</button>
-<button class="tab" onclick="openTab(event,'wings')">Wings</button>
+<button onclick="showSection('guides')">Guides</button>
+<button onclick="showSection('avatars')">Avatar Tier List</button>
+<button onclick="showSection('weapons')">Divine Weapons</button>
+<button onclick="showSection('wings')">Wings</button>
+<button onclick="showSection('training')">Training Tool</button>
+
 </nav>
 
 </header>
+
+
+<!-- TRAINING TOOL -->
+
+<section id="training" class="content-section">
+
+<h2>Training Progress Calculator</h2>
+
+<div class="training-box">
+
+<label>EXP per minute</label>
+<input id="expPerMin" type="number" placeholder="Example: 193.3">
+
+<label>Current Tier</label>
+<select id="currentTier">
+
+<option>T</option>
+<option>Qa</option>
+<option>Qi</option>
+<option>Sx</option>
+<option>Sp</option>
+<option>Oc</option>
+<option>No</option>
+<option>De</option>
+<option>Ud</option>
+<option>Dd</option>
+<option>Td</option>
+<option>Qad</option>
+<option>Qid</option>
+<option>Sxd</option>
+<option>Spd</option>
+<option>Ocd</option>
+<option>Nod</option>
+<option>Vg</option>
+<option>C</option>
+
+</select>
+
+<label>Current Amount</label>
+<input id="currentAmount" type="number" placeholder="Example: 200">
+
+<label>Target Tier</label>
+<select id="targetTier">
+
+<option>Qa</option>
+<option>Qi</option>
+<option>Sx</option>
+<option>Sp</option>
+<option>Oc</option>
+<option>No</option>
+<option>De</option>
+<option>Ud</option>
+<option>Dd</option>
+<option>Td</option>
+<option>Qad</option>
+<option>Qid</option>
+<option>Sxd</option>
+<option>Spd</option>
+<option>Ocd</option>
+<option>Nod</option>
+<option>Vg</option>
+<option>C</option>
+
+</select>
+
+<button onclick="calculateProgress()">Calculate Progress</button>
+
+<div id="trainingResult"></div>
+
+</div>
+
+</section>
 
 <!-- GUIDES -->
 
@@ -136,53 +209,6 @@
 
 </section>
 
-<!-- TRAINING TOOL BUTTON -->
-
-<div id="trainingButton" onclick="toggleTrainingTool()">
-Training Tool
-</div>
-
-
-<!-- TRAINING TOOL PANEL -->
-
-<div id="trainingPanel">
-
-<h3>Training EXP Tool</h3>
-
-<label>EXP per minute</label>
-<input id="expPerMin" type="number" placeholder="Example: 193.3">
-
-<label>Current Tier</label>
-
-<select id="tierSelect">
-
-<option>T</option>
-<option>Qa</option>
-<option>Qi</option>
-<option>Sx</option>
-<option>Sp</option>
-<option>Oc</option>
-<option>No</option>
-<option>De</option>
-<option>Ud</option>
-<option>Dd</option>
-<option>Td</option>
-<option>Qad</option>
-<option>Qid</option>
-<option>Sxd</option>
-<option>Spd</option>
-<option>Ocd</option>
-<option>Nod</option>
-<option>Vg</option>
-<option>C</option>
-
-</select>
-
-<button onclick="calculateTraining()">Calculate</button>
-
-<div id="trainingResult"></div>
-
-</div>
   
 <!-- COUNTER -->
 <footer  class="center-text">
@@ -192,6 +218,7 @@ Training Tool
 
 </body>
 </html>
+
 
 
 
