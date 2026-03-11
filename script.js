@@ -107,3 +107,75 @@ group.appendChild(div)
 container.appendChild(group)
 
 }
+
+/* TRAINING TOOL */
+
+const tiers = [
+
+"T","Qa","Qi","Sx","Sp","Oc","No","De",
+"Ud","Dd","Td","Qad","Qid","Sxd","Spd",
+"Ocd","Nod","Vg","C"
+
+]
+
+
+function toggleTrainingTool(){
+
+const panel=document.getElementById("trainingPanel")
+
+panel.style.display =
+panel.style.display==="block" ? "none" : "block"
+
+}
+
+
+
+function calculateTraining(){
+
+const expPerMin=parseFloat(document.getElementById("expPerMin").value)
+
+if(!expPerMin){
+
+document.getElementById("trainingResult").innerHTML="Enter EXP per minute"
+
+return
+
+}
+
+const tier=document.getElementById("tierSelect").value
+
+const tierIndex=tiers.indexOf(tier)
+
+
+
+/* BASE CALCULATIONS */
+
+const perHour=expPerMin*60
+
+const perDay=perHour*24
+
+
+
+let results=`<b>EXP per hour</b><br>${perHour.toLocaleString()} ${tier}<br><br>`
+results+=`<b>EXP per day</b><br>${perDay.toLocaleString()} ${tier}<br><br>`
+
+results+=`<b>Converted tiers</b><br>`
+
+
+
+let value=perDay
+
+for(let i=tierIndex+1;i<tiers.length;i++){
+
+value=value/1000
+
+results+=`${value.toFixed(6)} ${tiers[i]}<br>`
+
+}
+
+
+
+document.getElementById("trainingResult").innerHTML=results
+
+}
+
