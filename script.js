@@ -1,287 +1,81 @@
-const app = document.getElementById("app")
+const app = document.getElementById('app');
 
-/* ---------- DATA STORAGE ---------- */
+let bossesData = {};
+let avatarsData = {};
+let guidesData = {};
+let weaponsData = {};
 
-let DATA = {
-avatars:{},
-bosses:{},
-guides:{},
-weapons:{}
+async function loadData() {
+  bossesData = await fetch('data/bosses.json').then(r => r.json());
+  avatarsData = await fetch('data/avatars.json').then(r => r.json());
+  guidesData = await fetch('data/guides.json').then(r => r.json());
+  weaponsData = await fetch('data/divineweapons.json').then(r => r.json());
 }
 
-/* ---------- SAFE JSON LOADER ---------- */
-
-async function loadJSON(path){
-try{
-const r = await fetch(path)
-if(!r.ok) throw new Error("Missing")
-return await r.json()
-}catch(e){
-console.log("Failed loading:",path)
-return {}
-}
+// NAVIGATION
+function navigate(page) {
+  if(page === 'home') renderHome();
+  if(page === 'bosses') renderBosses();
+  if(page === 'towers') renderTowers();
+  if(page === 'weapons') renderWeapons();
 }
 
-/* ---------- INITIAL LOAD ---------- */
-
-async function init(){
-
-DATA.avatars = await loadJSON("./data/avatars.json")
-DATA.bosses = await loadJSON("./data/bosses.json")
-DATA.guides = await loadJSON("./data/guides.json")
-DATA.weapons = await loadJSON("./data/weapons.json")
-
-renderHome()
-
+// HOME PAGE
+function renderHome() {
+  app.innerHTML = `<h2>Welcome to the Legend of Avatar Guide</h2>
+  <p>Explore bosses, towers, divine weapons, and strategies for your favorite avatars.</p>`;
 }
 
-init()
-
-/* ---------- NAVIGATION ---------- */
-
-function navigate(page){
-
-if(page==="home") renderHome()
-if(page==="tier") renderTier()
-if(page==="guide") renderGuideMenu()
-if(page==="about") renderAbout()
-
+// BOSSES PAGE
+function renderBosses() {
+  app.innerHTML = '';
+  Object.values(bossesData).forEach(boss => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <img src="assets/guide/${boss.image}" alt="${boss.name}">
+      <h3>${boss.name}</h3>
+      <p>Avatar: ${boss.avatar}</p>
+      <p>Forge: ${boss.forge}</p>
+      <img src="assets/guide/${boss.skill}" alt="Skill">
+      <img src="assets/guide/${boss.special}" alt="Special">
+      <img src="assets/guide/${boss.pet}" alt="Pet">
+      <img src="assets/guide/${boss.rune}" alt="Rune">
+      <img src="assets/guide/${boss.relic}" alt="Relic">
+    `;
+    app.appendChild(card);
+  });
 }
 
-/* ---------- IMAGE VIEWER ---------- */
-
-function openImage(src,name){
-
-const viewer=document.createElement("div")
-viewer.className="imageViewer"
-
-viewer.innerHTML=`
-<div class="viewerContent">
-<img src="${src}">
-<div class="viewerTitle">${name}</div>
-</div>
-`
-
-viewer.onclick=()=>viewer.remove()
-
-document.body.appendChild(viewer)
-
+// TOWERS PAGE
+function renderTowers() {
+  app.innerHTML = '';
+  guidesData.towers.forEach(tower => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <img src="assets/guide/${tower.image}" alt="${tower.name}">
+      <h3>${tower.name}</h3>
+      <p>Boss: ${bossesData[tower.boss].name}</p>
+    `;
+    app.appendChild(card);
+  });
 }
 
-/* ---------- ICON HELPER ---------- */
-
-function icon(folder,file){
-
-const name=file.replace(".png","")
-
-return `
-<div class="iconFrame"
-onclick="openImage('assets/${folder}/${file}','${name}')">
-<img src="assets/${folder}/${file}">
-</div>
-`
-
+// DIVINE WEAPONS PAGE
+function renderWeapons() {
+  app.innerHTML = '';
+  weaponsData.combinations.forEach(combo => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <h3>${combo.effect} (${combo.value})</h3>
+      <p>Items:</p>
+      ${combo.items.map(item => `<img src="assets/divineweapons/${item.toLowerCase().replace(/\s/g,'')}.png" alt="${item}">`).join('')}
+      ${combo.level ? `<p>${combo.level}</p>` : ''}
+    `;
+    app.appendChild(card);
+  });
 }
 
-/* ---------- HOME ---------- */
-
-function renderHome(){
-
-app.innerHTML=`
-
-<div class="card">
-
-<h2>Legend of Avatar Global Guide</h2>
-
-<p>
-World Boss builds, Infinite Tower strategies, and Divine Weapon combinations.
-</p>
-
-</div>
-
-`
-
-}
-
-/* ---------- TIER LIST ---------- */
-
-function renderTier(){
-
-let html=`<div class="card"><h2>Avatar Tier List</h2></div>`
-
-for(const type in DATA.avatars){
-
-html+=`<div class="card"><h3>${type}</h3><div class="tierSection">`
-
-DATA.avatars[type].forEach((a,i)=>{
-
-html+=`
-
-<div class="avatarRow">
-
-${icon("avatars",a+".png")}
-
-<div class="rank">#${i+1}</div>
-
-<div>${a}</div>
-
-</div>
-
-`
-
-})
-
-html+=`</div></div>`
-
-}
-
-app.innerHTML=html
-
-}
-
-/* ---------- GUIDE MENU ---------- */
-
-function renderGuideMenu(){
-
-app.innerHTML=`
-
-<div class="card">
-
-<h2>Guides</h2>
-
-<div class="guideButton" onclick="renderBossGuide()">
-World Boss Guide
-</div>
-
-<div class="guideButton" onclick="renderTowerGuide()">
-Infinite Tower Guide
-</div>
-
-<div class="guideButton" onclick="renderDivineWeapons()">
-Divine Weapons
-</div>
-
-</div>
-
-`
-
-}
-
-/* ---------- WORLD BOSS ---------- */
-
-function renderBossGuide(){
-
-if(!DATA.bosses){
-app.innerHTML=`<div class="card">Boss data missing</div>`
-return
-}
-
-let html=`<div class="card"><h2>World Boss</h2></div>`
-
-for(const id in DATA.bosses){
-
-const b=DATA.bosses[id]
-
-html+=`
-
-<div class="card">
-
-<h3>${b.name}</h3>
-
-<img class="guideImg"
-src="assets/guide/${b.image}"
-onclick="openImage('assets/guide/${b.image}','${b.name}')">
-
-<p>Forge: ${b.forge}</p>
-
-</div>
-
-`
-
-}
-
-app.innerHTML=html
-
-}
-
-/* ---------- TOWER ---------- */
-
-function renderTowerGuide(){
-
-if(!DATA.guides.towers){
-app.innerHTML=`<div class="card">Tower data missing</div>`
-return
-}
-
-let html=`<div class="card"><h2>Infinite Tower</h2></div>`
-
-DATA.guides.towers.forEach(t=>{
-
-html+=`
-
-<div class="card">
-
-<h3>${t.name}</h3>
-
-<img class="guideImg"
-src="assets/guide/${t.image}"
-onclick="openImage('assets/guide/${t.image}','${t.name}')">
-
-</div>
-
-`
-
-})
-
-app.innerHTML=html
-
-}
-
-/* ---------- DIVINE WEAPONS ---------- */
-
-function renderDivineWeapons(){
-
-if(!DATA.weapons.combinations){
-app.innerHTML=`<div class="card">Weapon data missing</div>`
-return
-}
-
-let html=`<div class="card"><h2>Divine Weapons</h2></div>`
-
-DATA.weapons.combinations.forEach(c=>{
-
-html+=`
-
-<div class="card">
-
-<p>${c.items.join(" + ")}</p>
-
-<p>${c.effect} : ${c.value}</p>
-
-</div>
-
-`
-
-})
-
-app.innerHTML=html
-
-}
-
-/* ---------- ABOUT ---------- */
-
-function renderAbout(){
-
-app.innerHTML=`
-
-<div class="card">
-
-<h2>About</h2>
-
-<p>Fan-made guide site for Legend of Avatar Idle RPG.</p>
-
-</div>
-
-`
-
-}
+loadData().then(renderHome);
