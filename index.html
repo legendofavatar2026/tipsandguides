@@ -1,55 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Game Guides</title>
+<title>Game Guide</title>
 
 <link rel="stylesheet" href="style.css">
-
-<link rel="manifest" href="manifest.json">
 
 </head>
 
 <body>
 
 <header>
-
 <img src="assets/banner.png" class="banner">
-
 </header>
-
-<main>
-
-<section id="guidePage">
 
 <h2>World Boss Guides</h2>
 
-<input type="text" id="searchBar" placeholder="Search boss..." />
+<div id="bossContainer">
 
-<div id="bossContainer"></div>
-
-<div id="guideMenu" class="hidden"></div>
-
-<div id="guideViewer">
-<img id="guideImage">
+<div class="boss" onclick="openBoss('ironspider')">
+<img src="assets/guide/ironspider.png">
+<p>Iron Spider</p>
 </div>
 
-</section>
+<div class="boss" onclick="openBoss('poisonivy')">
+<img src="assets/guide/poisonivy.png">
+<p>Poison Ivy</p>
+</div>
 
-</main>
+<div class="boss" onclick="openBoss('abyssaltyrant')">
+<img src="assets/guide/abyssaltyrant.png">
+<p>Abyssal Tyrant</p>
+</div>
 
-<nav class="bottom-nav">
+</div>
 
-<button class="nav-btn active">Guide</button>
-<button class="nav-btn">Weapons</button>
-<button class="nav-btn">Avatars</button>
+<div id="guideMenu"></div>
 
-</nav>
+<div id="viewer">
+<img id="guideImage">
+</div>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
