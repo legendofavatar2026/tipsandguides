@@ -148,6 +148,114 @@ padding:12px;
 
 }
 
+/* ===== HEADER TABS ===== */
+
+.tabs{
+
+display:flex;
+justify-content:space-around;
+background:#111;
+border-bottom:1px solid #333;
+
+}
+
+.tab{
+
+flex:1;
+padding:12px;
+background:none;
+border:none;
+color:#aaa;
+font-size:14px;
+cursor:pointer;
+
+}
+
+.tab.active{
+
+color:white;
+border-bottom:2px solid #fff;
+
+}
+
+/* ===== TAB CONTENT ===== */
+
+.tabContent{
+
+display:none;
+
+}
+
+.tabContent.active{
+
+display:block;
+
+}
+
+/* ===== AVATAR LIST ===== */
+
+#avatarList{
+
+padding:15px;
+
+}
+
+.avatarCategory{
+
+margin-bottom:25px;
+
+}
+
+.avatarGrid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(90px,1fr));
+gap:10px;
+
+}
+
+.avatarGrid img{
+
+width:100%;
+border-radius:10px;
+border:2px solid #444;
+
+}
+
+/* ===== WEAPON LIST ===== */
+
+#weaponList{
+
+padding:15px;
+
+}
+
+.weaponCombo{
+
+background:#141414;
+padding:12px;
+margin-bottom:12px;
+border-radius:8px;
+border:1px solid #333;
+
+}
+
+.weaponItems{
+
+display:flex;
+gap:6px;
+margin-bottom:8px;
+
+}
+
+.weaponItems img{
+
+width:40px;
+height:40px;
+border-radius:6px;
+
+}
+
 /* ===== MOBILE OPTIMIZATION ===== */
 
 @media (max-width:480px){
@@ -157,4 +265,5 @@ font-size:12px;
 }
 
 }
+
 
