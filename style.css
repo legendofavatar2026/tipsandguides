@@ -139,6 +139,15 @@ transform:translateY(0);
 
 }
 
+#towerContainer{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:12px;
+padding:12px;
+
+}
+
 /* ===== MOBILE OPTIMIZATION ===== */
 
 @media (max-width:480px){
@@ -148,3 +157,4 @@ font-size:12px;
 }
 
 }
+
