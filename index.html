@@ -23,6 +23,11 @@
 <button class="tab" onclick="openTab(event,'weapons')">Divine Weapons</button>
 <button class="tab" onclick="openTab(event,'wings')">Wings</button>
 </nav>
+  
+<!-- Visitor Counter -->
+<p style="text-align:center; margin-top:10px;">
+  Visitor Count: <span id="visitor-count">0</span>
+</p>
 
 </header>
 
@@ -136,43 +141,35 @@
 
 </section>
 
-
-<!-- VISITOR COUNTER -->
-
-<footer style="text-align:center;margin-top:60px;padding-bottom:30px;">
-
-<h3>Site Visitors</h3>
-
-<p>Total Visits: <span id="total-visits">Loading...</span></p>
-<p>Today's Visits: <span id="today-visits">Loading...</span></p>
-
-</footer>
-
-
-<script src="script.js"></script>
-
 <script>
+const counterSlug = 'first-counter-3238';
+const apiURL = `https://api.countapi.xyz/hit/${counterSlug}?amount=1`;
 
-// change this to your unique site name
-const namespace = "https://legendofavatar2026.github.io/tipsandguides/";
-const key = "visits";
+async function updateCounter() {
+  try {
+    let counted = localStorage.getItem('visited');
+    let url = apiURL;
 
-fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
-.then(res => res.json())
-.then(res => {
-document.getElementById("total-visits").innerText = res.value;
-});
+    // If already counted, just get the current value
+    if (counted) {
+      url = `https://api.countapi.xyz/get/${counterSlug}`;
+    }
 
-// today visits
-const today = new Date().toISOString().slice(0,10);
+    const response = await fetch(url);
+    const data = await response.json();
+    document.getElementById('visitor-count').textContent = data.value;
 
-fetch(`https://api.countapi.xyz/hit/${namespace}/${today}`)
-.then(res => res.json())
-.then(res => {
-document.getElementById("today-visits").innerText = res.value;
-});
+    // Mark as counted
+    if (!counted) localStorage.setItem('visited', 'true');
 
+  } catch (error) {
+    console.error('Failed to fetch counter:', error);
+  }
+}
+
+updateCounter();
 </script>
-
+  
 </body>
 </html>
+
