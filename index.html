@@ -136,33 +136,7 @@
 
 </section>
 
-<footer class="site-footer">
-  <p>Visitor Count: <span id="visitor-count">0</span></p>
-</footer>
+<script src="script.js"></script>
 
-<script>
-const namespace = 'gameguide';
-const key = 'first-counter-3238';
-
-// Hit the counter (auto-creates if it doesn't exist)
-const hitURL = `https://api.countapi.xyz/hit/${namespace}/${key}`;
-
-async function updateCounter() {
-  try {
-    const res = await fetch(hitURL);
-    const data = await res.json();
-    document.getElementById('visitor-count').textContent = data.value;
-  } catch (err) {
-    console.error('CountAPI error:', err);
-  }
-}
-
-updateCounter();
-</script>
-  
 </body>
 </html>
-
-
-
-
