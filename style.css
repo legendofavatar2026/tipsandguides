@@ -91,3 +91,12 @@ transform:translateY(0);
 }
 
 }
+
+#towerContainer{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:12px;
+padding:12px;
+
+}
