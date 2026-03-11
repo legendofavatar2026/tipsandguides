@@ -110,35 +110,41 @@ container.appendChild(group)
 
 /* EXP TIERS */
 
+/* EXP TIERS */
+
 const tiers = [
 "T","Qa","Qi","Sx","Sp","Oc","No","De",
 "Ud","Dd","Td","Qad","Qid","Sxd","Spd",
 "Ocd","Nod","Vg","C"
 ]
 
-/* populate dropdowns */
+/* initialize tier dropdowns after page loads */
+
+window.addEventListener("DOMContentLoaded",()=>{
 
 const currentTierSelect=document.getElementById("currentTier")
 const targetTierSelect=document.getElementById("targetTier")
 
-if(currentTierSelect){
+if(!currentTierSelect || !targetTierSelect) return
 
 tiers.forEach(t=>{
 
 let o1=document.createElement("option")
-let o2=document.createElement("option")
-
+o1.value=t
 o1.text=t
+
+let o2=document.createElement("option")
+o2.value=t
 o2.text=t
 
-currentTierSelect.add(o1)
-targetTierSelect.add(o2)
+currentTierSelect.appendChild(o1)
+targetTierSelect.appendChild(o2)
 
 })
 
-}
+})
 
-/* convert tier value to base */
+/* convert tier to base */
 
 function toBase(value,tier){
 
@@ -148,7 +154,7 @@ return value*Math.pow(1000,index)
 
 }
 
-/* calculator */
+/* CALCULATOR */
 
 function calculateProgress(){
 
@@ -164,8 +170,6 @@ document.getElementById("trainingResult").innerHTML="Fill all fields"
 return
 
 }
-
-/* convert everything to base */
 
 const rateBase=toBase(rate,rateTier)
 const targetBase=toBase(targetValue,targetTier)
