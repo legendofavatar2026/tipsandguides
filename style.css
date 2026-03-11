@@ -160,11 +160,11 @@ border-radius:6px;
 .site-footer {
   text-align: center;
   padding: 15px 0;
-  background-color: #1a1a1a; /* dark footer */
-  color: #ffffff;            /* white text */
+  background-color: #1a1a1a;
+  color: #fff;
   font-family: 'Arial', sans-serif;
   font-size: 14px;
-  position: fixed;           /* stick to bottom */
+  position: fixed;
   width: 100%;
   bottom: 0;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
@@ -173,6 +173,7 @@ border-radius:6px;
 
 .site-footer span#visitor-count {
   font-weight: bold;
-  color: #4cafef; /* highlight number */
+  color: #4cafef;
 }
+
 
