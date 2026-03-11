@@ -1,6 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Game Guide</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<img src="assets/banner.png" class="banner">
+</header>
+
 <h2>World Boss Guides</h2>
 
-<div class="grid">
+<div id="bossContainer">
 
 <div class="boss" onclick="openBoss('ironspider')">
 <img src="assets/guide/ironspider.png">
@@ -19,10 +39,9 @@
 
 </div>
 
-
 <h2>Infinite Tower Guides</h2>
 
-<div class="grid">
+<div id="towerContainer">
 
 <div class="boss" onclick="openBoss('ironspider')">
 <img src="assets/guide/tower_steel.png">
@@ -40,3 +59,15 @@
 </div>
 
 </div>
+
+<div id="guideMenu"></div>
+
+<div id="viewer">
+<img id="guideImage">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
