@@ -1,188 +1,61 @@
-body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#0f1117;
-color:white;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #eee;
 }
 
-/* HERO */
-
-.hero{
-position:relative;
-height:220px;
-overflow:hidden;
+header {
+  background: #222;
+  padding: 10px;
+  text-align: center;
 }
 
-.banner{
-width:100%;
-height:100%;
-object-fit:cover;
+header h1 {
+  margin: 5px 0;
+  font-size: 1.5em;
 }
 
-.heroOverlay{
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-background:rgba(0,0,0,0.5);
-padding:15px 30px;
-border-radius:12px;
-text-align:center;
+nav {
+  margin-top: 5px;
 }
 
-.heroOverlay h1{
-margin:0;
-font-size:28px;
+nav button {
+  margin: 2px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background: #444;
+  color: #eee;
+  cursor: pointer;
 }
 
-.heroOverlay p{
-margin:4px 0 0;
-color:#ccc;
+nav button:hover {
+  background: #666;
 }
 
-/* MAIN */
-
-main{
-padding:16px;
-padding-bottom:80px;
+main {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
 }
 
-/* CARD */
-
-.card{
-background:#1a1f2b;
-border-radius:12px;
-padding:16px;
-margin-bottom:14px;
+.card {
+  background: #222;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
 }
 
-/* NAV */
-
-.bottomNav{
-position:fixed;
-bottom:0;
-width:100%;
-display:flex;
-background:#161a22;
-border-top:1px solid #222;
+.card img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
 }
 
-.bottomNav button{
-flex:1;
-padding:14px;
-background:none;
-border:none;
-color:#ccc;
-cursor:pointer;
-}
-
-.bottomNav button:hover{
-background:#222838;
-color:white;
-}
-
-/* GUIDE BUTTON */
-
-.guideButton{
-background:#20283b;
-padding:14px;
-border-radius:10px;
-margin-top:10px;
-cursor:pointer;
-text-align:center;
-transition:0.2s;
-}
-
-.guideButton:hover{
-background:#2f3a63;
-}
-
-/* TIER */
-
-.tierSection{
-display:grid;
-grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
-gap:12px;
-}
-
-.avatarRow{
-display:flex;
-flex-direction:column;
-align-items:center;
-background:#181a24;
-border-radius:12px;
-padding:12px;
-}
-
-.rank{
-color:#ffd166;
-font-weight:bold;
-}
-
-/* GUIDE IMAGE */
-
-.guideImg{
-width:100%;
-max-width:320px;
-border-radius:12px;
-display:block;
-margin:10px auto;
-cursor:pointer;
-}
-
-/* ICONS */
-
-.iconRow{
-display:flex;
-flex-wrap:wrap;
-gap:8px;
-margin-top:10px;
-}
-
-.iconFrame{
-width:52px;
-height:52px;
-background:#0c0f18;
-border:2px solid #2f3a63;
-border-radius:12px;
-display:flex;
-align-items:center;
-justify-content:center;
-cursor:pointer;
-}
-
-.iconFrame img{
-width:80%;
-height:80%;
-object-fit:contain;
-}
-
-/* IMAGE VIEWER */
-
-.imageViewer{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.9);
-display:flex;
-align-items:center;
-justify-content:center;
-z-index:9999;
-}
-
-.imageViewer img{
-max-width:95%;
-max-height:85%;
-border-radius:12px;
-}
-
-.viewerContent{
-text-align:center;
-}
-
-.viewerTitle{
-margin-top:10px;
-font-size:18px;
+.card h3 {
+  margin: 5px 0;
+  font-size: 1em;
 }
