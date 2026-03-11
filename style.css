@@ -176,4 +176,100 @@ border-radius:6px;
   color: #4cafef;
 }
 
+/* TRAINING TOOL BUTTON */
+
+#trainingButton{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+background:#1e1e1e;
+color:white;
+
+padding:12px 16px;
+
+border-radius:8px;
+border:1px solid #444;
+
+cursor:pointer;
+
+z-index:1000;
+
+}
+
+
+
+/* PANEL */
+
+#trainingPanel{
+
+position:fixed;
+
+bottom:80px;
+right:20px;
+
+background:#111;
+
+border:1px solid #333;
+border-radius:10px;
+
+padding:15px;
+
+width:260px;
+
+display:none;
+
+z-index:1000;
+
+color:white;
+
+}
+
+
+
+#trainingPanel input,
+#trainingPanel select{
+
+width:100%;
+
+padding:6px;
+margin-bottom:10px;
+
+background:#0e0e0e;
+border:1px solid #333;
+
+color:white;
+
+}
+
+
+
+#trainingPanel button{
+
+width:100%;
+
+padding:8px;
+
+background:#333;
+border:none;
+
+color:white;
+cursor:pointer;
+
+}
+
+
+
+#trainingResult{
+
+margin-top:12px;
+
+font-size:13px;
+line-height:1.6;
+
+max-height:200px;
+overflow:auto;
+
+}
 
