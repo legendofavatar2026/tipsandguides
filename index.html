@@ -140,12 +140,39 @@
 <!-- VISITOR COUNTER -->
 
 <footer style="text-align:center;margin-top:60px;padding-bottom:30px;">
-<p>Visitors</p>
-<img src="https://visitor-badge.laobi.icu/badge?page_id=legendofavatar2026.gameguide">
+
+<h3>Site Visitors</h3>
+
+<p>Total Visits: <span id="total-visits">Loading...</span></p>
+<p>Today's Visits: <span id="today-visits">Loading...</span></p>
+
 </footer>
 
 
 <script src="script.js"></script>
+
+<script>
+
+// change this to your unique site name
+const namespace = "https://legendofavatar2026.github.io/tipsandguides/";
+const key = "visits";
+
+fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+.then(res => res.json())
+.then(res => {
+document.getElementById("total-visits").innerText = res.value;
+});
+
+// today visits
+const today = new Date().toISOString().slice(0,10);
+
+fetch(`https://api.countapi.xyz/hit/${namespace}/${today}`)
+.then(res => res.json())
+.then(res => {
+document.getElementById("today-visits").innerText = res.value;
+});
+
+</script>
 
 </body>
 </html>
