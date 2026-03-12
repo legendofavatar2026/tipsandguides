@@ -188,7 +188,7 @@ border:1px solid #333;
 padding:20px;
 border-radius:10px;
 
-margin-top:20px;
+margin:20px auto;   /* centers horizontally */
 
 }
 
@@ -233,4 +233,5 @@ line-height:1.6;
 font-size:14px;
 
 }
+
 
