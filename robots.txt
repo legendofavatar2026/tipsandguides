@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://legendofavatar2026.github.io/tipsandguides/sitemap.xml
