@@ -234,3 +234,8 @@ font-size:14px;
 
 }
 
+#calculator{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
