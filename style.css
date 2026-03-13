@@ -243,5 +243,85 @@ margin-top:20px;
 opacity:0.8;
 }
 
+/* TIPS SECTION */
+
+.tips-box{
+
+background:#111;
+border:1px solid #333;
+
+padding:20px;
+
+border-radius:10px;
+
+margin-top:15px;
+
+}
+
+.tips-box ul{
+
+padding-left:18px;
+
+}
+
+.tips-box li{
+
+margin-bottom:8px;
+
+}
+
+
+
+/* CODES */
+
+.codes{
+
+margin-top:15px;
+
+display:grid;
+
+grid-template-columns:1fr;
+
+gap:10px;
+
+}
+
+.codeBox{
+
+display:flex;
+
+justify-content:space-between;
+align-items:center;
+
+background:#111;
+
+border:1px solid #333;
+
+padding:10px 12px;
+
+border-radius:8px;
+
+}
+
+.codeBox span{
+
+font-weight:bold;
+
+}
+
+.codeBox button{
+
+background:#333;
+border:none;
+
+color:white;
+
+padding:6px 10px;
+
+cursor:pointer;
+
+border-radius:6px;
+
+}
 
 
