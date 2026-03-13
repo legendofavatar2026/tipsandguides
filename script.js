@@ -192,5 +192,75 @@ ${days.toLocaleString(undefined,{maximumFractionDigits:2})} days
 
 }
 
+/* GIFT CODES SYSTEM */
+
+const giftCodes = [
+
+{code:"ORB1000GIFT"},
+{code:"ORB2000GIFT"},
+{code:"AVATAR0808"},
+{code:"AVATARXBLADE1"},
+{code:"AVATARXBLADE2"},
+{code:"AVATARDISCORD"},
+{code:"DISCORD11000"},
+{code:"TOWER10GIFT"},
+{code:"GLOBAL200DAY"},
+{code:"MARCH2026GIFT"},
+{code:"MARCHDELAYGIFT", new:true}
+
+]
+
+
+function loadGiftCodes(){
+
+const container = document.getElementById("codesContainer")
+
+container.innerHTML=""
+
+giftCodes.forEach(item=>{
+
+const div=document.createElement("div")
+div.className="codeBox"
+
+const label=item.new ? " <b style='color:#4caf50'>NEW</b>" : ""
+
+div.innerHTML=`
+<span>${item.code}${label}</span>
+<button onclick="copyCode('${item.code}')">Copy</button>
+`
+
+container.appendChild(div)
+
+})
+
+}
+
+
+function copyCode(code){
+
+navigator.clipboard.writeText(code)
+
+const msg=document.createElement("div")
+msg.innerText="Copied: "+code
+
+msg.style.position="fixed"
+msg.style.bottom="20px"
+msg.style.left="50%"
+msg.style.transform="translateX(-50%)"
+msg.style.background="#222"
+msg.style.padding="10px 15px"
+msg.style.borderRadius="6px"
+msg.style.zIndex="9999"
+
+document.body.appendChild(msg)
+
+setTimeout(()=>msg.remove(),1500)
+
+}
+
+
+/* LOAD CODES ON PAGE START */
+
+loadGiftCodes()
 
 
