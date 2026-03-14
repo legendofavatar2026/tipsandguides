@@ -413,5 +413,20 @@ cursor:pointer;
     transform: translateY(-1px);
 }
 
+.kofi-icon{
+    position:fixed;
+    bottom:15px;
+    right:15px;
+    font-size:20px;
+    text-decoration:none;
+    opacity:0.6;
+    transition:opacity 0.2s ease;
+    z-index:9999;
+}
+
+.kofi-icon:hover{
+    opacity:1;
+}
+
 
 
