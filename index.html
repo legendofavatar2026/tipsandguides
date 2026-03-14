@@ -324,7 +324,7 @@ legend of avatar infinite tower guide
 
         <p>
             💬 Legend of Avatar Back Accessory Design Contest!
-            <a href="https://discord.gg/m7W3R5S9" class="discord-button-tight">
+            <a href="https://discord.gg/NTDZ5k8u" class="discord-button-tight">
                 💡 Submit Your Idea
             </a>
         </p>
@@ -332,15 +332,23 @@ legend of avatar infinite tower guide
     </div>
 </div>
 
-  <script>
+<script>
 window.onload = function () {
     const popup = document.getElementById("eventPopup");
     const closeBtn = document.querySelector(".close-popup");
 
     popup.style.display = "block";
 
+    // close button
     closeBtn.onclick = function () {
         popup.style.display = "none";
+    };
+
+    // close when clicking outside popup-content
+    window.onclick = function (event) {
+        if (event.target === popup) {
+            popup.style.display = "none";
+        }
     };
 };
 </script>
