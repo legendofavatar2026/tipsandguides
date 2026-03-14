@@ -413,7 +413,17 @@ cursor:pointer;
     transform: translateY(-1px);
 }
 
+/* Fade-in/out effect */
+.popup {
+    opacity: 0;
+    pointer-events: none;       /* disable clicks when hidden */
+    transition: opacity 0.3s ease;
+}
 
+.popup.visible {
+    opacity: 1;
+    pointer-events: auto;       /* enable interaction when visible */
+}
 
 
 
