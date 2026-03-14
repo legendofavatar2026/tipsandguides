@@ -335,21 +335,26 @@ legend of avatar infinite tower guide
 
 </div>
 
- <script>
+<script>
+window.onload = function() {
+    var popup = document.getElementById("eventPopup");
 
-window.onload = function(){
+    // Show popup with fade-in
+    popup.classList.add("visible");
 
-document.getElementById("eventPopup").style.display = "block";
+    // Close when clicking outside the popup content
+    popup.addEventListener("click", function(e){
+        if(e.target === popup){
+            popup.classList.remove("visible");
+        }
+    });
 
-}
-
-document.querySelector(".close-popup").onclick = function(){
-
-document.getElementById("eventPopup").style.display = "none";
-
-}
-
-</script> 
+    // Close when clicking the X
+    document.querySelector(".close-popup").onclick = function(){
+        popup.classList.remove("visible");
+    };
+};
+</script>
   
 <footer class="mini-footer">
 Fan-made guide. Not affiliated with the official game or publisher.
