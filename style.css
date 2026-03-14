@@ -324,4 +324,49 @@ border-radius:6px;
 
 }
 
+.meta{
+max-width:1100px;
+margin:60px auto;
+text-align:center;
+}
 
+.meta h2{
+margin-bottom:30px;
+font-size:30px;
+}
+
+.meta-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.meta-card{
+background:#1c1c2e;
+padding:25px;
+border-radius:12px;
+text-align:left;
+border:1px solid rgba(255,255,255,0.05);
+transition:0.3s;
+}
+
+.meta-card:hover{
+transform:translateY(-5px);
+background:#24243d;
+}
+
+.meta-card h3{
+margin-top:0;
+}
+
+.combo{
+border-left:5px solid #3a8cff;
+}
+
+.skill{
+border-left:5px solid #ff6b6b;
+}
+
+.counter{
+border-left:5px solid #ffd166;
+}
