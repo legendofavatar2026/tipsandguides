@@ -312,47 +312,18 @@ legend of avatar infinite tower guide
 </section>
 
   
-<!-- EVENT POPUP -->
-<div id="eventPopup" class="popup">
-
+<!-- EVENT POPUP --> 
+  <div id="eventPopup" class="popup">
   <div class="popup-content">
-    <span class="close-popup">Close</span>
-
+    <span class="close-popup">&times;</span> 
     <h2>Current Event Notice</h2>
-
-    <p>
-      🔥 NEW MYTHIC : Wings of Steel - Alice! 
-      Ingame event held for her appearance!
-    </p>
-
-    <p>
-      💬 Legend of Avatar Back Accessory Design Contest! 
-      <a href="https://discord.gg/vwnReTaN" class="discord-button-tight">💡 Submit Your Idea</a>
-    </p>
-
+    <p> 🔥 NEW MYTHIC : Wings of Steel - Alice! Ingame event held for her appereance! </p>
+    <p> 💬 Legend of Avatar Back Accessory Design Contest! <a href="https://discord.gg/m7W3R5S9" class="discord-button-tight">💡 Submit Your Idea</a> </p> 
   </div>
 </div>
+  <script> window.onload = function(){ document.getElementById("eventPopup").style.display = "block"; } document.querySelector(".close-popup").onclick = function(){ document.getElementById("eventPopup").style.display = "none"; } </script>
+  
 
-<script>
-window.onload = function() {
-    var popup = document.getElementById("eventPopup");
-
-    // Show popup with fade-in
-    popup.classList.add("visible");
-
-    // Close when clicking outside the popup content
-    popup.addEventListener("click", function(e){
-        if(e.target === popup){
-            popup.classList.remove("visible");
-        }
-    });
-
-    // Close when clicking the Close text
-    document.querySelector(".close-popup").onclick = function(){
-        popup.classList.remove("visible");
-    };
-};
-</script>
   
 <footer class="mini-footer">
 Fan-made guide. Not affiliated with the official game or publisher.
