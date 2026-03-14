@@ -246,16 +246,11 @@ opacity:0.8;
 /* TIPS SECTION */
 
 .tips-box{
-
-background:#111;
-border:1px solid #333;
-
-padding:20px;
-
+background:#1c1c2e;
+border-left:4px solid #5d6bff;
 border-radius:10px;
-
+padding:20px;
 margin-top:15px;
-
 }
 
 .tips-box ul{
