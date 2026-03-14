@@ -89,8 +89,16 @@ text-align:center;
 .avatar img{
 width:100%;
 aspect-ratio:1/1;
+object-fit:contain;
 border-radius:10px;
 border:2px solid #444;
+background:#111;
+transition:0.2s;
+}
+
+.avatar img:hover{
+transform:scale(1.05);
+border-color:#6b7cff;
 }
 
 .avatar p{
