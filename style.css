@@ -74,7 +74,7 @@ cursor:pointer;
 .tower img{
 width:100%;
 aspect-ratio:1/1;
-object-fit:cover;
+object-fit:contain;
 border-radius:10px;
 border:2px solid #444;
 background:#111;
