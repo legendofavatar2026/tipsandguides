@@ -60,14 +60,16 @@ gap:12px;
 padding:12px;
 }
 
-/* BOSS */
-
-.boss{
+.avatar,
+.boss,
+.tower{
 text-align:center;
 cursor:pointer;
 }
 
-.boss img{
+.avatar img,
+.boss img,
+.tower img{
 width:100%;
 aspect-ratio:1/1;
 object-fit:cover;
@@ -75,34 +77,10 @@ border-radius:10px;
 border:2px solid #444;
 }
 
-.boss p{
+.avatar p,
+.boss p,
+.tower p{
 margin-top:6px;
-font-size:13px;
-}
-
-/* AVATAR */
-
-.avatar{
-text-align:center;
-}
-
-.avatar img{
-width:100%;
-aspect-ratio:1/1;
-object-fit:contain;
-border-radius:10px;
-border:2px solid #444;
-background:#111;
-transition:0.2s;
-}
-
-.avatar img:hover{
-transform:scale(1.05);
-border-color:#6b7cff;
-}
-
-.avatar p{
-margin-top:5px;
 font-size:13px;
 }
 
