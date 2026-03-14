@@ -60,6 +60,8 @@ gap:12px;
 padding:12px;
 }
 
+/* AVATAR / BOSS / TOWER */
+
 .avatar,
 .boss,
 .tower{
@@ -75,6 +77,15 @@ aspect-ratio:1/1;
 object-fit:cover;
 border-radius:10px;
 border:2px solid #444;
+background:#111;
+transition:0.2s ease;
+}
+
+.avatar img:hover,
+.boss img:hover,
+.tower img:hover{
+transform:scale(1.05);
+border-color:#6b7cff;
 }
 
 .avatar p,
