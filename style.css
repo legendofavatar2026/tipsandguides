@@ -1,4 +1,3 @@
-
 body{
 margin:0;
 font-family:Arial,Helvetica,sans-serif;
@@ -9,6 +8,17 @@ color:white;
 .banner{
 width:100%;
 }
+
+h2{
+text-align:center;
+margin-top:20px;
+}
+
+h3{
+margin-left:15px;
+}
+
+/* TABS */
 
 .tabs{
 display:flex;
@@ -23,12 +33,15 @@ background:none;
 border:none;
 color:#aaa;
 cursor:pointer;
+font-size:14px;
 }
 
 .tab.active{
 color:white;
 border-bottom:2px solid white;
 }
+
+/* TAB CONTENT */
 
 .tabContent{
 display:none;
@@ -38,6 +51,8 @@ display:none;
 display:block;
 }
 
+/* GRID */
+
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(110px,1fr));
@@ -45,24 +60,42 @@ gap:12px;
 padding:12px;
 }
 
-.avatar,.boss{
+/* AVATAR / BOSS / TOWER */
+
+.avatar,
+.boss,
+.tower{
 text-align:center;
 cursor:pointer;
 }
 
-.avatar img,.boss img{
+.avatar img,
+.boss img,
+.tower img{
 width:100%;
 aspect-ratio:1/1;
 object-fit:contain;
 border-radius:10px;
 border:2px solid #444;
 background:#111;
+transition:0.2s ease;
 }
 
-.avatar p,.boss p{
+.avatar img:hover,
+.boss img:hover,
+.tower img:hover{
+transform:scale(1.05);
+border-color:#6b7cff;
+}
+
+.avatar p,
+.boss p,
+.tower p{
 margin-top:6px;
 font-size:13px;
 }
+
+/* GUIDE MENU */
 
 #guideMenu{
 display:grid;
@@ -79,6 +112,8 @@ border:2px solid #555;
 cursor:pointer;
 }
 
+/* GUIDE VIEWER */
+
 #viewer{
 padding:15px;
 }
@@ -92,48 +127,108 @@ border-radius:10px;
 border:2px solid #333;
 }
 
+/* WEAPONS */
+
+.weaponGroup{
+margin:20px;
+}
+
+.weaponCombo{
+background:#141414;
+border:1px solid #333;
+border-radius:8px;
+padding:10px;
+margin-bottom:10px;
+}
+
+.weaponItems{
+display:flex;
+gap:6px;
+margin-bottom:6px;
+}
+
+.weaponItems img{
+width:40px;
+height:40px;
+border-radius:6px;
+}
+
+/* Footer Styling */
+.site-footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+  border-top: 1px solid #333;
+}
+
+.site-footer span#visitor-count {
+  font-weight: bold;
+  color: #4cafef;
+}
+
+/* TRAINING TOOL */
+
 .training-box{
+
 max-width:400px;
+
 background:#111;
 border:1px solid #333;
+
 padding:20px;
 border-radius:10px;
-margin:20px auto;
+
+margin:20px auto;   /* centers horizontally */
+
 }
+
 
 .training-box input,
 .training-box select{
+
 width:100%;
+
 padding:8px;
 margin-bottom:12px;
+
 background:#0e0e0e;
 border:1px solid #333;
+
 color:white;
+
 }
+
 
 .training-box button{
+
 width:100%;
+
 padding:10px;
+
 background:#333;
+
 border:none;
+
 color:white;
 cursor:pointer;
+
 }
 
-.codes{
+
+#trainingResult{
+
 margin-top:15px;
-display:grid;
-gap:10px;
-}
 
-.codeBox{
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:#111;
-border:1px solid #333;
-padding:10px 12px;
-border-radius:8px;
+line-height:1.6;
+font-size:14px;
+
 }
 
 .mini-footer{
@@ -142,4 +237,196 @@ font-size:11px;
 color:#777;
 padding:3px 0;
 margin-top:20px;
+opacity:0.8;
 }
+
+/* TIPS SECTION */
+
+.tips-box{
+background:#1c1c2e;
+border-left:4px solid #5d6bff;
+border-radius:10px;
+padding:20px;
+margin-top:15px;
+}
+
+.tips-box ul{
+
+padding-left:18px;
+
+}
+
+.tips-box li{
+
+margin-bottom:8px;
+
+}
+
+
+
+/* CODES */
+
+.codes{
+
+margin-top:15px;
+
+display:grid;
+
+grid-template-columns:1fr;
+
+gap:10px;
+
+}
+
+.codeBox{
+
+display:flex;
+
+justify-content:space-between;
+align-items:center;
+
+background:#111;
+
+border:1px solid #333;
+
+padding:10px 12px;
+
+border-radius:8px;
+
+}
+
+.codeBox span{
+
+font-weight:bold;
+
+}
+
+.codeBox button{
+
+background:#333;
+border:none;
+
+color:white;
+
+padding:6px 10px;
+
+cursor:pointer;
+
+border-radius:6px;
+
+}
+
+.meta{
+max-width:1100px;
+margin:60px auto;
+text-align:center;
+}
+
+.meta h2{
+margin-bottom:30px;
+font-size:30px;
+}
+
+.meta-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.meta-card{
+background:#1c1c2e;
+padding:25px;
+border-radius:12px;
+text-align:left;
+border:1px solid rgba(255,255,255,0.05);
+transition:0.3s;
+}
+
+.meta-card:hover{
+transform:translateY(-5px);
+background:#24243d;
+}
+
+.meta-card h3{
+margin-top:0;
+}
+
+.combo{
+border-left:5px solid #3a8cff;
+}
+
+.skill{
+border-left:5px solid #ff6b6b;
+}
+
+.counter{
+border-left:5px solid #ffd166;
+}
+
+/* EVENT POPUP */
+
+.popup{
+display:none;
+position:fixed;
+z-index:9999;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+}
+
+.popup-content{
+background:#1a1a2e;
+margin:10% auto;
+padding:25px;
+border-radius:12px;
+width:90%;
+max-width:500px;
+color:white;
+text-align:center;
+border:2px solid #444;
+}
+
+.close-popup{
+position:absolute;
+right:20px;
+top:10px;
+font-size:24px;
+cursor:pointer;
+}
+
+.discord-button-tight {
+    display: inline-block;
+    background-color: #5865F2;   /* Discord blurple */
+    color: white;
+    font-weight: 600;
+    font-family: "Segoe UI", sans-serif;
+    text-decoration: none;
+    border-radius: 4px;          /* small rounding */
+    padding: 2px 6px;            /* minimal padding around text */
+    transition: background 0.3s, transform 0.2s;
+}
+
+.discord-button-tight:hover {
+    background-color: #4752C4;
+    transform: translateY(-1px);
+}
+
+.kofi-icon{
+    position:fixed;
+    bottom:15px;
+    right:15px;
+    font-size:20px;
+    text-decoration:none;
+    opacity:0.6;
+    transition:opacity 0.2s ease;
+    z-index:9999;
+}
+
+.kofi-icon:hover{
+    opacity:1;
+}
+
+
+

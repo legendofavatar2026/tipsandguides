@@ -1,33 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TY77LTPV92"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TY77LTPV92');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Complete Legend of Avatar guide including hero tier list, divine weapons combinations, world boss guides, tower guides and progression calculator.">
-<title>Legend of Avatar Guide</title>
+<meta name="keywords" content="
+legend of avatar guide,
+legend of avatar tier list,
+legend of avatar hero tier list,
+legend of avatar divine weapons,
+legend of avatar world boss guide,
+legend of avatar infinite tower guide,
+legend of avatar training exp calculator
+">
+<meta property="og:title" content="Legend of Avatar Guide">
+<meta property="og:description" content="Hero tier list, divine weapon combos, boss guides and more.">
+<meta property="og:image" content="https://legendofavatar2026.github.io/tipsandguides/assets/banner.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://legendofavatar2026.github.io/tipsandguides/">
+  
+<title>Legend of Avatar Guide – Hero Tier List, Weapons, Boss Guides</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "Legend of Avatar Guide",
+ "url": "https://legendofavatar2026.github.io/tipsandguides/",
+ "description": "Complete Legend of Avatar guide including hero tier list, divine weapons combinations, world boss guides and progression calculator.",
+ "inLanguage": "en"
+}
+</script>
 </head>
 
 <body>
 
 <header>
+
 <img src="assets/banner.png" class="banner" alt="Legend of Avatar">
 
 <nav class="tabs">
-<button class="tab active" data-tab="guides">Guides</button>
-<button class="tab" data-tab="avatars">Avatar Tier List</button>
-<button class="tab" data-tab="weapons">Divine Weapons</button>
-<button class="tab" data-tab="calculator">Training EXP Calculator</button>
-<button class="tab" data-tab="tips">Tips & Codes</button>
+<button class="tab active" onclick="openTab(event,'guides')">Guides</button>
+<button class="tab" onclick="openTab(event,'avatars')">Avatar Tier List</button>
+<button class="tab" onclick="openTab(event,'weapons')">Divine Weapons</button>
+<button class="tab" onclick="openTab(event,'calculator')">Traning EXP Calculator</button>
+<button class="tab" onclick="openTab(event,'wings')">Wings</button>
+<button class="tab" onclick="openTab(event,'tips')">Tips & Codes</button>
 </nav>
+
 </header>
 
 
-<section id="guides" class="tabContent active">
+<section id="landing-page" class="tabContent active">
 
-<h2>World Boss Guides</h2>
+<h1>Legend of Avatar Complete Guide</h1>
+<h2>Game Meta Overview</h2>
 
-<div class="grid" id="bossGrid"></div>
+<div class="meta-grid">
+
+<div class="meta-card combo">
+<h3>⚡ Combo</h3>
+<p>Main PvE progression build.</p>
+<p>Strong against <b>Skill</b> teams in Arena.</p>
+<p>Main build for <b>Tower of Gale</b> and <b>Poison Ivy</b>.</p>
+</div>
+
+<div class="meta-card skill">
+<h3>🔥 Skill</h3>
+<p>Burst build used in Arena.</p>
+<p>Strong against <b>Counter</b> teams.</p>
+<p>Main build for <b>Tower of Rift</b> and <b>Abyssal Tyrant</b>.</p>
+</div>
+
+<div class="meta-card counter">
+<h3>🛡 Counter</h3>
+<p>Defensive Arena build.</p>
+<p>Strong against <b>Combo</b> teams.</p>
+<p>Main build for <b>Tower of Steel</b> and <b>Iron Spider</b>.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GUIDES -->
+
+<section id="guides" class="tabContent">
+
+<h2 class="seo-intro">Legend of Avatar World Boss Guide</h2>
+
+<div class="grid">
+
+<div class="boss" onclick="openBoss('ironspider')">
+<img src="assets/guide/ironspider.png" alt="Legend of Avatar Iron Spider">
+<p>Iron Spider</p>
+</div>
+
+<div class="boss" onclick="openBoss('poisonivy')">
+<img src="assets/guide/poisonivy.png" alt="Legend of Avatar Toxic Ivy">
+<p>Poison Ivy</p>
+</div>
+
+<div class="boss" onclick="openBoss('abyssaltyrant')">
+<img src="assets/guide/abyssaltyrant.png" alt="Legend of Avatar Abyssal Tyrant">
+<p>Abyssal Tyrant</p>
+</div>
+
+</div>
+
+
+<h2>Legend of Avatar Infinite Tower Guide</h2>
+
+<div class="grid">
+
+<div class="boss" onclick="openBoss('ironspider')">
+<img src="assets/guide/tower_steel.png" alt="Legend of Avatar Infinite Tower">
+<p>Tower of Steel</p>
+</div>
+
+<div class="boss" onclick="openBoss('poisonivy')">
+<img src="assets/guide/tower_gale.png" alt="Legend of Avatar Infinite Tower">
+<p>Tower of Gale</p>
+</div>
+
+<div class="boss" onclick="openBoss('abyssaltyrant')">
+<img src="assets/guide/tower_rift.png" alt="Legend of Avatar Infinite Tower">
+<p>Tower of Rift</p>
+</div>
+
+</div>
 
 <div id="guideMenu"></div>
 
@@ -38,43 +150,73 @@
 </section>
 
 
+<!-- AVATAR -->
+
 <section id="avatars" class="tabContent">
 
-<h2>Hero Tier List</h2>
+<h2>Legend of Avatar Hero Tier List</h2>
 
-<div id="avatarContainer"></div>
+<h3>Combo</h3>
+<div class="grid">
+
+<div class="avatar"><img src="assets/avatars/elysia.png" alt="Legend of Avatar Mythic Avatar"><p>1 Elysia</p></div>
+<div class="avatar"><img src="assets/avatars/alice.png" alt="Legend of Avatar Mythic Avatar"><p>2 Alice</p></div>
+<div class="avatar"><img src="assets/avatars/naktia.png" alt="Legend of Avatar Mythic Avatar"><p>3 Naktia</p></div>
+
+</div>
+
+<h3>Skill</h3>
+<div class="grid">
+
+<div class="avatar"><img src="assets/avatars/erian.png" alt="Legend of Avatar Mythic Avatar"><p>1 Erian</p></div>
+<div class="avatar"><img src="assets/avatars/serena.png" alt="Legend of Avatar Mythic Avatar"><p>2 Serena</p></div>
+<div class="avatar"><img src="assets/avatars/blake.png" alt="Legend of Avatar Mythic Avatar"><p>3 Blake</p></div>
+
+</div>
+
+<h3>Counter</h3>
+<div class="grid">
+
+<div class="avatar"><img src="assets/avatars/eve.png" alt="Legend of Avatar Mythic Avatar"><p>1 Eve</p></div>
+<div class="avatar"><img src="assets/avatars/yoran.png" alt="Legend of Avatar Mythic Avatar"><p>2 Yoran</p></div>
+<div class="avatar"><img src="assets/avatars/raiden.png" alt="Legend of Avatar Mythic Avatar"><p>3 Raiden</p></div>
+
+</div>
 
 </section>
 
 
+<!-- DIVINE WEAPONS -->
+
 <section id="weapons" class="tabContent">
 
-<h2>Divine Weapons</h2>
+<h2>Legend of Avatar Divine Weapons</h2>
 
 <div id="weaponContainer"></div>
 
 </section>
 
+  <!-- EXP CALCULATOR -->
 
 <section id="calculator" class="tabContent">
 
-<h2>Training EXP Calculator</h2>
+<h2>legend of avatar training exp calculator</h2>
 
 <div class="training-box">
 
 <label>EXP Gain per Minute</label>
-<input id="expPerMin">
+<input id="expPerMin" placeholder="Example: 143">
 
 <label>EXP Tier</label>
 <select id="currentTier"></select>
 
 <label>Target EXP</label>
-<input id="targetAmount">
+<input id="targetAmount" placeholder="Example: 25.6">
 
 <label>Target Tier</label>
 <select id="targetTier"></select>
 
-<button id="calcBtn">Calculate</button>
+<button onclick="calculateProgress()">Calculate</button>
 
 <div id="trainingResult"></div>
 
@@ -82,20 +224,181 @@
 
 </section>
 
+<!-- WINGS -->
+
+<section id="wings" class="tabContent">
+
+<h2 style="text-align:center;margin-top:80px">COMING SOON</h2>
+
+</section>
+  
+<!-- TIPS & CODES -->
 
 <section id="tips" class="tabContent">
 
-<h2>Gift Codes</h2>
+<h2>Tips & Tricks</h2>
+
+<h2>Event Tips</h2>
+
+<div class="tips-box">
+
+<ul>
+
+<li><b>Suspicious Goblin Event</b> is a diamond burning event. You will need around <b>20,000 diamonds per day for 3 days</b> to purchase all available items.</li>
+
+</ul>
+
+</div>
+
+
+<h2>Recurring Events (Resources Carry Over)</h2>
+
+<div class="tips-box">
+
+<ul>
+
+<li><b>Mystic Ore Rush Event</b> – Around <b>40,000 ores</b> needed to complete all missions from Round 1–4.</li>
+
+<li><b>Guardian Star Rush Event</b> – Around <b>180,000 guardian stones</b> needed to complete all missions from Round 1–4.</li>
+
+<li><b>Relic Enhancement Rush Event</b> – Around <b>12,000 relics</b> needed to complete all missions from Round 1–4.</li>
+
+<li><b>Skill Summon Rush Event</b> – Around <b>10,000 summons</b> needed to finish all missions.</li>
+
+<li><b>Pet Summon Rush Event</b> – Around <b>10,000 summons</b> needed to finish all missions.</li>
+
+<li><b>Call of Red Dragon</b> – Lucky Coins from this event <b>carry over</b> to the next event.</li>
+
+<li><b>World Boss</b> – Vision Forge Crystals <b>carry over</b> to the next world boss.</li>
+
+</ul>
+
+</div>
+
+
+<h2>Progression Tips</h2>
+
+<div class="tips-box">
+
+<ul>
+
+<li>For <b>Infinite Tower</b>, it is recommended to clear at least <b>50 floors</b> on each tower to obtain the basic collection bonus from the three weapons.</li>
+<li>For <b>Relics</b>, its better to get all the types of relics, the equally level each relich for the maximum owned effect.</li>
+<li>For <b>Accessory</b>, you level Bonus ATK/DEF/HP to level100, then you focus on leveling Boss Damage to max.</li>
+<li>For <b>Forge</b>, if you are SS Tier below its talked that getting a 4x Final Double Combo Dmg & 1x Final Atk.(this is subject to debate as everyone is unique) For SSS Tier 3xFinal DCD;2xFinal Boss Dmg.</li>
+<li>For <b>Mine</b>, use your common pickaxe first for better/faster leveling of your mine to open more slots.</li>
+<li>For <b>Mythic Avatar</b>, if you get a new Avatar its best to confirm it for collection, if its dupe/copy reroll or use  it to transcend your best mythic.</li>
+
+</ul>
+
+</div>
+
+
+<h2>Alchemy Lab Shop Priority (Mythic Trace)</h2>
+
+<div class="tips-box">
+
+<ol>
+
+<li>Blaze Fury</li>
+<li>Shadow Thorn</li>
+<li>Grim Reaper</li>
+<li>Frost Fang</li>
+<li>Durandal</li>
+<li>World Breaker</li>
+<li>Shooting Star</li>
+<li>Evil Moon</li>
+
+</ol>
+
+</div>
+
+
+<h2>Working Gift Codes</h2>
 
 <div id="codesContainer" class="codes"></div>
 
 </section>
 
+<!-- EVENT POPUP -->
+<div id="eventPopup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+
+        <h2>Current Event Notice</h2>
+
+        <p>
+            🔥 NEW MYTHIC : Wings of Steel - Alice! Ingame event held for her appearance!
+        </p>
+
+        <p>
+            💬 Legend of Avatar Back Accessory Design Contest!
+            <a href="https://discord.gg/NTDZ5k8u" class="discord-button-tight">
+                💡 Submit Your Idea
+            </a>
+        </p>
+
+    </div>
+</div>
+
+<script>
+window.onload = function () {
+    const popup = document.getElementById("eventPopup");
+    const closeBtn = document.querySelector(".close-popup");
+
+    popup.style.display = "block";
+
+    // close button
+    closeBtn.onclick = function () {
+        popup.style.display = "none";
+    };
+
+    // close when clicking outside popup-content
+    window.onclick = function (event) {
+        if (event.target === popup) {
+            popup.style.display = "none";
+        }
+    };
+};
+</script>
+
+  <!-- SMALL KO-FI TIP ICON -->
+<a href="https://ko-fi.com/tomoe1337" target="_blank" class="kofi-icon">
+☕
+</a>
+  
 <footer class="mini-footer">
 Fan-made guide. Not affiliated with the official game or publisher.
 </footer>
 
+  
 <script src="script.js"></script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
