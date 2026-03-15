@@ -1,0 +1,76 @@
+{
+  "bosses": [
+    {
+      "id": "ironspider",
+      "name": "Iron Spider",
+      "img": "assets/guide/ironspider.png"
+    },
+    {
+      "id": "poisonivy",
+      "name": "Poison Ivy",
+      "img": "assets/guide/poisonivy.png"
+    },
+    {
+      "id": "abyssaltyrant",
+      "name": "Abyssal Tyrant",
+      "img": "assets/guide/abyssaltyrant.png"
+    }
+  ],
+  "avatars": {
+    "Combo": [
+      {
+        "rank": 1,
+        "name": "Elysia",
+        "img": "assets/avatars/elysia.png"
+      },
+      {
+        "rank": 2,
+        "name": "Alice",
+        "img": "assets/avatars/alice.png"
+      },
+      {
+        "rank": 3,
+        "name": "Naktia",
+        "img": "assets/avatars/naktia.png"
+      }
+    ],
+    "Skill": [
+      {
+        "rank": 1,
+        "name": "Erian",
+        "img": "assets/avatars/erian.png"
+      },
+      {
+        "rank": 2,
+        "name": "Serena",
+        "img": "assets/avatars/serena.png"
+      },
+      {
+        "rank": 3,
+        "name": "Blake",
+        "img": "assets/avatars/blake.png"
+      }
+    ]
+  },
+  "weapons": [
+    {
+      "items": [
+        "executioner",
+        "solarhalo"
+      ],
+      "value": "20%"
+    },
+    {
+      "items": [
+        "muramasa",
+        "glacion"
+      ],
+      "value": "20%"
+    }
+  ],
+  "codes": [
+    "ORB1000GIFT",
+    "ORB2000GIFT",
+    "AVATAR0808"
+  ]
+}
