@@ -413,19 +413,28 @@ cursor:pointer;
     transform: translateY(-1px);
 }
 
-.kofi-icon{
-    position:fixed;
-    bottom:15px;
-    right:15px;
-    font-size:20px;
-    text-decoration:none;
-    opacity:0.6;
-    transition:opacity 0.2s ease;
-    z-index:9999;
+.kofi-icon {
+    position: fixed;
+    bottom: 12px;
+    right: 14px;
+
+    font-size: 12px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+
+    color: rgba(255, 255, 255, 0.5); /* soft subtle */
+    text-decoration: none;
+
+    opacity: 0.5;
+    transition: opacity 0.2s ease, color 0.2s ease;
+
+    z-index: 9999;
 }
 
-.kofi-icon:hover{
-    opacity:1;
+.kofi-icon:hover {
+    opacity: 0.8;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* CONTAINER */
