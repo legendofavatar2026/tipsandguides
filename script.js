@@ -65,6 +65,42 @@ const weaponData=[
 {items:["plasmaedge","epeefleur"],effect:"Ultimate Combo Double Damage",value:"6.20%"}
 ]
 
+/* PET DATA */
+const petData = [
+{name:"alien", lead:"skill dmg 30%", effect:"ignore evasion 10%"},
+{name:"aura", lead:"atk speed 65%", effect:"ignore counter 10%"},
+{name:"blitz", lead:"atk speed 46%", effect:"evasion 6%"},
+{name:"bubbles", lead:"normal atk dmg resist 30%", effect:"ignore evasion 10%"},
+{name:"dash", lead:"double combo dmg 43%", effect:"ignore combo 6%"},
+{name:"draco", lead:"triple combo chance 30%", effect:"ignore evasion 10%"},
+{name:"duff", lead:"boss dmg 45%", effect:"movement speed 0.60%"},
+{name:"elio", lead:"dmg reduction 13%", effect:"ignore combo 10%"},
+{name:"giggles", lead:"combo dmg resist 21%", effect:"ignore counter 6%"},
+{name:"grump", lead:"boss dmg resist 21%", effect:"ignore evasion 6%"},
+{name:"ice", lead:"counter chance 21%", effect:"ignore combo 6%"},
+{name:"inferno", lead:"combo dmg resist 30%", effect:"movement speed 0.90%"},
+{name:"lumina", lead:"double combo chance 30%", effect:"evasion 10%"},
+{name:"obsidian", lead:"normal atk dmg 30%", effect:"ignore combo 10%"},
+{name:"polly", lead:"crit dmg resist 30%", effect:"evasion 10%"},
+{name:"raven", lead:"triple combo chance 21%", effect:"evasion 6%"},
+{name:"rose", lead:"recovery 65%", effect:"ignore combo 10%"},
+{name:"rox", lead:"atk speed 65%", effect:"movement speed 0.90%"},
+{name:"scales", lead:"counter 30%", effect:"ignore evasion 10%"},
+{name:"shadow", lead:"double combo dmg 60%", effect:"movement speed 0.90%"},
+{name:"snowman", lead:"boss dmg 56%", effect:"ignore counter 10%"},
+{name:"sprint", lead:"counter dmg 60%", effect:"ignore evasion 10%"},
+{name:"storm", lead:"normal atk dmg 21%", effect:"ignore counter 6%"},
+{name:"stripe", lead:"counter dmg resist 21%", effect:"ignore combo 6%"},
+{name:"suzaku", lead:"counter dmg 60%", effect:"ignore combo 20%"},
+{name:"swift", lead:"skill dmg resist 21%", effect:"ignore counter 6%"},
+{name:"twinkle", lead:"boss dmg 56%", effect:"ignore evasion 10%"},
+{name:"typhon", lead:"boss dmg resist 30%", effect:"evasion 10%"},
+{name:"wave", lead:"double combo chance 21%", effect:"ignore counter 6%"},
+{name:"wiz", lead:"triple combo dmg 43%", effect:"movement speed 0.60%"},
+{name:"yura", lead:"triple combo dmg 60%", effect:"ignore combo 10%"},
+{name:"zephyros", lead:"recovery 65%", effect:"ignore counter 10%"}
+];
+
 
 /* GROUP BY EFFECT */
 
@@ -143,6 +179,26 @@ targetTierSelect.appendChild(o2)
 })
 
 })
+
+/* PET data render */
+window.addEventListener("DOMContentLoaded", () => {
+
+const filter = document.getElementById("petFilter")
+if(!filter) return
+
+const effects = [...new Set(petData.map(p => getBaseEffect(p.effect)))]
+
+effects.forEach(e => {
+const opt = document.createElement("option")
+opt.value = e
+opt.textContent = e.toUpperCase()
+filter.appendChild(opt)
+})
+
+
+
+})
+
 
 /* convert tier to base */
 
@@ -234,8 +290,184 @@ container.appendChild(div)
 })
 
 }
+/* PETS FUNCTION */
+function renderPets(selected){
+
+const container = document.getElementById("petContainer")
+container.innerHTML = ""
+
+petData
+.filter(p => {
+if(selected === "all") return true
+return getBaseEffect(p.effect) === selected
+})
+.forEach(p => {
+
+const div = document.createElement("div")
+div.className = "petCard"
+
+div.innerHTML = `
+<img src="assets/pets/${p.name}.png" alt="${p.name}">
+<h4>${p.name}</h4>
+<p><b>Lead:</b> ${p.lead}</p>
+<p><b>Effect:</b> ${p.effect}</p>
+`
+
+container.appendChild(div)
+
+})
+
+}
 
 
+function filterPets(){
+const value = document.getElementById("petFilter").value
+renderPets(value)
+}
+function getBaseEffect(effect){
+return effect
+.replace(/[0-9.]+%?/g,"") // remove numbers like 10%, 0.90
+.trim()
+.toLowerCase()
+}
+
+
+function loadPetSelectors(){
+
+const lead = document.getElementById("leadPet")
+const equips = document.querySelectorAll(".equipPet")
+
+petData.forEach(p => {
+
+const opt = `<option value="${p.name}">${p.name}</option>`
+
+lead.innerHTML += opt
+
+equips.forEach(sel=>{
+sel.innerHTML += opt
+})
+
+})
+
+}
+
+window.addEventListener("DOMContentLoaded", loadPetSelectors)
+
+function generateBuild(){
+
+const leadName = document.getElementById("leadPet").value
+const equips = [...document.querySelectorAll(".equipPet")].map(e=>e.value)
+
+// ✅ VALIDATION
+const check = validateBuild(leadName, equips)
+
+const container = document.getElementById("buildPreview")
+
+if(!check.valid){
+container.innerHTML = `<div class="warning">${check.message}</div>`
+return
+}
+
+// continue if valid
+const lead = petData.find(p=>p.name===leadName)
+const equipPets = equips.map(name=>petData.find(p=>p.name===name))
+
+// detect duplicate EFFECTS (optional, keep your old logic)
+const effects = equipPets.map(p=>p.effect)
+const duplicates = effects.filter((e,i,a)=>a.indexOf(e)!==i)
+
+const warning = duplicates.length ? 
+`<div class="warning">⚠ Duplicate Effect Detected</div>` : ""
+
+container.innerHTML = `
+<div class="build-card pro" id="captureArea">
+
+<div class="build-header">
+<h2>Pet Build</h2>
+<span class="watermark"></span>
+</div>
+
+${warning}
+
+<div class="full-row">
+<div class="pet-box lead">
+<img src="assets/pets/${lead.name}.png">
+<h4>${lead.name}</h4>
+<p>${lead.lead}</p>
+<span class="tag">LEAD</span>
+</div>
+
+${equipPets.map(p=>`
+<div class="pet-box">
+<img src="assets/pets/${p.name}.png">
+<h4>${p.name}</h4>
+<p>${p.effect}</p>
+</div>
+`).join("")}
+</div>
+</div>
+</div>
+`
+}
+
+
+
+function validateBuild(leadName, equips){
+
+const all = [leadName, ...equips]
+
+// find duplicates
+const duplicates = all.filter((item, index) => all.indexOf(item) !== index)
+
+if(duplicates.length > 0){
+return {
+valid:false,
+message:"⚠ Duplicate pets are not allowed"
+}
+}
+
+return { valid:true }
+
+}
+
+function downloadBuild(){
+
+const area = document.getElementById("captureArea")
+
+if(!area){
+alert("Please generate a build first!")
+return
+}
+
+html2canvas(area,{
+scale:2,
+backgroundColor:"#0e0e0e"
+}).then(canvas=>{
+
+/* 🔥 fallback-safe download */
+const image = canvas.toDataURL("image/png")
+
+const a = document.createElement("a")
+a.href = image
+a.download = "pet-build.png"
+
+/* required for browser */
+document.body.appendChild(a)
+a.click()
+document.body.removeChild(a)
+
+}).catch(err=>{
+console.error(err)
+alert("Download failed")
+})
+
+}
+
+
+document.querySelector(".btn.secondary").disabled = true
+document.querySelector(".btn.secondary").disabled = false
+
+/* END PET FUNCTION*/
 function copyCode(code){
 
 navigator.clipboard.writeText(code)
@@ -262,5 +494,3 @@ setTimeout(()=>msg.remove(),1500)
 /* LOAD CODES ON PAGE START */
 
 loadGiftCodes()
-
-

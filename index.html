@@ -11,6 +11,9 @@
 
   gtag('config', 'G-TY77LTPV92');
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Complete Legend of Avatar guide including hero tier list, divine weapons combinations, world boss guides, tower guides and progression calculator.">
@@ -141,13 +144,57 @@ legend of avatar training exp calculator
 
 </div>
 
+<h2>Pet Guide</h2>
+
+<div class="pet-filter">
+<label>Filter by Equipped Effect:</label>
+<select id="petFilter" onchange="filterPets()">
+<option value="">Select Effect</option>
+<option value="all">All</option>
+</select>
+</div>
+
+<div id="petContainer" class="grid"></div>
+
 <div id="guideMenu"></div>
 
 <div id="viewer">
 <img id="guideImage">
 </div>
 
+<div class="pet-builder">
+
+<h2 class="builder-title">🐾 Pet Build Creator</h2>
+
+<div class="builder-row">
+<div class="builder-group">
+<label>Lead Pet</label>
+<select id="leadPet"></select>
+</div>
+
+<div class="builder-group">
+<label>Equipped Pets</label>
+<div class="equip-grid-select">
+<select class="equipPet"></select>
+<select class="equipPet"></select>
+<select class="equipPet"></select>
+<select class="equipPet"></select>
+</div>
+</div>
+</div>
+
+<div class="builder-actions">
+<button onclick="generateBuild()" class="btn primary">Generate</button>
+<button onclick="downloadBuild()" class="btn secondary">Download</button>
+</div>
+
+</div>
+<!-- PREVIEW -->
+<div id="buildPreview" class="build-preview"></div>
+
+
 </section>
+
 
 
 <!-- AVATAR -->
@@ -162,6 +209,8 @@ legend of avatar training exp calculator
 <div class="avatar"><img src="assets/avatars/elysia.png" alt="Legend of Avatar Mythic Avatar"><p>1 Elysia</p></div>
 <div class="avatar"><img src="assets/avatars/alice.png" alt="Legend of Avatar Mythic Avatar"><p>2 Alice</p></div>
 <div class="avatar"><img src="assets/avatars/naktia.png" alt="Legend of Avatar Mythic Avatar"><p>3 Naktia</p></div>
+<div class="avatar"><img src="assets/avatars/hanami.png" alt="Legend of Avatar Mythic Avatar">
+<p>4 Hanami</p></div>
 
 </div>
 
@@ -171,6 +220,7 @@ legend of avatar training exp calculator
 <div class="avatar"><img src="assets/avatars/erian.png" alt="Legend of Avatar Mythic Avatar"><p>1 Erian</p></div>
 <div class="avatar"><img src="assets/avatars/serena.png" alt="Legend of Avatar Mythic Avatar"><p>2 Serena</p></div>
 <div class="avatar"><img src="assets/avatars/blake.png" alt="Legend of Avatar Mythic Avatar"><p>3 Blake</p></div>
+<div class="avatar"><img src="assets/avatars/braggard.png" alt="Legend of Avatar Mythic Avatar"><p>4 Braggard</p></div>
 
 </div>
 
@@ -180,6 +230,7 @@ legend of avatar training exp calculator
 <div class="avatar"><img src="assets/avatars/eve.png" alt="Legend of Avatar Mythic Avatar"><p>1 Eve</p></div>
 <div class="avatar"><img src="assets/avatars/yoran.png" alt="Legend of Avatar Mythic Avatar"><p>2 Yoran</p></div>
 <div class="avatar"><img src="assets/avatars/raiden.png" alt="Legend of Avatar Mythic Avatar"><p>3 Raiden</p></div>
+<div class="avatar"><img src="assets/avatars/belgas.png" alt="Legend of Avatar Mythic Avatar"><p>4 Belgas</p></div>
 
 </div>
 
@@ -376,29 +427,3 @@ Fan-made guide. Not affiliated with the official game or publisher.
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

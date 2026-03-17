@@ -1,0 +1,33 @@
+NAME | LEAD SKILL | EQUIPPED EFFECT
+alien|skill dmg 30%|ignore evasion 10%
+aura |atk speed 65%|ignore counter 10%
+blitz|atk speed 46%|evasion 6%
+bubbles|normal atk dmg resist 30%|ignore evasion 10%
+dash|double combo dmg 43%|ignore combo 6%
+draco|triple combo chance 30%|ignore evasion 10%
+duff|boss dmg 45%|movement speed 0.60%
+elio|dmg reduction 13%|ignore combo 10%
+giggles|combo dmg resist 21%|ignore counter 6%
+grump|boss dmg resist 21%|ignore evasion 6%
+ice|counter chance 21%|ignore combo 6%
+inferno|combo dmg resist 30%|movement speed 0.90%
+lumina|double combo chance 30%|evasion 10%
+obsidian|normal atk dmg 30%|ignore combo 10%
+polly|crit dmg resist 30%|evasion 10%
+raven|triple combo chance 21%|evasion 6%
+rose|recovery 65%|ignore combo 10%
+rox|atk speed 65%|movement speed 0.90%
+scales|counter 30%|ignore evasion 10%
+shadow|double combo dmg 60%|movement speed 0.90%
+snowman|boss dmg 56%|ignore counter 10%
+sprint|counter dmg 60%|ignore evasion 10%
+storm|normal atk dmg 21%|ignore counter 6%
+stripe|counter dmg resist 21%|ignore combo 6%
+suzaku|counter dmg 60%|ignore combo 20%
+swift|skill dmg resist 21%|ignore counter 6%
+twinkle|boss dmg 56%|ignore evasion 10%
+typhon|boss dmg resist 30%|evasion 10%
+wave|double combo chance 21%|ignore counter 6%
+wiz|triple combo dmg 43%|movement speed 0.60%
+yura|triple combo dmg 60%|ignore combo 10%
+zephyros|Recovery 65%|ignore counter 10%
