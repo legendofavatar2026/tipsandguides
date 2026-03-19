@@ -41,23 +41,24 @@ background:linear-gradient(to bottom,transparent,#0b0f1a);
 }
 
 /* TABS NAV UPGRADE */
-.tabs{
+.tabs {
   display: flex;
-  flex-wrap: wrap;            /* allows wrapping */
-  justify-content: center;
-  gap: 8px;                   /* spacing between buttons */
+  flex-wrap: wrap;              /* allows wrapping */
+  justify-content: center;      /* center align */
+  gap: 8px;                     /* spacing between buttons */
   padding: 10px;
 }
 
-.tab{
-  flex: 1 1 auto;             /* flexible size */
-  min-width: 120px;           /* prevents buttons from getting too small */
-  padding: 10px 14px;
+.tab {
+  flex: 1 1 auto;               /* flexible width */
+  min-width: 120px;             /* prevents too small buttons */
+  max-width: 200px;
+  padding: 10px;
   font-size: 14px;
-  cursor: pointer;
-  border: none;
-  border-radius: 6px;
+  text-align: center;
+  white-space: nowrap;          /* prevents text breaking weirdly */
 }
+
 
 .tab:hover{
 color:white;
