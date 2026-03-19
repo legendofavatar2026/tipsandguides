@@ -21,9 +21,8 @@ text-align:center;
 
 .banner{
 width:100%;
-max-height:220px;
+max-height:160px;
 object-fit:cover;
-filter:brightness(0.7);
 }
 
 header{
@@ -41,24 +40,26 @@ background:linear-gradient(to bottom,transparent,#0b0f1a);
 }
 
 /* TABS NAV UPGRADE */
-.tabs {
-  display: flex;
-  flex-wrap: wrap;              /* allows wrapping */
-  justify-content: center;      /* center align */
-  gap: 8px;                     /* spacing between buttons */
-  padding: 10px;
+.tabs{
+display:flex;
+justify-content:center;
+gap:10px;
+padding:12px;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:1000;
 }
 
-.tab {
-  flex: 1 1 auto;               /* flexible width */
-  min-width: 120px;             /* prevents too small buttons */
-  max-width: 200px;
-  padding: 10px;
-  font-size: 14px;
-  text-align: center;
-  white-space: nowrap;          /* prevents text breaking weirdly */
+.tab{
+padding:10px 16px;
+border-radius:20px;
+border:1px solid transparent;
+background:transparent;
+color:var(--muted);
+transition:0.2s;
 }
-
 
 .tab:hover{
 color:white;
@@ -69,6 +70,10 @@ border-color:var(--accent);
 background:var(--accent);
 color:white;
 box-shadow:0 0 10px rgba(107,124,255,0.5);
+}
+
+.tabs::-webkit-scrollbar{
+display:none;
 }
 
 /* TAB CONTENT */
@@ -124,8 +129,10 @@ opacity:1;
 /* GRID */
 
 .grid{
-gap:20px;
-padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:15px;
+padding:15px;
 }
 
 section{
@@ -632,7 +639,9 @@ border:1px solid #333;
 border-radius:10px;
 padding:10px;
 text-align:center;
-width:120px;           /* controls size */
+width:100%;
+max-width:120px;
+flex:1 1 80px;
 }
 
 .pet-box img{
@@ -645,9 +654,8 @@ object-fit:contain;
 .full-row{
 display:flex;
 flex-wrap:wrap;
-gap:12px;
+gap:10px;
 justify-content:center;
-margin-top:15px;
 }
 
 /* PET BOX */
@@ -689,10 +697,31 @@ object-fit:contain;
 
 /* MOBILE FIX */
 @media(max-width:600px){
+
 .builder-row{
 flex-direction:column;
 }
+
+.equip-grid-select{
+grid-template-columns:1fr; /* stack dropdowns */
 }
+
+.builder-actions{
+flex-direction:column;
+}
+
+.btn{
+width:100%;
+}
+
+.modal-content{
+width:95%;
+max-height:90vh;
+padding:15px;
+}
+
+}
+
 
 /*modal popup*/
 .modal{
