@@ -692,10 +692,18 @@ object-fit:contain;
 .builder-row{
 flex-direction:column;
 }
-    .tab{
-    flex: 1 1 45%;            /* 2 buttons per row on phones */
+}
+
+@media (max-width: 600px) {
+  .tab {
+    flex: 1 1 45%;              /* 2 buttons per row */
     font-size: 13px;
-    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .tab {
+    flex: 1 1 100%;             /* stack on very small screens */
   }
 }
 
