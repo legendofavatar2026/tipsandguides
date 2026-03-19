@@ -42,24 +42,21 @@ background:linear-gradient(to bottom,transparent,#0b0f1a);
 
 /* TABS NAV UPGRADE */
 .tabs{
-display:flex;
-justify-content:center;
-gap:10px;
-padding:12px;
-background:rgba(0,0,0,0.4);
-backdrop-filter:blur(10px);
-position:sticky;
-top:0;
-z-index:1000;
+  display: flex;
+  flex-wrap: wrap;            /* allows wrapping */
+  justify-content: center;
+  gap: 8px;                   /* spacing between buttons */
+  padding: 10px;
 }
 
 .tab{
-padding:10px 16px;
-border-radius:20px;
-border:1px solid transparent;
-background:transparent;
-color:var(--muted);
-transition:0.2s;
+  flex: 1 1 auto;             /* flexible size */
+  min-width: 120px;           /* prevents buttons from getting too small */
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
 }
 
 .tab:hover{
@@ -694,6 +691,11 @@ object-fit:contain;
 .builder-row{
 flex-direction:column;
 }
+    .tab{
+    flex: 1 1 45%;            /* 2 buttons per row on phones */
+    font-size: 13px;
+    padding: 10px;
+  }
 }
 
 /*modal popup*/
