@@ -67,7 +67,7 @@ legend of avatar arena build
 <img src="assets/banner.png" class="banner" alt="Legend of Avatar">
 
 <nav class="tabs">
-<button class="tab active" onclick="openTab(event,'guides')">Guides</button>
+<button class="tab" onclick="openTab(event,'guides')">Guides</button>
 <button class="tab" onclick="openTab(event,'avatars')">Avatar Tier List</button>
 <button class="tab" onclick="openTab(event,'weapons')">Divine Weapons</button>
 <button class="tab" onclick="openTab(event,'calculator')">Traning EXP Calculator</button>
@@ -115,20 +115,20 @@ legend of avatar arena build
 <section id="guides" class="tabContent">
 
 <h2 class="seo-intro">Legend of Avatar World Boss Guide</h2>
-
+<h3> Click the picture to show the guide</h3>
 <div class="grid">
 
-<div class="boss" onclick="openBoss('ironspider')">
+<div class="card boss" onclick="openBoss('ironspider')">
 <img src="assets/guide/ironspider.png" alt="Legend of Avatar Iron Spider">
 <p>Iron Spider</p>
 </div>
 
-<div class="boss" onclick="openBoss('poisonivy')">
+<div class="card boss" onclick="openBoss('poisonivy')">
 <img src="assets/guide/poisonivy.png" alt="Legend of Avatar Toxic Ivy">
 <p>Poison Ivy</p>
 </div>
 
-<div class="boss" onclick="openBoss('abyssaltyrant')">
+<div class="card boss" onclick="openBoss('abyssaltyrant')">
 <img src="assets/guide/abyssaltyrant.png" alt="Legend of Avatar Abyssal Tyrant">
 <p>Abyssal Tyrant</p>
 </div>
@@ -137,20 +137,21 @@ legend of avatar arena build
 
 
 <h2>Legend of Avatar Infinite Tower Guide</h2>
+<h3> Click the picture to show the guide</h3>
 
 <div class="grid">
 
-<div class="boss" onclick="openBoss('ironspider')">
+<div class="card boss" onclick="openBoss('ironspider')">
 <img src="assets/guide/tower_steel.png" alt="Legend of Avatar Infinite Tower">
 <p>Tower of Steel</p>
 </div>
 
-<div class="boss" onclick="openBoss('poisonivy')">
+<div class="card boss" onclick="openBoss('poisonivy')">
 <img src="assets/guide/tower_gale.png" alt="Legend of Avatar Infinite Tower">
 <p>Tower of Gale</p>
 </div>
 
-<div class="boss" onclick="openBoss('abyssaltyrant')">
+<div class="card boss" onclick="openBoss('abyssaltyrant')">
 <img src="assets/guide/tower_rift.png" alt="Legend of Avatar Infinite Tower">
 <p>Tower of Rift</p>
 </div>
@@ -219,10 +220,10 @@ legend of avatar arena build
 <h3>Combo</h3>
 <div class="grid">
 
-<div class="avatar"><img src="assets/avatars/elysia.png" alt="Legend of Avatar Mythic Avatar"><p>1 Elysia</p></div>
-<div class="avatar"><img src="assets/avatars/alice.png" alt="Legend of Avatar Mythic Avatar"><p>2 Alice</p></div>
-<div class="avatar"><img src="assets/avatars/naktia.png" alt="Legend of Avatar Mythic Avatar"><p>3 Naktia</p></div>
-<div class="avatar"><img src="assets/avatars/hanami.png" alt="Legend of Avatar Mythic Avatar">
+<div class="card avatar"><img src="assets/avatars/elysia.png" alt="Legend of Avatar Mythic Avatar"><p>1 Elysia</p></div>
+<div class="card avatar"><img src="assets/avatars/alice.png" alt="Legend of Avatar Mythic Avatar"><p>2 Alice</p></div>
+<div class="card avatar"><img src="assets/avatars/naktia.png" alt="Legend of Avatar Mythic Avatar"><p>3 Naktia</p></div>
+<div class="card avatar"><img src="assets/avatars/hanami.png" alt="Legend of Avatar Mythic Avatar">
 <p>4 Hanami</p></div>
 
 </div>
@@ -230,20 +231,20 @@ legend of avatar arena build
 <h3>Skill</h3>
 <div class="grid">
 
-<div class="avatar"><img src="assets/avatars/erian.png" alt="Legend of Avatar Mythic Avatar"><p>1 Erian</p></div>
-<div class="avatar"><img src="assets/avatars/serena.png" alt="Legend of Avatar Mythic Avatar"><p>2 Serena</p></div>
-<div class="avatar"><img src="assets/avatars/blake.png" alt="Legend of Avatar Mythic Avatar"><p>3 Blake</p></div>
-<div class="avatar"><img src="assets/avatars/braggard.png" alt="Legend of Avatar Mythic Avatar"><p>4 Braggard</p></div>
+<div class="card avatar"><img src="assets/avatars/erian.png" alt="Legend of Avatar Mythic Avatar"><p>1 Erian</p></div>
+<div class="card avatar"><img src="assets/avatars/serena.png" alt="Legend of Avatar Mythic Avatar"><p>2 Serena</p></div>
+<div class="card avatar"><img src="assets/avatars/blake.png" alt="Legend of Avatar Mythic Avatar"><p>3 Blake</p></div>
+<div class="card avatar"><img src="assets/avatars/braggard.png" alt="Legend of Avatar Mythic Avatar"><p>4 Braggard</p></div>
 
 </div>
 
 <h3>Counter</h3>
 <div class="grid">
 
-<div class="avatar"><img src="assets/avatars/eve.png" alt="Legend of Avatar Mythic Avatar"><p>1 Eve</p></div>
-<div class="avatar"><img src="assets/avatars/yoran.png" alt="Legend of Avatar Mythic Avatar"><p>2 Yoran</p></div>
-<div class="avatar"><img src="assets/avatars/raiden.png" alt="Legend of Avatar Mythic Avatar"><p>3 Raiden</p></div>
-<div class="avatar"><img src="assets/avatars/belgas.png" alt="Legend of Avatar Mythic Avatar"><p>4 Belgas</p></div>
+<div class="card avatar"><img src="assets/avatars/eve.png" alt="Legend of Avatar Mythic Avatar"><p>1 Eve</p></div>
+<div class="card avatar"><img src="assets/avatars/yoran.png" alt="Legend of Avatar Mythic Avatar"><p>2 Yoran</p></div>
+<div class="card avatar"><img src="assets/avatars/raiden.png" alt="Legend of Avatar Mythic Avatar"><p>3 Raiden</p></div>
+<div class="card avatar"><img src="assets/avatars/belgas.png" alt="Legend of Avatar Mythic Avatar"><p>4 Belgas</p></div>
 
 </div>
 
@@ -439,6 +440,16 @@ Fan-made guide. Not affiliated with the official game or publisher.
 <script>(function(d,a,b){let s=d.createElement('script');s.async=true;s.src='https://peacyx.com/code/pops.js?h=waWQiOjEyMjIzMjIsInNpZCI6MTcxNDI5MSwid2lkIjo3MzYyODEsInNyYyI6Mn0=eyJ&si1='+a+'&si2='+b;d.head.appendChild(s);})(document,'subid1','subid2');</script>
 
   <script src="script.js"></script>
+
+<div id="guideModal" class="modal">
+  <div class="modal-content">
+
+    <span class="close-modal">&times;</span>
+
+    <div id="modalBody"></div>
+
+  </div>
+</div>
 
 </body>
 </html>

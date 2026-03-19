@@ -17,25 +17,48 @@ const types=["pet","skill","relic","rune","special","forge"]
 
 function openBoss(boss){
 
-const menu=document.getElementById("guideMenu")
-menu.innerHTML=""
+const modal = document.getElementById("guideModal")
+const body = document.getElementById("modalBody")
+
+const types = ["pet","skill","relic","rune","special","forge"]
+
+body.innerHTML = ""
 
 types.forEach(type=>{
 
-const img=`assets/guide/${boss}_${type}.png`
+const img = `assets/guide/${boss}_${type}.png`
 
-const div=document.createElement("div")
-div.className="guideIcon"
+const section = document.createElement("div")
+section.className = "guide-section"
 
-div.innerHTML=`<img src="${img}">`
+section.innerHTML = `
+<h3>${type.toUpperCase()}</h3>
+<img src="${img}" loading="lazy">
+`
 
-div.onclick=()=>showGuide(img)
-
-menu.appendChild(div)
+body.appendChild(section)
 
 })
 
+modal.style.display = "block"
 }
+
+document.addEventListener("DOMContentLoaded", ()=>{
+
+const modal = document.getElementById("guideModal")
+const closeBtn = document.querySelector(".close-modal")
+
+closeBtn.onclick = ()=> modal.style.display = "none"
+
+window.onclick = (e)=>{
+if(e.target === modal){
+modal.style.display = "none"
+}
+
+}
+
+})
+
 
 function showGuide(img){
 document.getElementById("guideImage").src=img
@@ -262,7 +285,7 @@ const giftCodes = [
 {code:"TOWER10GIFT"},
 {code:"GLOBAL200DAY"},
 {code:"MARCH2026GIFT"},
-{code:"MARCHDELAYGIFT", new:true}
+/*{code:"MARCHDELAYGIFT", new:true}*/
 
 ]
 
