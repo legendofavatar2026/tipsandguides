@@ -172,6 +172,210 @@ function calculateProgress(){
   `
 }
 
+/* ===================== GIFT CODES SYSTEM ===================== */
+const giftCodes = [
+  { code: "ORB1000GIFT" },
+  { code: "ORB2000GIFT" },
+  { code: "AVATAR0808" },
+  { code: "AVATARXBLADE1" },
+  { code: "AVATARXBLADE2" },
+  { code: "AVATARDISCORD" },
+  { code: "DISCORD11000" },
+  { code: "TOWER10GIFT" },
+  { code: "GLOBAL200DAY" },
+  { code: "MARCH2026GIFT" }
+  // { code: "MARCHDELAYGIFT", new: true }
+];
+
+function loadGiftCodes() {
+  const container = document.getElementById("codesContainer");
+  container.innerHTML = "";
+
+  giftCodes.forEach(item => {
+    const div = document.createElement("div");
+    div.className = "codeBox";
+
+    const label = item.new
+      ? " <b style='color:#4caf50'>NEW</b>"
+      : "";
+
+    div.innerHTML = `
+      <span>${item.code}${label}</span>
+      <button onclick="copyCode('${item.code}')">Copy</button>
+    `;
+
+    container.appendChild(div);
+  });
+}
+
+/* ===================== PETS FUNCTION ===================== */
+
+function renderPets(selected) {
+  const container = document.getElementById("petContainer");
+  container.innerHTML = "";
+
+  petData
+    .filter(p => {
+      if (selected === "all") return true;
+      return getBaseEffect(p.effect) === selected;
+    })
+    .forEach(p => {
+      const div = document.createElement("div");
+      div.className = "petCard";
+
+      div.innerHTML = `
+        <img src="assets/pets/${p.name}.png" alt="${p.name}">
+        <h4>${p.name}</h4>
+        <p><b>Lead:</b> ${p.lead}</p>
+        <p><b>Effect:</b> ${p.effect}</p>
+      `;
+
+      container.appendChild(div);
+    });
+}
+
+function filterPets() {
+  const value = document.getElementById("petFilter").value;
+  renderPets(value);
+}
+
+function getBaseEffect(effect) {
+  return effect
+    .replace(/[0-9.]+%?/g, "") // remove numbers like 10%, 0.90
+    .trim()
+    .toLowerCase();
+}
+
+function loadPetSelectors() {
+  const lead = document.getElementById("leadPet");
+  const equips = document.querySelectorAll(".equipPet");
+
+  petData.forEach(p => {
+    const opt = `<option value="${p.name}">${p.name}</option>`;
+
+    lead.innerHTML += opt;
+
+    equips.forEach(sel => {
+      sel.innerHTML += opt;
+    });
+  });
+}
+
+window.addEventListener("DOMContentLoaded", loadPetSelectors);
+
+/* ===================== BUILD GENERATOR ===================== */
+
+function generateBuild() {
+  const leadName = document.getElementById("leadPet").value;
+  const equips = [...document.querySelectorAll(".equipPet")]
+    .map(e => e.value);
+
+  const container = document.getElementById("buildPreview");
+
+  // VALIDATION
+  const check = validateBuild(leadName, equips);
+  if (!check.valid) {
+    container.innerHTML = `<div class="warning">${check.message}</div>`;
+    return;
+  }
+
+  const lead = petData.find(p => p.name === leadName);
+  const equipPets = equips.map(name =>
+    petData.find(p => p.name === name)
+  );
+
+  // Detect duplicate effects
+  const effects = equipPets.map(p => p.effect);
+  const duplicates = effects.filter((e, i, a) => a.indexOf(e) !== i);
+
+  const warning = duplicates.length
+    ? `<div class="warning">⚠ Duplicate Effect Detected</div>`
+    : "";
+
+  container.innerHTML = `
+    <div class="build-card pro" id="captureArea">
+      <div class="build-header">
+        <h2>Pet Build</h2>
+        <span class="watermark"></span>
+      </div>
+
+      ${warning}
+
+      <div class="full-row">
+        <div class="pet-box lead">
+          <img src="assets/pets/${lead.name}.png">
+          <h4>${lead.name}</h4>
+          <p>${lead.lead}</p>
+          <span class="tag">LEAD</span>
+        </div>
+
+        ${equipPets.map(p => `
+          <div class="pet-box">
+            <img src="assets/pets/${p.name}.png">
+            <h4>${p.name}</h4>
+            <p>${p.effect}</p>
+          </div>
+        `).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function validateBuild(leadName, equips) {
+  const all = [leadName, ...equips];
+
+  const duplicates = all.filter((item, index) =>
+    all.indexOf(item) !== index
+  );
+
+  if (duplicates.length > 0) {
+    return {
+      valid: false,
+      message: "⚠ Duplicate pets are not allowed"
+    };
+  }
+
+  return { valid: true };
+}
+
+/* ===================== DOWNLOAD FUNCTION ===================== */
+
+function downloadBuild() {
+  const area = document.getElementById("captureArea");
+
+  if (!area) {
+    alert("Please generate a build first!");
+    return;
+  }
+
+  html2canvas(area, {
+    scale: 2,
+    backgroundColor: "#0e0e0e"
+  })
+    .then(canvas => {
+      const image = canvas.toDataURL("image/png");
+
+      const a = document.createElement("a");
+      a.href = image;
+      a.download = "pet-build.png";
+
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    })
+    .catch(err => {
+      console.error(err);
+      alert("Download failed");
+    });
+}
+
+/* ===================== BUTTON STATE ===================== */
+
+document.querySelector(".btn.secondary").disabled = true;
+document.querySelector(".btn.secondary").disabled = false;
+
+/* ===================== END ===================== */
+
 /* COPY CODE */
 function copyCode(code){
   navigator.clipboard.writeText(code)
