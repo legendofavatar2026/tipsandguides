@@ -163,11 +163,11 @@ const petData = [
 {name:"zephyros", lead:"recovery 65%", effect:"ignore counter 10%"}
 ]
 
-function initPets(){
+/*function initPets(){
   renderPets("all")
   initPetFilter()
   loadPetSelectors()
-}
+}*/
 
 function renderPets(selected){
   const container = document.getElementById("petContainer")
