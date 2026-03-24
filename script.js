@@ -43,20 +43,11 @@ body.appendChild(section)
 modal.style.display = "block"
 }
 
-document.addEventListener("DOMContentLoaded", ()=>{
-
-const modal = document.getElementById("guideModal")
-const closeBtn = document.querySelector(".close-modal")
-
-closeBtn.onclick = ()=> modal.style.display = "none"
-
-window.onclick = (e)=>{
-if(e.target === modal){
-modal.style.display = "none"
-}
-
-}
-
+document.addEventListener("click", (e)=>{
+  const modal = document.getElementById("guideModal")
+  if(e.target === modal){
+    modal.style.display = "none"
+  }
 })
 
 
