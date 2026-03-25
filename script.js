@@ -513,6 +513,60 @@ setTimeout(()=>msg.remove(),1500)
 
 }
 
+function renderWeapons(selected="all"){
+
+  const container = document.getElementById("weaponContainer")
+  container.innerHTML = ""
+
+  weaponData
+  .filter(w => selected === "all" || w.effect === selected)
+  .forEach(w => {
+
+    const div = document.createElement("div")
+    div.className = "card weaponCard"
+
+    let icons = ""
+
+    w.items.forEach(i=>{
+      icons += `<img src="assets/divineweapons/${i}.png">`
+    })
+
+    div.innerHTML = `
+      <div class="weapon-icons">${icons}</div>
+      <h4>${w.effect}</h4>
+      <p><b>${w.value}</b></p>
+    `
+
+    container.appendChild(div)
+
+  })
+
+}
+
+function filterWeapons(){
+  const value = document.getElementById("weaponFilter").value
+  renderWeapons(value)
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+
+  const filter = document.getElementById("weaponFilter")
+  if(!filter) return
+
+  const effects = [...new Set(weaponData.map(w => w.effect))]
+
+  effects.forEach(e=>{
+    const opt = document.createElement("option")
+    opt.value = e
+    opt.textContent = e
+    filter.appendChild(opt)
+  })
+
+  renderWeapons("all") // initial load
+
+})
+
+
 
 /* LOAD CODES ON PAGE START */
 

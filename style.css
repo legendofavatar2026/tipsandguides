@@ -779,4 +779,21 @@ border-radius:10px;
 border:1px solid #333;
 }
 
+.weaponCard{
+  text-align:center;
+}
 
+.weapon-icons{
+  display:flex;
+  justify-content:center;
+  gap:6px;
+  margin-bottom:8px;
+}
+
+.weapon-icons img{
+  width:40px;
+  height:40px;
+  border-radius:6px;
+  background:#111;
+  border:1px solid #333;
+}

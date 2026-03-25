@@ -256,7 +256,14 @@ legend of avatar arena build
 
 <h2>Legend of Avatar Divine Weapons</h2>
 
-<div id="weaponContainer"></div>
+<div class="pet-filter">
+  <label>Filter by Effect:</label>
+  <select id="weaponFilter" onchange="filterWeapons()">
+    <option value="all">All</option>
+  </select>
+</div>
+
+<div id="weaponContainer" class="grid"></div>
 
 </section>
 
