@@ -285,7 +285,7 @@ const giftCodes = [
 {code:"TOWER10GIFT"},
 {code:"GLOBAL200DAY"},
 {code:"MARCH2026GIFT"},
-/*{code:"MARCHDELAYGIFT", new:true}*/
+{code:"DIAMOND500", new:true}
 
 ]
 
