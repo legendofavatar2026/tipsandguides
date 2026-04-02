@@ -567,6 +567,99 @@ window.addEventListener("DOMContentLoaded", () => {
 })
 
 
+/* EMBLEM SYSTEM */
+const emblemNames = [
+"possession","flame","unity","joy","harvest","immortality","secret",
+"journey","resolve","thorn","wisdom","disaster","frost","endurance",
+"protection","sun","justice","genesis","harmony","intellect","flow",
+"abundance","legacy","radiance","fortitude","order","repose","mastery",
+"strike","smash","frenzy","counter","ambush"
+]
+
+const emblemShapes = ["pillar","orb","tablet","crest","foundation","wedge"]
+
+function renderEmblems(selected="all"){
+
+const container = document.getElementById("emblemContainer")
+container.innerHTML = ""
+
+emblemNames.forEach(name=>{
+emblemShapes.forEach(shape=>{
+
+if(selected !== "all" && shape !== selected) return
+
+const file = `assets/emblem/${name}_${shape}.png`
+
+const div = document.createElement("div")
+div.className = "card emblemCard"
+
+div.innerHTML = `
+<img src="${file}" alt="${name} ${shape}" loading="lazy">
+<h4>${name} (${shape})</h4>
+`
+
+container.appendChild(div)
+
+})
+})
+
+}
+
+function filterEmblems(){
+const value = document.getElementById("emblemFilter").value
+renderEmblems(value)
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+
+const filter = document.getElementById("emblemFilter")
+if(!filter) return
+
+emblemShapes.forEach(shape=>{
+const opt = document.createElement("option")
+opt.value = shape
+opt.textContent = shape.toUpperCase()
+filter.appendChild(opt)
+})
+
+function renderEmblems(selected="all"){
+
+const container = document.getElementById("emblemContainer")
+container.innerHTML = ""
+
+emblemNames.forEach(name=>{
+emblemShapes.forEach(shape=>{
+
+if(selected !== "all" && shape !== selected) return
+
+const file = `assets/emblem/${name}_${shape}.png`
+
+const div = document.createElement("div")
+div.className = "card emblemCard"
+
+const img = document.createElement("img")
+img.src = file
+img.alt = `${name} ${shape}`
+img.loading = "lazy"
+
+// ✅ remove card if image fails
+img.onerror = () => {
+div.remove()
+}
+
+const title = document.createElement("h4")
+title.textContent = `${name} (${shape})`
+
+div.appendChild(img)
+div.appendChild(title)
+
+container.appendChild(div)
+
+})
+})
+
+}
+
 
 /* LOAD CODES ON PAGE START */
 

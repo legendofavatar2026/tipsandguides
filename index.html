@@ -72,6 +72,7 @@ legend of avatar arena build
 <button class="tab" onclick="openTab(event,'weapons')">Divine Weapons</button>
 <button class="tab" onclick="openTab(event,'calculator')">Traning EXP Calculator</button>
 <button class="tab" onclick="openTab(event,'tips')">Tips & Codes</button>
+<button class="tab" onclick="openTab(event,'emblems')">Emblems</button>
 </nav>
 
 </header>
@@ -208,7 +209,21 @@ legend of avatar arena build
 
 </section>
 
+<!-- EMBLEM SYSTEM -->
+<section id="emblems" class="tabContent">
 
+<h2>Legend of Avatar Emblems</h2>
+
+<div class="pet-filter">
+  <label>Filter by Shape:</label>
+  <select id="emblemFilter" onchange="filterEmblems()">
+    <option value="all">All</option>
+  </select>
+</div>
+
+<div id="emblemContainer" class="grid"></div>
+
+</section>
 
 <!-- AVATAR -->
 
