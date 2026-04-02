@@ -212,17 +212,38 @@ legend of avatar arena build
 <!-- EMBLEM SYSTEM -->
 <section id="emblems" class="tabContent">
 
-<h2>Legend of Avatar Emblems</h2>
+<div class="emblemTab">
+  <h2>Emblems</h2>
 
-<div class="pet-filter">
-  <label>Filter by Shape:</label>
-  <select id="emblemFilter" onchange="filterEmblems()">
-    <option value="all">All</option>
+  <!-- Shape selector -->
+  <label for="shapeSelect">Select Shape:</label>
+  <select id="shapeSelect">
+    <option value="">--Choose a Shape--</option>
+    <option value="pillar">Pillar</option>
+    <option value="orb">Orb</option>
+    <option value="tablet">Tablet</option>
+    <option value="crest">Crest</option>
+    <option value="foundation">Foundation</option>
+    <option value="wedge">Wedge</option>
   </select>
+
+  <!-- Name filter -->
+  <label for="nameFilter">Filter by Name:</label>
+  <input type="text" id="nameFilter" placeholder="Type emblem name...">
+
+  <!-- Emblem display -->
+  <div id="emblemContainer" class="emblemContainer"></div>
 </div>
 
-<div id="emblemContainer" class="grid"></div>
-
+<!-- Inventory -->
+<div class="inventoryTab">
+  <h2>My Emblem Inventory</h2>
+  <div id="inventoryContainer" class="inventory"></div>
+  <div class="shareLink">
+    <label>Share your inventory:</label>
+    <input type="text" id="shareLinkInput" readonly>
+  </div>
+</div>
 </section>
 
 <!-- AVATAR -->

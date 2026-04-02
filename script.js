@@ -578,7 +578,7 @@ const emblemNames = [
 
 const emblemShapes = ["pillar","orb","tablet","crest","foundation","wedge"]
 
-function renderEmblems(selected="all"){
+function renderEmblems(selectedShape="", selectedName=""){
 
 const container = document.getElementById("emblemContainer")
 container.innerHTML = ""
@@ -586,17 +586,28 @@ container.innerHTML = ""
 emblemNames.forEach(name=>{
 emblemShapes.forEach(shape=>{
 
-if(selected !== "all" && shape !== selected) return
+// ✅ filter logic
+if(selectedShape && shape !== selectedShape) return
+if(selectedName && name !== selectedName) return
 
 const file = `assets/emblem/${name}_${shape}.png`
 
 const div = document.createElement("div")
 div.className = "card emblemCard"
 
-div.innerHTML = `
-<img src="${file}" alt="${name} ${shape}" loading="lazy">
-<h4>${name} (${shape})</h4>
-`
+const img = document.createElement("img")
+img.src = file
+img.alt = `${name} ${shape}`
+img.loading = "lazy"
+
+// remove if missing
+img.onerror = () => div.remove()
+
+const title = document.createElement("h4")
+title.textContent = `${name} (${shape})`
+
+div.appendChild(img)
+div.appendChild(title)
 
 container.appendChild(div)
 
@@ -606,8 +617,20 @@ container.appendChild(div)
 }
 
 function filterEmblems(){
-const value = document.getElementById("emblemFilter").value
-renderEmblems(value)
+
+const shape = document.getElementById("emblemShapeFilter").value
+const name = document.getElementById("emblemNameFilter").value
+
+const container = document.getElementById("emblemContainer")
+
+// ❌ require at least ONE filter
+if(!shape && !name){
+container.innerHTML = ""
+return
+}
+
+renderEmblems(shape, name)
+
 }
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -622,44 +645,137 @@ opt.textContent = shape.toUpperCase()
 filter.appendChild(opt)
 })
 
-function renderEmblems(selected="all"){
+renderEmblems("all")
 
-const container = document.getElementById("emblemContainer")
-container.innerHTML = ""
+})
+
+window.addEventListener("DOMContentLoaded", () => {
+
+const nameFilter = document.getElementById("emblemNameFilter")
+if(!nameFilter) return
 
 emblemNames.forEach(name=>{
-emblemShapes.forEach(shape=>{
-
-if(selected !== "all" && shape !== selected) return
-
-const file = `assets/emblem/${name}_${shape}.png`
-
-const img = new Image()
-img.src = file
-
-img.onload = () => {
-
-const div = document.createElement("div")
-div.className = "card emblemCard"
-
-div.innerHTML = `
-<img src="${file}" alt="${name} ${shape}" loading="lazy">
-<h4>${name} (${shape})</h4>
-`
-
-container.appendChild(div)
-
-}
-
-// ❌ if image doesn't exist → do nothing
-img.onerror = () => {}
-
-})
+const opt = document.createElement("option")
+opt.value = name
+opt.textContent = name.toUpperCase()
+nameFilter.appendChild(opt)
 })
 
+})
+
+const shapes = ["pillar","orb","tablet","crest","foundation","wedge"];
+const names = ["possession","flame","unity","joy","harvest","immortality","secret","journey","resolve","thorn","wisdom","disaster","frost","endurance","protection","sun","justice","genesis","harmony","intellect","flow","abundance","legacy","radiance","fortitude","order","repose","mastery","strike","smash","frenzy","counter","ambush"];
+
+let inventory = [];
+
+// Load inventory from URL
+function loadInventoryFromURL(){
+    const params = new URLSearchParams(window.location.search);
+    const data = params.get("inventory");
+    if(data){
+        inventory = data.split(",");
+        renderInventory();
+    }
 }
 
+// Render all emblems after shape is selected
+function renderEmblems(){
+    const shape = document.getElementById("shapeSelect").value;
+    const filter = document.getElementById("nameFilter").value.toLowerCase();
+    const container = document.getElementById("emblemContainer");
+    container.innerHTML = "";
 
+    if(!shape) return; // don’t show anything until a shape is selected
+
+    names.forEach(name => {
+        const path = `assets/emblem/${name}_${shape}.png`;
+        const img = new Image();
+        img.src = path;
+
+        img.onload = () => { // Only show if image exists
+            if(!name.toLowerCase().includes(filter)) return;
+
+            const div = document.createElement("div");
+            div.className = "emblemItem";
+
+            const emblemImg = document.createElement("img");
+            emblemImg.src = path;
+            emblemImg.alt = name;
+
+            const label = document.createElement("div");
+            label.textContent = name;
+
+            const btn = document.createElement("button");
+            btn.textContent = inventory.includes(`${name}_${shape}`) ? "Added" : "Add";
+            btn.disabled = inventory.includes(`${name}_${shape}`);
+            btn.onclick = () => addToInventory(name, shape, btn);
+
+            div.appendChild(emblemImg);
+            div.appendChild(label);
+            div.appendChild(btn);
+            container.appendChild(div);
+        }
+    });
+}
+
+// Add emblem to inventory
+function addToInventory(name, shape, button){
+    const key = `${name}_${shape}`;
+    if(!inventory.includes(key)){
+        inventory.push(key);
+        button.textContent = "Added";
+        button.disabled = true;
+        renderInventory();
+        updateShareLink();
+    }
+}
+
+// Remove emblem from inventory
+function removeFromInventory(key){
+    inventory = inventory.filter(e => e !== key);
+    renderInventory();
+    updateShareLink();
+    renderEmblems(); // re-enable add button if emblem is visible
+}
+
+// Render inventory
+function renderInventory(){
+    const container = document.getElementById("inventoryContainer");
+    container.innerHTML = "";
+    inventory.forEach(key => {
+        const div = document.createElement("div");
+        div.className = "inventoryItem";
+
+        const img = document.createElement("img");
+        img.src = `assets/emblem/${key}.png`;
+        img.alt = key;
+
+        const btn = document.createElement("button");
+        btn.textContent = "Remove";
+        btn.onclick = ()=>removeFromInventory(key);
+
+        div.appendChild(img);
+        div.appendChild(btn);
+        container.appendChild(div);
+    });
+}
+
+// Generate shareable link
+function updateShareLink(){
+    const baseUrl = window.location.href.split("?")[0];
+    const data = encodeURIComponent(inventory.join(","));
+    const link = `${baseUrl}?inventory=${data}`;
+    document.getElementById("shareLinkInput").value = link;
+}
+
+// Event listeners
+document.getElementById("shapeSelect").addEventListener("change", renderEmblems);
+document.getElementById("nameFilter").addEventListener("input", renderEmblems);
+
+// Initialize
+window.addEventListener("DOMContentLoaded", ()=>{
+    loadInventoryFromURL();
+});
 
 /* LOAD CODES ON PAGE START */
 

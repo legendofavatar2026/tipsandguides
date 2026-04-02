@@ -797,3 +797,64 @@ border:1px solid #333;
   background:#111;
   border:1px solid #333;
 }
+
+
+.emblemCard{
+text-align:center;
+}
+
+.emblemCard img{
+width:100%;
+aspect-ratio:1/1;
+object-fit:contain;
+border-radius:10px;
+border:2px solid #444;
+background:#111;
+}
+
+.emblemCard h4{
+margin-top:6px;
+font-size:13px;
+}
+
+.emblemContainer, .inventory {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.emblemItem, .inventoryItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--card);  /* dark background */
+  color: var(--text);             /* light text */
+}
+
+.emblemItem img, .inventoryItem img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.emblemItem button, .inventoryItem button {
+  padding: 2px 5px;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+
+.emblemItem button:hover, .inventoryItem button:hover {
+  transform: scale(1.05);
+  background-color: var(--accent2);
+}
