@@ -622,43 +622,10 @@ opt.textContent = shape.toUpperCase()
 filter.appendChild(opt)
 })
 
-function renderEmblems(selected="all"){
-
-const container = document.getElementById("emblemContainer")
-container.innerHTML = ""
-
-emblemNames.forEach(name=>{
-emblemShapes.forEach(shape=>{
-
-if(selected !== "all" && shape !== selected) return
-
-const file = `assets/emblem/${name}_${shape}.png`
-
-const div = document.createElement("div")
-div.className = "card emblemCard"
-
-const img = document.createElement("img")
-img.src = file
-img.alt = `${name} ${shape}`
-img.loading = "lazy"
-
-// ✅ remove card if image fails
-img.onerror = () => {
-div.remove()
-}
-
-const title = document.createElement("h4")
-title.textContent = `${name} (${shape})`
-
-div.appendChild(img)
-div.appendChild(title)
-
-container.appendChild(div)
+renderEmblems("all")
 
 })
-})
 
-}
 
 
 /* LOAD CODES ON PAGE START */
