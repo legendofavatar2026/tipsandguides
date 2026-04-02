@@ -739,27 +739,41 @@ function removeFromInventory(key){
 }
 
 // Render inventory
-function renderInventory(){
+function renderInventory() {
     const container = document.getElementById("inventoryContainer");
     container.innerHTML = "";
+
     inventory.forEach(key => {
         const div = document.createElement("div");
         div.className = "inventoryItem";
 
+        // Extract the emblem name from the file (before the underscore)
+        const emblemName = key.split("_")[0];
+        const displayName = emblemName.charAt(0).toUpperCase() + emblemName.slice(1); // Capitalize first letter
+
+        // Name element
+        const nameEl = document.createElement("span");
+        nameEl.textContent = displayName;
+        nameEl.className = "emblemName";
+
+        // Image element
         const img = document.createElement("img");
         img.src = `assets/emblem/${key}.png`;
-        img.alt = key;
+        img.alt = displayName;
 
+        // Remove button
         const btn = document.createElement("button");
         btn.textContent = "Remove";
-        btn.onclick = ()=>removeFromInventory(key);
+        btn.onclick = () => removeFromInventory(key);
 
+        // Append name, image, and button
+        div.appendChild(nameEl);
         div.appendChild(img);
         div.appendChild(btn);
+
         container.appendChild(div);
     });
 }
-
 // Generate shareable link
 function updateShareLink(){
     const baseUrl = window.location.href.split("?")[0];
@@ -776,6 +790,8 @@ document.getElementById("nameFilter").addEventListener("input", renderEmblems);
 window.addEventListener("DOMContentLoaded", ()=>{
     loadInventoryFromURL();
 });
+
+
 
 /* LOAD CODES ON PAGE START */
 
