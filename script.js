@@ -169,8 +169,6 @@ container.appendChild(group)
 
 /* EXP TIERS */
 
-/* EXP TIERS */
-
 const tiers = [
 "T","Qa","Qi","Sx","Sp","Oc","No","De",
 "Ud","Dd","Td","Qad","Qid","Sxd","Spd",
@@ -568,229 +566,492 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 /* EMBLEM SYSTEM */
-const emblemNames = [
-"possession","flame","unity","joy","harvest","immortality","secret",
-"journey","resolve","thorn","wisdom","disaster","frost","endurance",
-"protection","sun","justice","genesis","harmony","intellect","flow",
-"abundance","legacy","radiance","fortitude","order","repose","mastery",
-"strike","smash","frenzy","counter","ambush"
-]
 
-const emblemShapes = ["pillar","orb","tablet","crest","foundation","wedge"]
+const emblemData = {
+  possession: {
+    setType: "3/3",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%"]
+    },
+    effect: "When HP falls below 30%, creates a shield that blocks 1 attack for 3 sec. (Cooldown: 40 sec)"
+  },
+  flame: {
+    setType: "3/3",
+    bonuses: {
+      "3": ["Emblem Combo Double DMG +20.00%"]
+    }
+  },
+  unity: {
+    setType: "3/3",
+    bonuses: {
+      "3": ["Emblem Counter DMG +20.00%"]
+    }
+  },
+  joy: {
+    setType: "3/3",
+    bonuses: {
+      "3": ["Emblem Skill CRIT DMG +20.00%"]
+    }
+  },
+  harvest: {
+    setType: "3/3",
+    bonuses: {
+      "3": ["Emblem Combo Triple DMG +10.00%"]
+    }
+  },
+  immortality: {
+    setType: "3/3",
+    bonuses: {
+      "3": ["Emblem Counter Ex DMG +10.00%"]
+    }
+  },
+  secret: {
+    setType: "3/3",
+    bonuses: {
+      "3": ["Emblem Skill CRIT DMG +10.00%"]
+    }
+  },
+  journey: {
+    setType: "3/3",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%"]
+    },
+    effect: "When HP falls below 30% and you take Combo, Counter, or Skill Critical Damage, gain a shield equal to 12.00% of max HP for 5 sec. (Cooldown: 40 sec)"
+  },
+  resolve: {
+    setType: "3/3",
+    bonuses: {
+      "3": ["Emblem Combo Double DMG +20.00%"]
+    },
+    effect: "When Combo Damage is triggered, increases Double Combo Damage by 10.00% for 2 sec. (Cooldown: 2 sec)"
+  },
+  thorn: {
+    setType: "3/3",
+    bonuses: {
+      "3": ["Emblem Counter DMG +20.00%"]
+    },
+    effect: "When Counter DMG is triggered, increases Counter Damage by 10.00% for 2 sec. (Cooldown: 2 sec)"
+  },
+  wisdom: {
+    setType: "3/3",
+    bonuses: {
+      "3": ["Emblem Skill CRIT DMG +10.00%"]
+    },
+    effect: "When Skill Critical Damage is triggered, increases Skill Critical Damage by 10.00% for 3 sec. (Cooldown: 3 sec)"
+  },
+  disaster: {
+    setType: "3/3",
+    bonuses: {
+      "3": ["Emblem Combo Triple DMG +10.00%"]
+    },
+    effect: "When hit by a Skill Critical Hit, increases Evasion by 15.00% for 3 sec. (Cooldown: 3 sec)"
+  },
+  frost: {
+    setType: "3/3",
+    bonuses: {
+      "3": ["Emblem Counter Ex DMG +10.00%"]
+    },
+    effect: "When hit by a Combo attack, gain a shield equal to 1.00% of max HP for 2 sec. (Cooldown: 2 sec)"
+  },
+  endurance: {
+    setType: "3/3",
+    bonuses: {
+      "3": ["Skill Acceleration +4.00%"]
+    },
+    effect: "When hit by a counterattack, restores HP by 3.00% of max HP (Cooldown: 2 sec)"
+  },
 
-function renderEmblems(selectedShape="", selectedName=""){
+  protection: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Emblem Normal Mob DMG +100.00%"],
+      "4": ["Emblem Boss DMG +50.00%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Boss DMG +100.00%"]
+    },
+    effect: "When using a Wind-type Specialized Skill, increases Double Combo Damage by 60.00% for 6 sec."
+  },
+  sun: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Emblem Normal Mob DMG +100.00%"],
+      "4": ["Emblem Boss DMG +50.00%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Boss DMG +100.00%"]
+    },
+    effect: "When using a Stone-type Specialized Skill, increases Counter Damage by 60.00% for 6 sec."
+  },
+  justice: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Emblem Normal Mob DMG +100.00%"],
+      "4": ["Emblem Boss DMG +50.00%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Boss DMG +100.00%"]
+    },
+    effect: "When using a Corrosion-type Specialized Skill, increases Skill Critical Damage by 45.00% for 6 sec."
+  },
+  genesis: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Emblem Normal Mob DMG +100.00%"],
+      "4": ["Emblem Boss DMG +50.00%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Boss DMG +100.00%"]
+    },
+    effect: "When using a Wind-type Specialized Skill, increases Triple Combo Damage by 50.00% for 6 sec."
+  },
+  harmony: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Emblem Normal Mob DMG +100.00%"],
+      "4": ["Emblem Boss DMG +50.00%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Boss DMG +100.00%"]
+    },
+    effect: "When using a Stone-type Specialized Skill, increases Ex-Counter Damage by 55.00% for 6 sec."
+  },
+  intellect: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Emblem Normal Mob DMG +100.00%"],
+      "4": ["Emblem Boss DMG +50.00%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Boss DMG +100.00%"]
+    },
+    effect: "When using a Corrosion-type Specialized Skill, increases Skill Acceleration by 50.00% for 5 sec, increasing cooldown recovery speed during the duration."
+  },
+  flow: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Emblem Normal Mob DMG +100.00%"],
+      "4": ["Emblem Boss DMG +50.00%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Boss DMG +100.00%"]
+    },
+    effect: "When using a Corrosion-type Specialized Skill, increases Recovery by 60.00% for 5 sec."
+  },
+  abundance: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Ignore Critical Hit +8.00%"],
+      "4": ["Emblem Combo Double DMG +25.00%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Combo Double DMG +40.00%"]
+    },
+    effect: "When using a Wind-type Specialized Skill, deals 20% damage and reduces the opponent's Skill Critical Chance by 30.00% for 7 sec."
+  },
+  legacy: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Ignore Critical Hit +8.00%"],
+      "4": ["Emblem Counter DMG +25.00%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Counter DMG +40.00%"]
+    },
+    effect: "When using a Stone-type Specialized Skill, deals 20% damage and reduces the opponent's Double Combo Chance by 30.00% for 7 sec."
+  },
+  radiance: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Ignore Critical Hit +8.00%"],
+      "4": ["Emblem Skill CRIT DMG +12.50%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Skill CRIT DMG +20.00%"]
+    },
+    effect: "When using a Corrosion-type Specialized Skill, deals 20% damage and reduces the opponent's Counter Chance by 30.00% for 7 sec."
+  },
+  fortitude: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Ignore Critical Hit +8.00%"],
+      "4": ["Emblem Combo Triple DMG +12.50%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Combo Triple DMG +20.00%"]
+    },
+    effect: "When using a Wind-type Specialized Skill, deals 20% damage and reduces the opponent's Combo Damage Resistance by 40.00% for 7 sec."
+  },
+  order: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Ignore Critical Hit +8.00%"],
+      "4": ["Emblem Counter Ex DMG +12.50%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Counter Ex DMG +20.00%"]
+    },
+    effect: "When using a Stone-type Specialized Skill, deals 20% damage and reduces the opponent's Counter Damage Resistance by 40.00% for 7 sec."
+  },
+  repose: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Ignore Critical Hit +8.00%"],
+      "4": ["Skill Acceleration +5.00%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Skill Acceleration +15.00%"]
+    },
+    effect: "When using a Corrosion-type Specialized Skill, deals 20% damage and reduces the opponent's Skill Damage Resistance by 40.00% for 7 sec."
+  },
+  mastery: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Ignore Critical Hit +8.00%"],
+      "4": ["Emblem Recovery +12.50%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Recovery +20.00%"]
+    },
+    effect: "When using a Corrosion-type Specialized Skill, restores 20.00% of lost HP over 5 sec."
+  },
+  strike: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Emblem Skill DMG +6.00%"],
+      "4": ["Emblem DMG Increase +10.00%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Skill DMG +12.00%"]
+    },
+    effect: "When using the Smash or Fury skill, increases Boss Damage by 100.00% for 7 sec."
+  },
+  smash: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Emblem Normal Attack DMG +6.00%"],
+      "4": ["Emblem DMG Increase +10.00%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Normal Attack DMG +12.00%"]
+    },
+    effect: "When using the Strike skill, increases Boss Damage by 100.00% for 7 sec."
+  },
+  frenzy: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Skill Acceleration +4.00%"],
+      "4": ["Emblem DMG Increase +10.00%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Skill Acceleration +15.00%"]
+    },
+    effect: "When using the Frenzy skill, increases Boss Damage by 100.00% for 7 sec."
+  },
+  counter: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Emblem Counter DMG +20.00%"],
+      "4": ["Emblem DMG Increase +10.00%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Counter DMG +40.00%"]
+    },
+    effect: "When using the Raid or Blitz skill, increases Boss Damage by 100.00% for 6 sec."
+  },
+  ambush: {
+    setType: "6/6",
+    bonuses: {
+      "3": ["Emblem ATK/HP/DEF +111.00%", "Emblem Combo Double DMG +20.00%"],
+      "4": ["Emblem DMG Increase +10.00%"],
+      "5": ["Emblem ATK/HP/DEF +248.00%"],
+      "6": ["Emblem Combo Double DMG +40.00%"]
+    },
+    effect: "When using the Burst or Explosion skill, increases Boss Damage by 100.00% for 6 sec."
+  }
+};
 
-const container = document.getElementById("emblemContainer")
-container.innerHTML = ""
-
-emblemNames.forEach(name=>{
-emblemShapes.forEach(shape=>{
-
-// ✅ filter logic
-if(selectedShape && shape !== selectedShape) return
-if(selectedName && name !== selectedName) return
-
-const file = `assets/emblem/${name}_${shape}.png`
-
-const div = document.createElement("div")
-div.className = "card emblemCard"
-
-const img = document.createElement("img")
-img.src = file
-img.alt = `${name} ${shape}`
-img.loading = "lazy"
-
-// remove if missing
-img.onerror = () => div.remove()
-
-const title = document.createElement("h4")
-title.textContent = `${name} (${shape})`
-
-div.appendChild(img)
-div.appendChild(title)
-
-container.appendChild(div)
-
-})
-})
-
-}
-
-function filterEmblems(){
-
-const shape = document.getElementById("emblemShapeFilter").value
-const name = document.getElementById("emblemNameFilter").value
-
-const container = document.getElementById("emblemContainer")
-
-// ❌ require at least ONE filter
-if(!shape && !name){
-container.innerHTML = ""
-return
-}
-
-renderEmblems(shape, name)
-
-}
-
-window.addEventListener("DOMContentLoaded", () => {
-
-const filter = document.getElementById("emblemFilter")
-if(!filter) return
-
-emblemShapes.forEach(shape=>{
-const opt = document.createElement("option")
-opt.value = shape
-opt.textContent = shape.toUpperCase()
-filter.appendChild(opt)
-})
-
-renderEmblems("all")
-
-})
-
-window.addEventListener("DOMContentLoaded", () => {
-
-const nameFilter = document.getElementById("emblemNameFilter")
-if(!nameFilter) return
-
-emblemNames.forEach(name=>{
-const opt = document.createElement("option")
-opt.value = name
-opt.textContent = name.toUpperCase()
-nameFilter.appendChild(opt)
-})
-
-})
-
-const shapes = ["pillar","orb","tablet","crest","foundation","wedge"];
-const names = ["possession","flame","unity","joy","harvest","immortality","secret","journey","resolve","thorn","wisdom","disaster","frost","endurance","protection","sun","justice","genesis","harmony","intellect","flow","abundance","legacy","radiance","fortitude","order","repose","mastery","strike","smash","frenzy","counter","ambush"];
-
+const emblemNames = Object.keys(emblemData);
+const emblemShapes = ["pillar","orb","tablet","crest","foundation","wedge"];
 let inventory = [];
 
 // Load inventory from URL
 function loadInventoryFromURL(){
-    const params = new URLSearchParams(window.location.search);
-    const data = params.get("inventory");
-    if(data){
-        inventory = data.split(",");
-        renderInventory();
-    }
+  const params = new URLSearchParams(window.location.search);
+  const data = params.get("inventory");
+  if(data){
+    inventory = data.split(",");
+  }
 }
 
-// Render all emblems after shape is selected
+// Render all emblems
 function renderEmblems(){
-    const shape = document.getElementById("shapeSelect").value;
-    const filter = document.getElementById("nameFilter").value.toLowerCase();
-    const container = document.getElementById("emblemContainer");
-    container.innerHTML = "";
+  const shape = document.getElementById("shapeSelect").value;
+  const filter = document.getElementById("nameFilter").value;
+  const container = document.getElementById("emblemContainer");
+  container.innerHTML = "";
 
-    if(!shape) return; // don’t show anything until a shape is selected
+  if(!shape) return;
 
-    names.forEach(name => {
-        const path = `assets/emblem/${name}_${shape}.png`;
-        const img = new Image();
-        img.src = path;
+  emblemNames.forEach(name => {
+    const path = `assets/emblem/${name}_${shape}.png`;
+    const img = new Image();
+    img.src = path;
 
-        img.onload = () => { // Only show if image exists
-            if(!name.toLowerCase().includes(filter)) return;
+    img.onload = () => {
+      if(filter && name !== filter) return;
 
-            const div = document.createElement("div");
-            div.className = "emblemItem";
+      const div = document.createElement("div");
+      div.className = "emblemItem";
 
-            const emblemImg = document.createElement("img");
-            emblemImg.src = path;
-            emblemImg.alt = name;
+      const emblemImg = document.createElement("img");
+      emblemImg.src = path;
+      emblemImg.alt = name;
 
-            const label = document.createElement("div");
-            label.textContent = name;
+      const label = document.createElement("div");
+      label.textContent = name.charAt(0).toUpperCase() + name.slice(1);
 
-            const btn = document.createElement("button");
-            btn.textContent = inventory.includes(`${name}_${shape}`) ? "Added" : "Add";
-            btn.disabled = inventory.includes(`${name}_${shape}`);
-            btn.onclick = () => addToInventory(name, shape, btn);
+      const setType = document.createElement("small");
+      setType.className = "setTag";
+      setType.textContent = emblemData[name].setType;
 
-            div.appendChild(emblemImg);
-            div.appendChild(label);
-            div.appendChild(btn);
-            container.appendChild(div);
-        }
-    });
+      const btn = document.createElement("button");
+      btn.textContent = inventory.includes(`${name}_${shape}`) ? "Added" : "Add";
+      btn.disabled = inventory.includes(`${name}_${shape}`);
+      btn.onclick = () => addToInventory(name, shape, btn);
+
+      div.appendChild(emblemImg);
+      div.appendChild(label);
+      div.appendChild(setType);
+      div.appendChild(btn);
+      container.appendChild(div);
+    };
+  });
 }
 
-// Add emblem to inventory
+// Add emblem
 function addToInventory(name, shape, button){
-    const key = `${name}_${shape}`;
-    if(!inventory.includes(key)){
-        inventory.push(key);
-        button.textContent = "Added";
-        button.disabled = true;
-        renderInventory();
-        updateShareLink();
-    }
-}
-
-// Remove emblem from inventory
-function removeFromInventory(key){
-    inventory = inventory.filter(e => e !== key);
+  const key = `${name}_${shape}`;
+  if(!inventory.includes(key)){
+    inventory.push(key);
+    button.textContent = "Added";
+    button.disabled = true;
     renderInventory();
     updateShareLink();
-    renderEmblems(); // re-enable add button if emblem is visible
+    renderSetSummary();
+  }
+}
+
+// Remove emblem
+function removeFromInventory(key){
+  inventory = inventory.filter(e => e !== key);
+  renderInventory();
+  updateShareLink();
+  renderEmblems();
+  renderSetSummary();
 }
 
 // Render inventory
 function renderInventory() {
-    const container = document.getElementById("inventoryContainer");
-    container.innerHTML = "";
+  const container = document.getElementById("inventoryContainer");
+  container.innerHTML = "";
 
-    inventory.forEach(key => {
-        const div = document.createElement("div");
-        div.className = "inventoryItem";
+  inventory.forEach(key => {
+    const div = document.createElement("div");
+    div.className = "inventoryItem";
 
-        // Extract the emblem name from the file (before the underscore)
-        const emblemName = key.split("_")[0];
-        const displayName = emblemName.charAt(0).toUpperCase() + emblemName.slice(1); // Capitalize first letter
+    const [name] = key.split("_");
+    const displayName = name.charAt(0).toUpperCase() + name.slice(1);
 
-        // Name element
-        const nameEl = document.createElement("span");
-        nameEl.textContent = displayName;
-        nameEl.className = "emblemName";
+    const img = document.createElement("img");
+    img.src = `assets/emblem/${key}.png`;
+    img.alt = displayName;
 
-        // Image element
-        const img = document.createElement("img");
-        img.src = `assets/emblem/${key}.png`;
-        img.alt = displayName;
+    const nameEl = document.createElement("span");
+    nameEl.textContent = displayName;
+    nameEl.className = "emblemName";
 
-        // Remove button
-        const btn = document.createElement("button");
-        btn.textContent = "Remove";
-        btn.onclick = () => removeFromInventory(key);
+    const btn = document.createElement("button");
+    btn.textContent = "Remove";
+    btn.onclick = () => removeFromInventory(key);
 
-        // Append name, image, and button
-        div.appendChild(nameEl);
-        div.appendChild(img);
-        div.appendChild(btn);
-
-        container.appendChild(div);
-    });
+    div.appendChild(nameEl);
+    div.appendChild(img);
+    div.appendChild(btn);
+    container.appendChild(div);
+  });
 }
-// Generate shareable link
+
+// Share link
 function updateShareLink(){
-    const baseUrl = window.location.href.split("?")[0];
-    const data = encodeURIComponent(inventory.join(","));
-    const link = `${baseUrl}?inventory=${data}`;
-    document.getElementById("shareLinkInput").value = link;
+  const baseUrl = window.location.href.split("?")[0];
+  const data = encodeURIComponent(inventory.join(","));
+  const link = `${baseUrl}?inventory=${data}`;
+  document.getElementById("shareLinkInput").value = link;
 }
 
-// Event listeners
-document.getElementById("shapeSelect").addEventListener("change", renderEmblems);
-document.getElementById("nameFilter").addEventListener("input", renderEmblems);
+// Render active set summary
+function renderSetSummary(){
+  const summary = document.getElementById("setSummary");
+  if(!summary) return;
 
-// Initialize
+  summary.innerHTML = "";
+
+  const counts = {};
+
+  inventory.forEach(key => {
+    const [name] = key.split("_");
+    counts[name] = (counts[name] || 0) + 1;
+  });
+
+  const activeSets = Object.entries(counts)
+    .filter(([name, count]) => {
+      const req = emblemData[name].setType === "3/3" ? 3 : 3;
+      return count >= req;
+    })
+    .sort((a,b)=>b[1]-a[1]);
+
+  if(activeSets.length === 0){
+    summary.innerHTML = `<div class="setBox"><h3>No Active Sets Yet</h3><p>Add at least 3 matching emblem pieces to activate a set.</p></div>`;
+    return;
+  }
+
+  activeSets.forEach(([name, count]) => {
+    const data = emblemData[name];
+    const div = document.createElement("div");
+    div.className = "setBox";
+
+    let bonusHTML = "";
+
+    Object.keys(data.bonuses).forEach(step => {
+      if(count >= parseInt(step)){
+        bonusHTML += `
+          <div class="bonusStep active">
+            <b>${step}/${data.setType.split("/")[1]}</b>
+            <ul>${data.bonuses[step].map(b=>`<li>${b}</li>`).join("")}</ul>
+          </div>
+        `;
+      } else {
+        bonusHTML += `
+          <div class="bonusStep inactive">
+            <b>${step}/${data.setType.split("/")[1]}</b>
+            <ul>${data.bonuses[step].map(b=>`<li>${b}</li>`).join("")}</ul>
+          </div>
+        `;
+      }
+    });
+
+    div.innerHTML = `
+      <h3>${name.charAt(0).toUpperCase() + name.slice(1)} (${count}/${data.setType.split("/")[1]})</h3>
+      <div class="bonusList">${bonusHTML}</div>
+      ${data.effect ? `<p class="setEffect"><b>Effect:</b> ${data.effect}</p>` : ""}
+    `;
+
+    summary.appendChild(div);
+  });
+}
+
+// Events
 window.addEventListener("DOMContentLoaded", ()=>{
-    loadInventoryFromURL();
-});
+  loadInventoryFromURL();
+  renderInventory();
+  updateShareLink();
+  renderSetSummary();
+  renderEmblems();
 
+  document.getElementById("shapeSelect").addEventListener("change", renderEmblems);
+  document.getElementById("nameFilter").addEventListener("change", renderEmblems);
+  const nameDropdown = document.getElementById("nameFilter")
+
+emblemNames.forEach(name => {
+  const opt = document.createElement("option")
+  opt.value = name.toLowerCase()
+  opt.textContent = name.charAt(0).toUpperCase() + name.slice(1)
+  nameDropdown.appendChild(opt)
+})
+});
 
 
 /* LOAD CODES ON PAGE START */

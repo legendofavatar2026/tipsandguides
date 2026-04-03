@@ -228,8 +228,10 @@ legend of avatar arena build
   </select>
 
   <!-- Name filter -->
-  <label for="nameFilter">Filter by Name:</label>
-  <input type="text" id="nameFilter" placeholder="Type emblem name...">
+ <label for="nameFilter">Filter by Name:</label>
+<select id="nameFilter">
+  <option value="">All</option>
+</select>
 
   <!-- Emblem display -->
   <div id="emblemContainer" class="emblemContainer"></div>
@@ -237,6 +239,10 @@ legend of avatar arena build
 
 <!-- Inventory -->
 <div class="inventoryTab">
+<div class="setSummaryTab">
+  <h2>Active Set Effects</h2>
+  <div id="setSummary" class="setSummary"></div>
+</div>
   <h2>My Emblem Inventory</h2>
   <div id="inventoryContainer" class="inventory"></div>
   <div class="shareLink">
