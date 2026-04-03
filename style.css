@@ -10,7 +10,9 @@
 body{
 background:linear-gradient(180deg,#0b0f1a,#0e0e0e);
 color:var(--text);
-font-family:'Segoe UI',sans-serif;
+font-family:'Segoe UI',sans-serif; 
+overflow-x: hidden;
+
 }
 
 section h1,
