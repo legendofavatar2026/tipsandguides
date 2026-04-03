@@ -1,4 +1,38 @@
 /* TAB SYSTEM */
+const tabConfig = [
+  { id: "guides", label: "Guides" },
+  { id: "avatars", label: "Avatar Tier List" },
+  { id: "weapons", label: "Divine Weapons" },
+  { id: "calculator", label: "Training EXP Calculator" },
+  { id: "tips", label: "Tips & Codes" },
+  { id: "emblems", label: "Emblems" }
+]
+
+
+
+function renderTabs(){
+
+  const container = document.getElementById("navTabs")
+  container.innerHTML = ""
+
+  tabConfig.forEach((tab, index) => {
+
+    const btn = document.createElement("button")
+    btn.className = "tab"
+    btn.textContent = tab.label
+
+    btn.onclick = (e) => openTab(e, tab.id)
+
+    // set first tab active by default
+    if(index === 0){
+      btn.classList.add("active")
+      document.getElementById(tab.id).classList.add("active")
+    }
+
+    container.appendChild(btn)
+
+  })
+}
 
 function openTab(evt, tab){
 
@@ -9,6 +43,10 @@ document.getElementById(tab).classList.add("active")
 evt.currentTarget.classList.add("active")
 
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderTabs()
+})
 
 
 /* GUIDE SYSTEM */
@@ -938,7 +976,27 @@ function renderInventory() {
   const container = document.getElementById("inventoryContainer");
   container.innerHTML = "";
 
-  inventory.forEach(key => {
+  const sortType = document.getElementById("sortInventory")?.value || "default"
+
+let sortedInventory = [...inventory]
+
+if(sortType === "name"){
+  sortedInventory.sort((a,b)=>{
+    const [nameA] = a.split("_")
+    const [nameB] = b.split("_")
+    return nameA.localeCompare(nameB)
+  })
+}
+
+if(sortType === "shape"){
+  sortedInventory.sort((a,b)=>{
+    const [,shapeA] = a.split("_")
+    const [,shapeB] = b.split("_")
+    return shapeA.localeCompare(shapeB)
+  })
+}
+
+sortedInventory.forEach(key => {
     const div = document.createElement("div");
     div.className = "inventoryItem";
 
@@ -1043,6 +1101,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
   document.getElementById("shapeSelect").addEventListener("change", renderEmblems);
   document.getElementById("nameFilter").addEventListener("change", renderEmblems);
+  document.getElementById("sortInventory").addEventListener("change", renderInventory)
   const nameDropdown = document.getElementById("nameFilter")
 
 emblemNames.forEach(name => {
@@ -1052,6 +1111,7 @@ emblemNames.forEach(name => {
   nameDropdown.appendChild(opt)
 })
 });
+
 
 
 /* LOAD CODES ON PAGE START */

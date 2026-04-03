@@ -66,14 +66,7 @@ legend of avatar arena build
 
 <img src="assets/banner.png" class="banner" alt="Legend of Avatar">
 
-<nav class="tabs">
-<button class="tab" onclick="openTab(event,'guides')">Guides</button>
-<button class="tab" onclick="openTab(event,'avatars')">Avatar Tier List</button>
-<button class="tab" onclick="openTab(event,'weapons')">Divine Weapons</button>
-<button class="tab" onclick="openTab(event,'calculator')">Traning EXP Calculator</button>
-<button class="tab" onclick="openTab(event,'tips')">Tips & Codes</button>
-<button class="tab" onclick="openTab(event,'emblems')">Emblems</button>
-</nav>
+<nav class="tabs" id="navTabs"></nav>
 
 </header>
 
@@ -244,6 +237,12 @@ legend of avatar arena build
   <div id="setSummary" class="setSummary"></div>
 </div>
   <h2>My Emblem Inventory</h2>
+  <label for="sortInventory">Sort Inventory:</label>
+<select id="sortInventory">
+  <option value="default">Default</option>
+  <option value="name">Set Name</option>
+  <option value="shape">Shape</option>
+</select>
   <div id="inventoryContainer" class="inventory"></div>
   <div class="shareLink">
     <label>Share your inventory:</label>
