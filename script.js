@@ -310,19 +310,13 @@ ${days.toLocaleString(undefined,{maximumFractionDigits:2})} days
 /* GIFT CODES SYSTEM */
 
 const giftCodes = [
-
-{code:"ORB1000GIFT"},
-{code:"ORB2000GIFT"},
-{code:"AVATAR0808"},
-{code:"AVATARXBLADE1"},
-{code:"AVATARXBLADE2"},
-{code:"AVATARDISCORD"},
-{code:"DISCORD11000"},
-{code:"TOWER10GIFT"},
-{code:"GLOBAL200DAY"},
-{code:"MARCH2026GIFT"},
-{code:"DIAMOND500", new:true}
-
+  { code: "AVATARXBLADE1" },
+  { code: "AVATARXBLADE2" },
+  { code: "TOWER10GIFT" },
+  { code: "DIAMOND500", new: true },
+  { code: "KOREAGOOGLE1ST", new: true },
+  { code: "TAIWANAPPLE1ST", new: true },
+  { code: "DISCORD12000", new: true }
 ]
 
 
