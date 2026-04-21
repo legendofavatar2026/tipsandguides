@@ -443,74 +443,67 @@ legend of avatar arena build
 <!-- EVENT POPUP -->
 <div id="eventPopup" class="popup">
     <div class="popup-content">
+
+        <!-- Single close button -->
         <span class="close-popup">&times;</span>
 
-        <h2>
-        
+        <h2>🚀 Update 1.17.0 is now live!</h2>
+        <p><small>New content, improvements, and fixes have been applied.</small></p>
 
-        <p><span class="close-popup">&times;</span>
- 🚀 <strong>Update 1.17.0 is now live!</strong><br>
-<small>New content, improvements, and fixes have been applied.</small>
-</p>
-    </h2>
-    <p>
-        ✨ <strong>New Content:</strong> Immortal Pets added<br>
-        <small>Obtainable via synthesizing max-level Mythic Pets (13 Normal + 3 Sacred Beast)</small>
-    </p>
+        <p>
+            ✨ <strong>New Content:</strong> Immortal Pets added<br>
+            <small>Obtainable via synthesizing max-level Mythic Pets (13 Normal + 3 Sacred Beast)</small>
+        </p>
 
-    <p>
-        🔥 <strong>Suzaku Buff:</strong> Upgraded to Immortal<br>
-        <small>Damage and Counter Damage significantly increased</small>
-    </p>
+        <p>
+            🔥 <strong>Suzaku Buff:</strong> Upgraded to Immortal<br>
+            <small>Damage and Counter Damage significantly increased</small>
+        </p>
 
-    <p>
-        ⚙️ <strong>Emblem Adjustments:</strong> Duplicate names updated (A/B variants)<br>
-        <small>Some Emblem effects changed to Damage Reduction</small>
-    </p>
+        <p>
+            ⚙️ <strong>Emblem Adjustments:</strong> Duplicate names updated (A/B variants)<br>
+            <small>Some Emblem effects changed to Damage Reduction</small>
+        </p>
 
-    <p>
-        🛠 <strong>Improvements:</strong> UI, animations, and system optimizations<br>
-        <small>Includes auto-identify when fewer than 30 Emblems remain</small>
-    </p>
+        <p>
+            🛠 <strong>Improvements:</strong> UI, animations, and system optimizations<br>
+            <small>Includes auto-identify when fewer than 30 Emblems remain</small>
+        </p>
 
-    <p>
-        🐞 <strong>Fixes:</strong> Various bugs related to UI, Guild, and Emblem systems resolved
-    </p>
+        <p>
+            🐞 <strong>Fixes:</strong> Various bugs related to UI, Guild, and Emblem systems resolved
+        </p>
 
-    <p>
-        🌸 <strong>Upcoming Event:</strong> Spring Event arriving in April
-    </p>
+        <p>
+            🌸 <strong>Upcoming Event:</strong> Spring Event arriving in April
+        </p>
 
-      <p>
-    <a href="https://discord.gg/GgNdpdAb" target="_blank" 
-       style="display:inline-block; background:#5865F2; color:#fff; padding:8px 12px; border-radius:6px; text-decoration:none; font-weight:bold;">
-       📘 Access Guides & Discussions
-    </a>
-</p>
-      
+        <p>
+            <a href="https://discord.gg/GgNdpdAb" target="_blank" 
+               style="display:inline-block; background:#5865F2; color:#fff; padding:8px 12px; border-radius:6px; text-decoration:none; font-weight:bold;">
+               📘 Access Guides & Discussions
+            </a>
+        </p>
+
     </div>
 </div>
 
-<script>
 window.onload = function () {
     const popup = document.getElementById("eventPopup");
     const closeBtn = document.querySelector(".close-popup");
 
     popup.style.display = "block";
 
-    // close button
     closeBtn.onclick = function () {
         popup.style.display = "none";
     };
 
-    // close when clicking outside popup-content
     window.onclick = function (event) {
         if (event.target === popup) {
             popup.style.display = "none";
         }
     };
 };
-</script>
 
   <!-- SMALL KO-FI TIP ICON -->
 <a href="https://ko-fi.com/tomoe1337" target="_blank"
