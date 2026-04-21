@@ -462,23 +462,29 @@ background:rgba(0,0,0,0.7);
 }
 
 .popup-content{
-background:#1a1a2e;
-margin:10% auto;
-padding:25px;
-border-radius:12px;
-width:90%;
-max-width:500px;
-color:white;
-text-align:center;
-border:2px solid #444;
+    position: relative; /* مهم */
+    background:#1a1a2e;
+    margin:10% auto;
+    padding:25px;
+    border-radius:12px;
+    width:90%;
+    max-width:500px;
+    color:white;
+    text-align:center;
+    border:2px solid #444;
 }
 
 .close-popup{
-position:absolute;
-right:20px;
-top:10px;
-font-size:24px;
-cursor:pointer;
+    position:absolute;
+    right:15px;
+    top:10px;
+    font-size:26px;
+    cursor:pointer;
+    color:#fff;
+}
+
+.close-popup:hover{
+    color:#ff4d4d;
 }
 
 .discord-button-tight {
