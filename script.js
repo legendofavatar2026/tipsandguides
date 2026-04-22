@@ -316,7 +316,7 @@ const giftCodes = [
   { code: "DIAMOND500", new: true },
   { code: "KOREAGOOGLE1ST", new: true },
   { code: "TAIWANAPPLE1ST", new: true },
-  { code: "DISCORD12000", new: true }
+  { code: "DISCORD13000", new: true }
 ]
 
 
