@@ -950,3 +950,67 @@ font-size:13px;
   background:#0e0e0e;
   color:#fff;
 }
+
+/* hide dropdown on desktop */
+.mobile-tabs{
+  display:none;
+  width:90%;
+  margin:10px auto;
+  padding:10px;
+  border-radius:8px;
+  background:#111;
+  color:white;
+  border:1px solid #333;
+}
+
+/* MOBILE VIEW */
+@media(max-width:600px){
+
+  .tabs{
+    display:none; /* hide buttons */
+  }
+
+  .mobile-tabs{
+    display:block; /* show dropdown */
+  }
+
+}
+
+.mobile-tabs{
+  position: relative;
+  z-index: 2000; /* higher than header/tabs */
+}
+
+.mobile-tabs{
+  pointer-events:auto;
+}
+
+/* TAB ICON STYLE */
+.tab{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  font-size:14px;
+}
+
+/* SVG base */
+.tab svg{
+  width:16px;
+  height:16px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:2;
+  transition:0.2s;
+}
+
+/* hover effect */
+.tab:hover svg{
+  transform:scale(1.1);
+  stroke:#6b7cff;
+}
+
+/* active tab glow */
+.tab.active svg{
+  stroke:#fff;
+  filter:drop-shadow(0 0 4px rgba(107,124,255,0.7));
+}

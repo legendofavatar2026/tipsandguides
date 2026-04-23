@@ -1,46 +1,88 @@
 /* TAB SYSTEM */
 const tabConfig = [
-  { id: "guides", label: "Guides" },
-  { id: "avatars", label: "Avatar Tier List" },
-  { id: "weapons", label: "Divine Weapons" },
-  { id: "calculator", label: "Training EXP Calculator" },
-  { id: "tips", label: "Tips & Codes" },
-  { id: "emblems", label: "Emblems" }
+  {
+    id: "landing-page",
+    label: "Home",
+    icon: `<svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2z"/></svg>`
+  },
+  {
+    id: "guides",
+    label: "Guides",
+    icon: `<svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h10v16H6a2 2 0 0 0-2 2z"/><path d="M16 19a2 2 0 0 0-2 2h6V5a2 2 0 0 0-2-2"/></svg>`
+  },
+  {
+    id: "avatars",
+    label: "Avatars",
+    icon: `<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>`
+  },
+  {
+    id: "weapons",
+    label: "Weapons",
+    icon: `<svg viewBox="0 0 24 24"><path d="M14 3l7 7-4 4-7-7z"/><path d="M3 21l6-6"/></svg>`
+  },
+  {
+    id: "calculator",
+    label: "Calculator",
+    icon: `<svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8M8 10h8M8 14h2M12 14h2M16 14h2"/></svg>`
+  },
+  {
+    id: "tips",
+    label: "Tips",
+    icon: `<svg viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12c1 1 2 2 2 4h4c0-2 1-3 2-4a7 7 0 0 0-4-12z"/></svg>`
+  },
+  {
+    id: "emblems",
+    label: "Emblems",
+    icon: `<svg viewBox="0 0 24 24"><path d="M12 2l7 4v6c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6z"/></svg>`
+  }
 ]
-
-
 
 function renderTabs(){
 
   const container = document.getElementById("navTabs")
+  const mobile = document.getElementById("mobileTabs")
+
   container.innerHTML = ""
+  mobile.innerHTML = ""
 
-  tabConfig.forEach((tab, index) => {
+  tabConfig.forEach((tab) => {
 
+    // DESKTOP TAB
     const btn = document.createElement("button")
     btn.className = "tab"
-    btn.textContent = tab.label
-
+    btn.innerHTML = `
+      <span class="icon">${tab.icon}</span>
+      <span class="label">${tab.label}</span>
+    `
     btn.onclick = (e) => openTab(e, tab.id)
-
-    // set first tab active by default
-    if(index === 0){
-      btn.classList.add("active")
-      document.getElementById(tab.id).classList.add("active")
-    }
 
     container.appendChild(btn)
 
+    // MOBILE DROPDOWN (text fallback)
+    const opt = document.createElement("option")
+    opt.value = tab.id
+    opt.textContent = tab.label
+
+    mobile.appendChild(opt)
   })
+
+  mobile.onchange = function(){
+    openTab({ currentTarget: null }, this.value)
+    document.querySelectorAll(".tab").forEach(t=>t.classList.remove("active"))
+  }
+
 }
 
 function openTab(evt, tab){
 
-document.querySelectorAll(".tabContent").forEach(t=>t.classList.remove("active"))
-document.querySelectorAll(".tab").forEach(t=>t.classList.remove("active"))
+  document.querySelectorAll(".tabContent").forEach(t=>t.classList.remove("active"))
+  document.querySelectorAll(".tab").forEach(t=>t.classList.remove("active"))
 
-document.getElementById(tab).classList.add("active")
-evt.currentTarget.classList.add("active")
+  document.getElementById(tab).classList.add("active")
+
+  if(evt.currentTarget){
+    evt.currentTarget.classList.add("active")
+  }
 
 }
 
