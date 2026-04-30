@@ -1015,102 +1015,105 @@ font-size:13px;
   filter:drop-shadow(0 0 4px rgba(107,124,255,0.7));
 }
 
-<style>
-/* POPUP BACKGROUND */
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/* BACKDROP */
 .popup {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
 }
 
 /* MODAL BOX */
 .popup-content {
-  background: #fff;
-  margin: 8% auto;
-  padding: 20px;
-  width: 90%;
-  max-width: 420px;
-  border-radius: 10px;
-  position: relative;
-  font-family: Arial, sans-serif;
+    background: #1e1e2f;
+    color: #fff;
+    width: 90%;
+    max-width: 420px;
+    padding: 20px 22px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    animation: fadeIn 0.25s ease;
+    font-family: Arial, sans-serif;
+}
+
+/* TITLE */
+.popup-content h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 8px;
+}
+
+/* TEXT BLOCK */
+.popup-content p {
+    font-size: 14px;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* SECTION STYLE */
+.popup-content .section {
+    margin-bottom: 10px;
 }
 
 /* CLOSE BUTTON */
 .close-popup {
-  position: absolute;
-  right: 12px;
-  top: 10px;
-  font-size: 20px;
-  cursor: pointer;
+    float: right;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.close-popup:hover {
+    opacity: 1;
 }
 
-/* SUBTEXT */
-.popup-sub {
-  font-size: 13px;
-  opacity: 0.7;
-  margin-bottom: 15px;
+/* BUTTON GROUP */
+.popup-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
 }
 
-/* SECTIONS */
-.update-section {
-  background: #f5f5f5;
-  padding: 10px;
-  border-radius: 6px;
-  margin-bottom: 10px;
+/* BUTTON BASE */
+.popup-buttons a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 14px;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.2s ease;
 }
 
-.update-section h3 {
-  margin: 0 0 5px 0;
-  font-size: 14px;
+/* DISCORD */
+.discord-btn {
+    background: #5865F2;
+    color: white;
+}
+.discord-btn:hover {
+    background: #4752c4;
 }
 
-.update-section p {
-  margin: 2px 0;
-  font-size: 13px;
+/* BLOGGER */
+.blogger-btn {
+    background: #FF5722;
+    color: white;
+}
+.blogger-btn:hover {
+    background: #e64a19;
 }
 
-/* NOTE */
-.popup-note {
-  font-size: 12px;
-  opacity: 0.7;
-  margin-top: 10px;
+/* ANIMATION */
+@keyframes fadeIn {
+    from { transform: translateY(10px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
-/* BUTTONS CENTERED */
-.popup-actions {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-/* BUTTON STYLE */
-.btn {
-  padding: 8px 14px;
-  font-size: 14px;
-  text-decoration: none;
-  color: white;
-  border-radius: 6px;
-}
-
-.discord {
-  background: #5865F2;
-}
-
-.blogger {
-  background: #FF5722;
-}
-
-/* DISCLAIMER */
-.popup-disclaimer {
-  font-size: 11px;
-  text-align: center;
-  opacity: 0.6;
-  margin-top: 10px;
-}
-</style>
