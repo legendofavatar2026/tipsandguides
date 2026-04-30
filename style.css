@@ -1015,8 +1015,7 @@ font-size:13px;
   filter:drop-shadow(0 0 4px rgba(107,124,255,0.7));
 }
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/* BACKDROP */
+/* ===== POPUP BACKDROP ===== */
 .popup {
     display: none;
     position: fixed;
@@ -1028,7 +1027,7 @@ font-size:13px;
     align-items: center;
 }
 
-/* MODAL BOX */
+/* ===== MODAL ===== */
 .popup-content {
     background: #1e1e2f;
     color: #fff;
@@ -1037,7 +1036,7 @@ font-size:13px;
     padding: 20px 22px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    animation: fadeIn 0.25s ease;
+    animation: popupFade 0.25s ease;
     font-family: Arial, sans-serif;
 }
 
@@ -1049,16 +1048,11 @@ font-size:13px;
     padding-bottom: 8px;
 }
 
-/* TEXT BLOCK */
-.popup-content p {
+/* TEXT */
+.popup-content .section {
     font-size: 14px;
     margin: 8px 0;
     line-height: 1.5;
-}
-
-/* SECTION STYLE */
-.popup-content .section {
-    margin-bottom: 10px;
 }
 
 /* CLOSE BUTTON */
@@ -1072,7 +1066,7 @@ font-size:13px;
     opacity: 1;
 }
 
-/* BUTTON GROUP */
+/* BUTTON CONTAINER */
 .popup-buttons {
     display: flex;
     justify-content: center;
@@ -1093,7 +1087,7 @@ font-size:13px;
     transition: 0.2s ease;
 }
 
-/* DISCORD */
+/* DISCORD BUTTON */
 .discord-btn {
     background: #5865F2;
     color: white;
@@ -1102,7 +1096,7 @@ font-size:13px;
     background: #4752c4;
 }
 
-/* BLOGGER */
+/* BLOGGER BUTTON */
 .blogger-btn {
     background: #FF5722;
     color: white;
@@ -1112,8 +1106,7 @@ font-size:13px;
 }
 
 /* ANIMATION */
-@keyframes fadeIn {
+@keyframes popupFade {
     from { transform: translateY(10px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
-
