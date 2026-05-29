@@ -354,10 +354,9 @@ ${days.toLocaleString(undefined,{maximumFractionDigits:2})} days
 const giftCodes = [
   { code: "AVATARXBLADE1" },
   { code: "AVATARXBLADE2" },
-  { code: "TOWER10GIFT" },
-  { code: "DIAMOND500", new: true },
-  { code: "KOREAGOOGLE1ST", new: true },
-  { code: "TAIWANAPPLE1ST", new: true },
+  { code: "THANKU4WAITING", new: true },
+  { code: "GUILDSEASON1", new: true },
+  { code: "DEVLETTER2026", new: true },
   { code: "DISCORD13000", new: true }
 ]
 
