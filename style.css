@@ -1088,21 +1088,42 @@ font-size:13px;
 }
 
 /* DISCORD BUTTON */
-.discord-btn {
-    background: #5865F2;
-    color: white;
-}
-.discord-btn:hover {
-    background: #4752c4;
+.popup-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
 }
 
-/* BLOGGER BUTTON */
+.popup-buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 130px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+.popup-buttons a:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.discord-btn {
+    background: #5865F2;
+}
+
 .blogger-btn {
     background: #FF5722;
-    color: white;
 }
-.blogger-btn:hover {
-    background: #e64a19;
+
+.gacha-btn {
+    background: linear-gradient(135deg, #ffb300, #ff6f00);
 }
 
 /* ANIMATION */
