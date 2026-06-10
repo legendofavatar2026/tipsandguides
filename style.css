@@ -1126,6 +1126,13 @@ font-size:13px;
     background: linear-gradient(135deg, #ffb300, #ff6f00);
 }
 
+.featured-btn {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
 /* ANIMATION */
 @keyframes popupFade {
     from { transform: translateY(10px); opacity: 0; }
