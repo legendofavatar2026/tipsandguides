@@ -354,10 +354,12 @@ ${days.toLocaleString(undefined,{maximumFractionDigits:2})} days
 const giftCodes = [
   { code: "AVATARXBLADE1" },
   { code: "AVATARXBLADE2" },
-  { code: "THANKU4WAITING", new: true },
-  { code: "GUILDSEASON1", new: true },
-  { code: "DEVLETTER2026", new: true },
-  { code: "DISCORD13000", new: true }
+  { code: "THANKU4WAITING"},
+  { code: "GUILDSEASON1"},
+  { code: "DEVLETTER2026"},
+  { code: "DISCORD13000"},
+  { code: "AVATARXSOCCER26", new: true }
+  
 ]
 
 
