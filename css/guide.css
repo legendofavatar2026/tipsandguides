@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#101114;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.7;
+}
+
+.guide-container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.guide-header{
+    margin-bottom:40px;
+}
+
+.guide-header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.guide-header p{
+    color:#aaaaaa;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-bottom:20px;
+    color:#4aa3ff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.back-btn:hover{
+    text-decoration:underline;
+}
+
+.guide-section{
+    background:#1b1d22;
+    border-radius:12px;
+    padding:25px;
+    margin-bottom:30px;
+}
+
+.guide-section h2{
+    margin-bottom:15px;
+    color:#ffcc4d;
+}
+
+.guide-section p{
+    margin-bottom:15px;
+}
+
+.guide-section ul{
+    margin-left:20px;
+}
+
+.guide-section li{
+    margin-bottom:10px;
+}
+
+.guide-image{
+    width:100%;
+    border-radius:10px;
+    margin:25px 0;
+}
+
+.guide-image{
+    display:block;
+    max-width:100%;
+    width:auto;
+    height:auto;
+    margin:25px auto;
+    border-radius:12px;
+    border:1px solid #333;
+}
+
+/* Portrait (Avatars) */
+.img-portrait{
+    max-width:220px;
+}
+
+/* Wide images (Skills, Pets, Runes) */
+.img-wide{
+    max-width:700px;
+}
+
+/* Landscape (Forge, Specialization, etc.) */
+.img-landscape{
+    max-width:650px;
+}
+
+/* Full-width screenshots */
+.img-full{
+    max-width:100%;
+}
+
+.avatar-row {
+    display: flex;
+    gap: 12px;          /* spacing between images */
+    align-items: center;
+    flex-wrap: wrap;    /* wraps on smaller screens */
+}
+
+.avatar-row img {
+    width: 120px;       /* adjust as needed */
+    height: auto;
+}
+
+footer{
+    text-align:center;
+    color:#888;
+    margin-top:60px;
+    padding:25px;
+}
+

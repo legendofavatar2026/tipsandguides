@@ -1,0 +1,1 @@
+console.log("Legend of Avatar Guide Loaded");
