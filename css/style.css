@@ -174,3 +174,141 @@ header p {
 .site-footer p{
     margin: 0;
 }
+
+/* Popup Background */
+
+.popup{
+    display:flex;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+/* Popup Card */
+
+.popup-content{
+
+    position:relative;
+
+    width:90%;
+    max-width:500px;
+
+    background:#1b1d22;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    color:white;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.4);
+}
+
+.popup-content h2{
+    margin-bottom:15px;
+}
+
+.popup-content hr{
+    margin:20px 0;
+    border:none;
+    border-top:1px solid #333;
+}
+
+.close-popup{
+
+    position:absolute;
+
+    top:15px;
+
+    right:20px;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    color:#aaa;
+}
+
+.close-popup:hover{
+    color:white;
+}
+
+.popup-buttons{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:24px;
+}
+
+.popup-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+
+    min-width:130px;
+    height:40px;
+
+    padding:0 16px;
+
+    border-radius:10px;
+
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    font-size:14px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    transition:all .25s ease;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
+}
+
+/* Discord */
+
+.discord{
+    background:linear-gradient(135deg,#5865F2,#404EED);
+}
+
+.discord:hover{
+    transform:translateY(-3px);
+    box-shadow:
+        0 0 20px rgba(88,101,242,.45);
+}
+
+/* Blog */
+
+.blog{
+    background:linear-gradient(135deg,#ff9f1c,#ff6b00);
+}
+
+.blog:hover{
+    transform:translateY(-3px);
+    box-shadow:
+        0 0 20px rgba(255,159,28,.45);
+}
+
+/* Transparency */
+
+.official{
+    background:linear-gradient(135deg,#27ae60,#16a085);
+}
+
+.official:hover{
+    transform:translateY(-3px);
+    box-shadow:
+        0 0 20px rgba(39,174,96,.45);
+}
+
+.popup-btn:active{
+    transform:scale(.96);
+}

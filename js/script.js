@@ -15,3 +15,18 @@ search.addEventListener("keyup",function(){
     });
 
 });
+
+const popup = document.getElementById("updatePopup");
+
+const closeBtn = document.querySelector(".close-popup");
+
+closeBtn.onclick = () => {
+    popup.style.display = "none";
+};
+
+window.onclick = (e) => {
+    if(e.target === popup){
+        popup.style.display = "none";
+    }
+};
+
