@@ -43,18 +43,45 @@ header p{
 }
 
 #search{
+    width:100%;
+    max-width:500px;
 
-    width:min(500px,90%);
-    padding:15px;
-
-    border:none;
-    border-radius:10px;
-
-    background:#202020;
-    color:white;
+    padding:14px 18px;
 
     font-size:16px;
 
+    color:#fff;
+    background:rgba(30,30,35,.9);
+
+    border:2px solid #4da3ff;
+    border-radius:12px;
+
+    outline:none;
+
+    transition:.3s;
+
+    animation:searchGlow 2s ease-in-out infinite;
+}
+
+#search::placeholder{
+    color:#bbb;
+}
+
+#search:focus{
+    border-color:#ffd54a;
+    box-shadow:0 0 20px rgba(255,213,74,.7);
+    animation:none;
+}
+
+@keyframes searchGlow{
+    0%,100%{
+        box-shadow:0 0 6px rgba(77,163,255,.35);
+    }
+    50%{
+        box-shadow:
+            0 0 14px rgba(77,163,255,.9),
+            0 0 24px rgba(77,163,255,.45);
+    }
 }
 
 .guides{
