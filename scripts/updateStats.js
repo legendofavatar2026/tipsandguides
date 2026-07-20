@@ -31,14 +31,8 @@ async function run() {
             updated: new Date().toISOString()
         }, null, 2)
     );
+
+    console.log(`Updated active users: ${activeUsers}`);
 }
 
 run();
-
-
-fetch("../stats.json")
-.then(r => r.json())
-.then(data => {
-    document.getElementById("activeUsers").textContent =
-        data.activeUsers;
-});

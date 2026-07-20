@@ -318,6 +318,15 @@ content="https://legendofavatar2026.github.io/tipsandguides/websitebanner.png">
 
 <script src="js/script.js"></script>
 
+<script>
+fetch("stats.json")
+.then(r => r.json())
+.then(data => {
+    document.getElementById("activeUsers").textContent =
+        data.activeUsers;
+});
+</script>
+
 </body>
 
 <footer class="site-footer">
