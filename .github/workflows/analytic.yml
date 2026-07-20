@@ -38,5 +38,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add stats.json
-          git diff --cached --quiet || git commit -m "Update analytics"
+          git diff --cached --quiet || git commit -m "Update analytic"
           git push
