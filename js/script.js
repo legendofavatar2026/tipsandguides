@@ -40,3 +40,29 @@ window.addEventListener("click", (e) => {
         localStorage.setItem("popupVersion", popupVersion);
     }
 });
+
+const sparkleContainer = document.getElementById("sparkle-container");
+
+function createSparkle(){
+
+    const sparkle = document.createElement("div");
+    sparkle.className = "sparkle";
+
+    sparkle.style.left = Math.random() * window.innerWidth + "px";
+    sparkle.style.top = Math.random() * window.innerHeight + "px";
+
+    const size = Math.random() * 4 + 4;
+    sparkle.style.width = size + "px";
+    sparkle.style.height = size + "px";
+
+    sparkle.style.animationDuration = (Math.random() * 1.5 + 2) + "s";
+
+    sparkleContainer.appendChild(sparkle);
+
+    sparkle.addEventListener("animationend", () => {
+        sparkle.remove();
+    });
+
+}
+
+setInterval(createSparkle, 500);
