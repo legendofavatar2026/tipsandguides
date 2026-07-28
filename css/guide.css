@@ -23,10 +23,13 @@ body{
 @media (max-width:768px){
     body{
         background:
-            linear-gradient(rgba(10,10,15,0.60), rgba(10,10,15,0.60)),
+            linear-gradient(rgba(10,10,15,0.82), rgba(10,10,15,0.82)),
             url("../websitebg2-mobile.png");
 
-        background-attachment:scroll;
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
     }
 }
 
