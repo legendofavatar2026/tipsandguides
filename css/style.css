@@ -3,24 +3,22 @@
     padding:0;
     box-sizing:border-box;
 }
+
 body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    color:#fff;
-    line-height:1.7;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    line-height: 1.7;
 
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-}
+    /* Background image */
+    background:
+        linear-gradient(rgba(10,10,15,0.82), rgba(10,10,15,0.82)),
+        url("../websitebg0.png");
 
-@media (max-width:768px){
-
-    body{
-        background-position:60% center;
-    }
-
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header{
@@ -560,4 +558,3 @@ width:100%;
     }
 
 }
-
