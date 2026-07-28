@@ -16,44 +16,6 @@ search.addEventListener("keyup",function(){
 
 });
 
-const desktopBackgrounds = [
-    "websitebg1.png",
-    "websitebg2.png",
-    "websitebg3.png",
-    "websitebg0.png"
-];
-
-const mobileBackgrounds = [
-    "websitebg1-mobile.png",
-    "websitebg2-mobile.png",
-    "websitebg3-mobile.png",
-    "websitebg0-mobile.png"
-];
-
-// Detect mobile device
-const isMobile = window.innerWidth <= 768;
-
-// Use the appropriate set of backgrounds
-const backgrounds = isMobile ? mobileBackgrounds : desktopBackgrounds;
-
-// Create a number that changes once per day
-const today = new Date();
-const dayNumber = Math.floor(today.getTime() / (1000 * 60 * 60 * 24));
-
-// Pick today's background
-const background = backgrounds[dayNumber % backgrounds.length];
-
-document.body.style.background = `
-    linear-gradient(rgba(10,10,15,0.82), rgba(10,10,15,0.82)),
-    url("${background}")
-`;
-
-document.body.style.backgroundSize = "cover";
-document.body.style.backgroundPosition = "center";
-document.body.style.backgroundRepeat = "no-repeat";
-document.body.style.backgroundAttachment = isMobile ? "scroll" : "fixed";
-
-
 const popup = document.getElementById("updatePopup");
 const closeBtn = document.querySelector(".close-popup");
 
