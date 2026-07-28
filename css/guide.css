@@ -65,7 +65,7 @@ body{
 
 .guide-section{
     background:rgba(27,29,34,0.82);
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(4px);
     -webkit-backdrop-filter:blur(10px);
 
     border:1px solid rgba(255,255,255,.08);
@@ -158,7 +158,7 @@ footer{
     gap:20px;
 
     background:rgba(31,34,43,.82);
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(4px);
     -webkit-backdrop-filter:blur(10px);
 
     border:1px solid rgba(255,255,255,.08);

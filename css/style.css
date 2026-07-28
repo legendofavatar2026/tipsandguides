@@ -175,7 +175,7 @@ header p{
 
     background:rgba(29,29,29,.60);
 
-    backdrop-filter:blur(12px);
+    backdrop-filter:blur(2px);
     -webkit-backdrop-filter:blur(12px);
 
     border:1px solid rgba(255,255,255,.08);
@@ -189,8 +189,6 @@ header p{
 }
 
 .card:hover{
-
-    background:rgba(29,29,29,.72);
 
     transform:translateY(-8px);
 
