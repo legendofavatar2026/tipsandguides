@@ -16,6 +16,31 @@ search.addEventListener("keyup",function(){
 
 });
 
+const backgrounds = [
+    "websitebg1.png",
+    "websitebg2.png",
+    "websitebg3.png",
+    "websitebg0.png"
+];
+
+// Create a number that changes once per day
+const today = new Date();
+const dayNumber = Math.floor(today.getTime() / (1000 * 60 * 60 * 24));
+
+// Pick today's background
+const background = backgrounds[dayNumber % backgrounds.length];
+
+document.body.style.background = `
+    linear-gradient(rgba(10,10,15,0.82), rgba(10,10,15,0.82)),
+    url("${background}")
+`;
+
+document.body.style.backgroundSize = "cover";
+document.body.style.backgroundPosition = "center";
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.backgroundAttachment = "fixed";
+
+
 const popup = document.getElementById("updatePopup");
 const closeBtn = document.querySelector(".close-popup");
 
