@@ -11,7 +11,7 @@ body{
     line-height:1.7;
 
     background:
-        linear-gradient(rgba(10,10,15,0.82), rgba(10,10,15,0.82)),
+        linear-gradient(rgba(10,10,15,0.60), rgba(10,10,15,0.60)),
         url("../websitebg2.png");
 
     background-size:cover;
@@ -23,7 +23,7 @@ body{
 @media (max-width:768px){
     body{
         background:
-            linear-gradient(rgba(10,10,15,0.82), rgba(10,10,15,0.82)),
+            linear-gradient(rgba(10,10,15,0.60), rgba(10,10,15,0.60)),
             url("../websitebg2-mobile.png");
 
         background-attachment:scroll;
@@ -110,22 +110,61 @@ header p{
 }
 
 .guide-section{
-    background: rgba(25, 27, 34, 0.88);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
 
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 12px;
+    background: rgba(29,29,29,0.55);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    border-radius: 16px;
+
     padding: 25px;
     margin-bottom: 30px;
+
+    transition: .25s;
+}
+
+.guide-section:hover{
+
+    background: rgba(29,29,29,0.65);
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.45);
+
 }
 
 .guide-header{
-    background: rgba(20,20,25,0.75);
-    backdrop-filter: blur(6px);
-    border-radius: 12px;
-    padding: 30px;
-    margin-bottom: 35px;
+
+    background:rgba(29,29,29,.88);
+
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+
+    border-radius:16px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:30px;
+
+    margin-bottom:35px;
+
+}
+
+.guide-image{
+
+    display:block;
+
+    margin:25px auto;
+
+    border-radius:16px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
 }
 
 .card{
@@ -134,7 +173,12 @@ header p{
 
     color:white;
 
-    background:#1d1d1d;
+    background:rgba(29,29,29,.60);
+
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.08);
 
     border-radius:16px;
 
@@ -145,6 +189,8 @@ header p{
 }
 
 .card:hover{
+
+    background:rgba(29,29,29,.72);
 
     transform:translateY(-8px);
 

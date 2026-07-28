@@ -11,8 +11,8 @@ body{
     line-height:1.7;
 
     background:
-        linear-gradient(rgba(10,10,15,0.82), rgba(10,10,15,0.82)),
-        url("../websitebg2.png");
+    linear-gradient(rgba(10,10,15,0.60), rgba(10,10,15,0.60)),
+            url("../websitebg2.png");
 
     background-size:cover;
     background-position:center;
@@ -23,7 +23,7 @@ body{
 @media (max-width:768px){
     body{
         background:
-            linear-gradient(rgba(10,10,15,0.82), rgba(10,10,15,0.82)),
+            linear-gradient(rgba(10,10,15,0.60), rgba(10,10,15,0.60)),
             url("../websitebg2-mobile.png");
 
         background-attachment:scroll;
@@ -34,6 +34,8 @@ body{
     max-width:1000px;
     margin:auto;
     padding:40px 20px;
+
+    filter:drop-shadow(0 0 25px rgba(0,0,0,.35));
 }
 
 .guide-header{
@@ -62,7 +64,11 @@ body{
 }
 
 .guide-section{
-    background:#1b1d22;
+    background:rgba(27,29,34,0.82);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.08);
     border-radius:12px;
     padding:25px;
     margin-bottom:30px;
@@ -151,7 +157,10 @@ footer{
     align-items:center;
     gap:20px;
 
-    background:#1f222b;
+    background:rgba(31,34,43,.82);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+
     border:1px solid rgba(255,255,255,.08);
     border-radius:12px;
 
