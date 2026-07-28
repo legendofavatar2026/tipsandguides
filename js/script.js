@@ -16,12 +16,25 @@ search.addEventListener("keyup",function(){
 
 });
 
-const backgrounds = [
+const desktopBackgrounds = [
     "websitebg1.png",
     "websitebg2.png",
     "websitebg3.png",
     "websitebg0.png"
 ];
+
+const mobileBackgrounds = [
+    "websitebg1-mobile.png",
+    "websitebg2-mobile.png",
+    "websitebg3-mobile.png",
+    "websitebg0-mobile.png"
+];
+
+// Detect mobile device
+const isMobile = window.innerWidth <= 768;
+
+// Use the appropriate set of backgrounds
+const backgrounds = isMobile ? mobileBackgrounds : desktopBackgrounds;
 
 // Create a number that changes once per day
 const today = new Date();
@@ -38,7 +51,7 @@ document.body.style.background = `
 document.body.style.backgroundSize = "cover";
 document.body.style.backgroundPosition = "center";
 document.body.style.backgroundRepeat = "no-repeat";
-document.body.style.backgroundAttachment = "fixed";
+document.body.style.backgroundAttachment = isMobile ? "scroll" : "fixed";
 
 
 const popup = document.getElementById("updatePopup");
