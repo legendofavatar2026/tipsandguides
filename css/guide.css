@@ -24,7 +24,7 @@ body{
     body{
         background:
             linear-gradient(rgba(10,10,15,0.82), rgba(10,10,15,0.82)),
-            url("../websitebg2-mobile.png");
+            url("../websitebg1-mobile.png");
 
         background-size:cover;
         background-position:center;
