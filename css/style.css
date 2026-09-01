@@ -24,7 +24,7 @@ body{
     body{
         background:
             linear-gradient(rgba(10,10,15,0.60), rgba(10,10,15,0.60)),
-            url("../websitebanner-nightwalker-portrait.png");
+            url("../websitebg-NWMobile.png");
 
         background-attachment:scroll;
     }
