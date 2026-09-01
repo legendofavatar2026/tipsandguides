@@ -561,52 +561,71 @@ width:100%;
 
 .sparkle{
     position:absolute;
-    width:6px;
-    height:6px;
-    border-radius:50%;
-    background:#ffd54f;
+    top:-40px;
+    width:14px;
+    height:18px;
+
+    background:#d88932;
+
+    border-radius:70% 0 70% 0;
+
     opacity:0;
-    animation:sparkle 2.5s ease-in-out forwards;
+    animation:fall-leaf 15s linear forwards;
 }
 
-.sparkle::before,
+/* Leaf vein */
+.sparkle::before{
+    content:"";
+    position:absolute;
+    width:2px;
+    height:14px;
+    background:rgba(90,45,15,.45);
+
+    left:50%;
+    top:2px;
+
+    transform:translateX(-50%) rotate(25deg);
+}
+
+/* Small stem */
 .sparkle::after{
     content:"";
     position:absolute;
-    left:50%;
-    top:50%;
-    background:#ffe082;
-    transform:translate(-50%,-50%);
-}
-
-.sparkle::before{
-    width:2px;
-    height:12px;
-}
-
-.sparkle::after{
-    width:12px;
+    width:5px;
     height:2px;
+    background:#76502d;
+
+    top:-2px;
+    right:-2px;
+
+    transform:rotate(-25deg);
 }
 
-@keyframes sparkle{
+@keyframes fall-leaf{
 
     0%{
-        transform:scale(.3) rotate(0deg);
+        transform:translateY(-30px) translateX(0) rotate(0deg);
         opacity:0;
     }
 
-    20%{
+    10%{
         opacity:.9;
     }
 
-    50%{
-        transform:scale(1.2) rotate(90deg);
-        opacity:1;
+    30%{
+        transform:translateY(30vh) translateX(25px) rotate(100deg);
+    }
+
+    55%{
+        transform:translateY(55vh) translateX(-25px) rotate(200deg);
+    }
+
+    80%{
+        transform:translateY(80vh) translateX(30px) rotate(300deg);
     }
 
     100%{
-        transform:scale(.2) rotate(180deg);
+        transform:translateY(110vh) translateX(-15px) rotate(360deg);
         opacity:0;
     }
 
