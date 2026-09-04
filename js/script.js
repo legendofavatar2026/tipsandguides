@@ -20,7 +20,7 @@ const popup = document.getElementById("updatePopup");
 const closeBtn = document.querySelector(".close-popup");
 
 // Change this whenever you update the popup
-const popupVersion = "LOA-September_UPDTE";
+const popupVersion = "LOA-Shizuka-update-LIVE";
 
 // Show popup only if this version hasn't been seen
 if (localStorage.getItem("popupVersion") !== popupVersion) {
