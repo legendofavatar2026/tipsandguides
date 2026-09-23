@@ -917,46 +917,63 @@ function escapeHtml(value) {
 
 async function loadData() {
 
+    const jsonFile = "./divineweapcollect_fixed.json";
+
     try {
 
-        const response =
-            await fetch(
-                "divineweapcollect_fixed.json",
-                {
-                    cache: "no-store"
-                }
-            );
+        statusEl.textContent = "Loading weapon data...";
 
+        console.log("HTML location:", window.location.href);
+        console.log("Trying to load:", new URL(jsonFile, window.location.href).href);
+
+        const response = await fetch(jsonFile, {
+            cache: "no-store"
+        });
+
+        console.log("Response status:", response.status);
+        console.log("Response URL:", response.url);
 
         if (!response.ok) {
 
             throw new Error(
-                `HTTP ${response.status}`
+                `HTTP ${response.status} - ${response.statusText}`
             );
 
         }
 
+        const text = await response.text();
 
-        database =
-            await response.json();
+        console.log("JSON response:", text.substring(0, 200));
 
+        try {
 
-        weapons =
-            getWeaponNames(
-                database
+            database = JSON.parse(text);
+
+        } catch (jsonError) {
+
+            throw new Error(
+                "The JSON file was found, but it contains invalid JSON. " +
+                jsonError.message
             );
 
+        }
+
+        if (!Array.isArray(database)) {
+
+            throw new Error(
+                "The JSON file loaded, but its main structure is not an array."
+            );
+
+        }
+
+        weapons = getWeaponNames(database);
 
         populateSelects();
 
-
         statusEl.textContent =
-
             `${database.length} records • ${weapons.length} weapons loaded`;
 
-
-        messageEl.style.display =
-            "block";
+        messageEl.style.display = "block";
 
         messageEl.className =
             "weapon-message";
@@ -964,22 +981,37 @@ async function loadData() {
         messageEl.textContent =
             "Select at least 2 weapons to search.";
 
+        console.log("Divine Weapon database loaded successfully.");
+        console.log("Records:", database.length);
+        console.log("Weapons:", weapons.length);
+
     }
 
     catch (error) {
 
-        console.error(error);
+        console.error("DIVINE WEAPON DATABASE ERROR:", error);
 
-
-        messageEl.style.display =
-            "block";
+        messageEl.style.display = "block";
 
         messageEl.className =
             "weapon-message error";
 
-        messageEl.textContent =
-            "Unable to load divineweapcollect_fixed.json. Make sure the HTML and JSON files are in the same folder and are being loaded through a web server.";
-
+        messageEl.innerHTML = `
+            <strong>Unable to load Divine Weapon database.</strong>
+            <br><br>
+            <strong>Error:</strong>
+            ${escapeHtml(error.message)}
+            <br><br>
+            <strong>Expected JSON location:</strong>
+            <br>
+            ${escapeHtml(
+                new URL(jsonFile, window.location.href).href
+            )}
+            <br><br>
+            Open the browser console with
+            <strong>F12 → Console</strong>
+            for more information.
+        `;
 
         statusEl.textContent =
             "Data loading failed";

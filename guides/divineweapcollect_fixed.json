@@ -1,5 +1,5 @@
-
- {
+[
+{
   "STAT": "Ultimate Attack (1)",
   "AMOUNT": 20,
   "WEAPON1": "Executioner",
@@ -3941,3 +3941,4 @@
   "WEAPON1": "Avenger's Greataxe",
   "WEAPON2": "Twin-wing Beam Sword"
  }
+]
