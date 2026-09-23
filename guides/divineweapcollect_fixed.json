@@ -1,0 +1,3943 @@
+
+ {
+  "STAT": "Ultimate Attack (1)",
+  "AMOUNT": 20,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Attack (1)",
+  "AMOUNT": 28.8,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Attack (1)",
+  "AMOUNT": 34.6,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Attack (1)",
+  "AMOUNT": 41.5,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Attack (1)",
+  "AMOUNT": 49.8,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Attack (1)",
+  "AMOUNT": 59.7,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Attack (1)",
+  "AMOUNT": 71.7,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Attack (1)",
+  "AMOUNT": 86,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Attack (1)",
+  "AMOUNT": 103.2,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Attack (2)",
+  "AMOUNT": 20,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Attack (2)",
+  "AMOUNT": 28.8,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Attack (2)",
+  "AMOUNT": 34.6,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Attack (2)",
+  "AMOUNT": 41.5,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Attack (2)",
+  "AMOUNT": 49.8,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Attack (2)",
+  "AMOUNT": 59.7,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Attack (2)",
+  "AMOUNT": 71.7,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Attack (2)",
+  "AMOUNT": 86,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Attack (2)",
+  "AMOUNT": 103.2,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (1)",
+  "AMOUNT": 3.5,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Muramasa",
+  "WEAPON4": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (1)",
+  "AMOUNT": 4.1,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Muramasa",
+  "WEAPON4": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (1)",
+  "AMOUNT": 5,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Muramasa",
+  "WEAPON4": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (1)",
+  "AMOUNT": 6,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Muramasa",
+  "WEAPON4": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (1)",
+  "AMOUNT": 7.2,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Muramasa",
+  "WEAPON4": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (1)",
+  "AMOUNT": 8.6,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Muramasa",
+  "WEAPON4": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (1)",
+  "AMOUNT": 10.3,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Muramasa",
+  "WEAPON4": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (1)",
+  "AMOUNT": 12.4,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Muramasa",
+  "WEAPON4": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (1)",
+  "AMOUNT": 14.9,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Muramasa",
+  "WEAPON4": "Glacion"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (1)",
+  "AMOUNT": 2.5,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (1)",
+  "AMOUNT": 3.6,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (1)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (1)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (1)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (1)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (1)",
+  "AMOUNT": 9,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (1)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (1)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate Defense (1)",
+  "AMOUNT": 3,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate Defense (1)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate Defense (1)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate Defense (1)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate Defense (1)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate Defense (1)",
+  "AMOUNT": 9,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate Defense (1)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate Defense (1)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate Defense (1)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate HP (1)",
+  "AMOUNT": 8,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate HP (1)",
+  "AMOUNT": 11.5,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate HP (1)",
+  "AMOUNT": 13.8,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate HP (1)",
+  "AMOUNT": 16.6,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate HP (1)",
+  "AMOUNT": 19.9,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate HP (1)",
+  "AMOUNT": 23.9,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate HP (1)",
+  "AMOUNT": 28.7,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate HP (1)",
+  "AMOUNT": 34.4,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate HP (1)",
+  "AMOUNT": 41.3,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (1)",
+  "AMOUNT": 2.5,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (1)",
+  "AMOUNT": 3.6,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (1)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (1)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (1)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (1)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (1)",
+  "AMOUNT": 9,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (1)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (1)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (2)",
+  "AMOUNT": 2.9,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (2)",
+  "AMOUNT": 3.5,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (2)",
+  "AMOUNT": 4.1,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (2)",
+  "AMOUNT": 5,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (2)",
+  "AMOUNT": 6,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (2)",
+  "AMOUNT": 7.2,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (2)",
+  "AMOUNT": 8.6,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (2)",
+  "AMOUNT": 10.3,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (2)",
+  "AMOUNT": 12.4,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (2)",
+  "AMOUNT": 3.6,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner",
+  "WEAPON3": "Plasma Edge"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (2)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner",
+  "WEAPON3": "Plasma Edge"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (2)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner",
+  "WEAPON3": "Plasma Edge"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (2)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner",
+  "WEAPON3": "Plasma Edge"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (2)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner",
+  "WEAPON3": "Plasma Edge"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (2)",
+  "AMOUNT": 9,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner",
+  "WEAPON3": "Plasma Edge"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (2)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner",
+  "WEAPON3": "Plasma Edge"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (2)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner",
+  "WEAPON3": "Plasma Edge"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (2)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner",
+  "WEAPON3": "Plasma Edge"
+ },
+ {
+  "STAT": "Ultimate HP (2)",
+  "AMOUNT": 8,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg"
+ },
+ {
+  "STAT": "Ultimate HP (2)",
+  "AMOUNT": 11.5,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg"
+ },
+ {
+  "STAT": "Ultimate HP (2)",
+  "AMOUNT": 13.8,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg"
+ },
+ {
+  "STAT": "Ultimate HP (2)",
+  "AMOUNT": 16.6,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg"
+ },
+ {
+  "STAT": "Ultimate HP (2)",
+  "AMOUNT": 19.9,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg"
+ },
+ {
+  "STAT": "Ultimate HP (2)",
+  "AMOUNT": 23.9,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg"
+ },
+ {
+  "STAT": "Ultimate HP (2)",
+  "AMOUNT": 28.7,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg"
+ },
+ {
+  "STAT": "Ultimate HP (2)",
+  "AMOUNT": 34.4,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg"
+ },
+ {
+  "STAT": "Ultimate HP (2)",
+  "AMOUNT": 41.3,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg"
+ },
+ {
+  "STAT": "Ultimate Defense (2)",
+  "AMOUNT": 3,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Defense (2)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Defense (2)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Defense (2)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Defense (2)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Defense (2)",
+  "AMOUNT": 9,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Defense (2)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Defense (2)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Defense (2)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Combo Triple Damage (1)",
+  "AMOUNT": 2.5,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Combo Triple Damage (1)",
+  "AMOUNT": 3.6,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Combo Triple Damage (1)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Combo Triple Damage (1)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Combo Triple Damage (1)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Combo Triple Damage (1)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Combo Triple Damage (1)",
+  "AMOUNT": 9,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Combo Triple Damage (1)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate Combo Triple Damage (1)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Solar Halo"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (1)",
+  "AMOUNT": 3,
+  "WEAPON1": "Red Dragon",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (1)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Red Dragon",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (1)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Red Dragon",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (1)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Red Dragon",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (1)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Red Dragon",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (1)",
+  "AMOUNT": 9,
+  "WEAPON1": "Red Dragon",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (1)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Red Dragon",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (1)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Red Dragon",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (1)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Red Dragon",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (3)",
+  "AMOUNT": 2.9,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shadow Thorn",
+  "WEAPON3": "Dragon's Eye"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (3)",
+  "AMOUNT": 3.5,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shadow Thorn",
+  "WEAPON3": "Dragon's Eye"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (3)",
+  "AMOUNT": 4.1,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shadow Thorn",
+  "WEAPON3": "Dragon's Eye"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (3)",
+  "AMOUNT": 5,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shadow Thorn",
+  "WEAPON3": "Dragon's Eye"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (3)",
+  "AMOUNT": 6,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shadow Thorn",
+  "WEAPON3": "Dragon's Eye"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (3)",
+  "AMOUNT": 7.2,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shadow Thorn",
+  "WEAPON3": "Dragon's Eye"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (3)",
+  "AMOUNT": 8.6,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shadow Thorn",
+  "WEAPON3": "Dragon's Eye"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (3)",
+  "AMOUNT": 10.3,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shadow Thorn",
+  "WEAPON3": "Dragon's Eye"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (3)",
+  "AMOUNT": 12.4,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shadow Thorn",
+  "WEAPON3": "Dragon's Eye"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (4)",
+  "AMOUNT": 2.9,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Grim Reaper",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (4)",
+  "AMOUNT": 3.5,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Grim Reaper",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (4)",
+  "AMOUNT": 4.1,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Grim Reaper",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (4)",
+  "AMOUNT": 5,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Grim Reaper",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (4)",
+  "AMOUNT": 6,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Grim Reaper",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (4)",
+  "AMOUNT": 7.2,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Grim Reaper",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (4)",
+  "AMOUNT": 8.6,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Grim Reaper",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (4)",
+  "AMOUNT": 10.3,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Grim Reaper",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (4)",
+  "AMOUNT": 12.4,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Grim Reaper",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (1)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (1)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (1)",
+  "AMOUNT": 9,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (1)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (1)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (1)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (1)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (1)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (1)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (1)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (1)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (1)",
+  "AMOUNT": 9,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (1)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (1)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (1)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (1)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (1)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (1)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Executioner"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (2)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (2)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (2)",
+  "AMOUNT": 9,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (2)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (2)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (2)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (2)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (2)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (2)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (2)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (2)",
+  "AMOUNT": 9,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (2)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (2)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (2)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (2)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (2)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (2)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (2)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (3)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (3)",
+  "AMOUNT": 9,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (3)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (3)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (3)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (3)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (3)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (3)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (3)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 9,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (2)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Archduke's Frost Blade",
+  "WEAPON3": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (2)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Archduke's Frost Blade",
+  "WEAPON3": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (2)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Archduke's Frost Blade",
+  "WEAPON3": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (2)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Archduke's Frost Blade",
+  "WEAPON3": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (2)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Archduke's Frost Blade",
+  "WEAPON3": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (2)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Archduke's Frost Blade",
+  "WEAPON3": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (2)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Archduke's Frost Blade",
+  "WEAPON3": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (2)",
+  "AMOUNT": 38.5,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Archduke's Frost Blade",
+  "WEAPON3": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (2)",
+  "AMOUNT": 46.2,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Archduke's Frost Blade",
+  "WEAPON3": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (3)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (3)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (3)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (3)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (3)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (3)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (3)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (3)",
+  "AMOUNT": 38.5,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (3)",
+  "AMOUNT": 46.2,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Defense (3)",
+  "AMOUNT": 9,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate Defense (3)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate Defense (3)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate Defense (3)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate Defense (3)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate Defense (3)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate Defense (3)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate Defense (3)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate Defense (3)",
+  "AMOUNT": 38.5,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate Defense (4)",
+  "AMOUNT": 9,
+  "WEAPON1": "Axe of the Azure Hero",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Defense (4)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Axe of the Azure Hero",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Defense (4)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Axe of the Azure Hero",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Defense (4)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Axe of the Azure Hero",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Defense (4)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Axe of the Azure Hero",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Defense (4)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Axe of the Azure Hero",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Defense (4)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Axe of the Azure Hero",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Defense (4)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Axe of the Azure Hero",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Defense (4)",
+  "AMOUNT": 38.5,
+  "WEAPON1": "Axe of the Azure Hero",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Defense (5)",
+  "AMOUNT": 9,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate Defense (5)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate Defense (5)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate Defense (5)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate Defense (5)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate Defense (5)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate Defense (5)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate Defense (5)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate Defense (5)",
+  "AMOUNT": 38.5,
+  "WEAPON1": "Rune Chakram of the Empress",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (4)",
+  "AMOUNT": 9,
+  "WEAPON1": "Whispering Shadow Dagger",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (4)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Whispering Shadow Dagger",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (4)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Whispering Shadow Dagger",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (4)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Whispering Shadow Dagger",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (4)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Whispering Shadow Dagger",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (4)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Whispering Shadow Dagger",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (4)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Whispering Shadow Dagger",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (4)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Whispering Shadow Dagger",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (4)",
+  "AMOUNT": 38.5,
+  "WEAPON1": "Whispering Shadow Dagger",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate HP (3)",
+  "AMOUNT": 23.9,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (3)",
+  "AMOUNT": 28.7,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (3)",
+  "AMOUNT": 34.4,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (3)",
+  "AMOUNT": 41.3,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (3)",
+  "AMOUNT": 49.5,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (3)",
+  "AMOUNT": 59.4,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (3)",
+  "AMOUNT": 71.3,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (3)",
+  "AMOUNT": 85.6,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (3)",
+  "AMOUNT": 102.7,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (4)",
+  "AMOUNT": 23.9,
+  "WEAPON1": "Katana of the Black Falcon",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (4)",
+  "AMOUNT": 28.7,
+  "WEAPON1": "Katana of the Black Falcon",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (4)",
+  "AMOUNT": 34.4,
+  "WEAPON1": "Katana of the Black Falcon",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (4)",
+  "AMOUNT": 41.3,
+  "WEAPON1": "Katana of the Black Falcon",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (4)",
+  "AMOUNT": 49.5,
+  "WEAPON1": "Katana of the Black Falcon",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (4)",
+  "AMOUNT": 59.4,
+  "WEAPON1": "Katana of the Black Falcon",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (4)",
+  "AMOUNT": 71.3,
+  "WEAPON1": "Katana of the Black Falcon",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (4)",
+  "AMOUNT": 85.6,
+  "WEAPON1": "Katana of the Black Falcon",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (4)",
+  "AMOUNT": 102.7,
+  "WEAPON1": "Katana of the Black Falcon",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (5)",
+  "AMOUNT": 28.7,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate HP (5)",
+  "AMOUNT": 34.4,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate HP (5)",
+  "AMOUNT": 41.3,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate HP (5)",
+  "AMOUNT": 49.5,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate HP (5)",
+  "AMOUNT": 59.4,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate HP (5)",
+  "AMOUNT": 71.3,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate HP (5)",
+  "AMOUNT": 85.6,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate HP (5)",
+  "AMOUNT": 102.7,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate HP (5)",
+  "AMOUNT": 123.3,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (5)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (5)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (5)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (5)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (5)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (5)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (5)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (5)",
+  "AMOUNT": 38.5,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (5)",
+  "AMOUNT": 46.2,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 9,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (2)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (3)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Epee-Fleur",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (3)",
+  "AMOUNT": 9,
+  "WEAPON1": "Epee-Fleur",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (3)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Epee-Fleur",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (3)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Epee-Fleur",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (3)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Epee-Fleur",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (3)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Epee-Fleur",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (3)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Epee-Fleur",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (3)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Epee-Fleur",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (3)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Epee-Fleur",
+  "WEAPON2": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (6)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (6)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (6)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (6)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (6)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (6)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (6)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (6)",
+  "AMOUNT": 38.5,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (6)",
+  "AMOUNT": 46.2,
+  "WEAPON1": "Plasma Edge",
+  "WEAPON2": "Epee-Fleur",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (4)",
+  "AMOUNT": 9,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (4)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (4)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (4)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (4)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (4)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (4)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (4)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate Combo Double Damage (4)",
+  "AMOUNT": 38.5,
+  "WEAPON1": "Dragon's Eye",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Tydal Wave"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (7)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (7)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (7)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (7)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (7)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (7)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (7)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (7)",
+  "AMOUNT": 38.5,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (7)",
+  "AMOUNT": 46.2,
+  "WEAPON1": "Archduke's Frost Blade",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (8)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (8)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (8)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (8)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (8)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (8)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (8)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (8)",
+  "AMOUNT": 38.5,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (8)",
+  "AMOUNT": 46.2,
+  "WEAPON1": "Sword Princess's Thunder Sword",
+  "WEAPON2": "Whispering Shadow Dagger",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (3)",
+  "AMOUNT": 9,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (3)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (3)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (3)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (3)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (3)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (3)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (3)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Counter Damage (3)",
+  "AMOUNT": 38.5,
+  "WEAPON1": "Guiding Sword Of Victory",
+  "WEAPON2": "Katana of the Black Falcon",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (4)",
+  "AMOUNT": 9,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (4)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (4)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (4)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (4)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (4)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (4)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (4)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate Skill Critical Damage (4)",
+  "AMOUNT": 38.5,
+  "WEAPON1": "Knight's War Hammer",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (9)",
+  "AMOUNT": 1,
+  "WEAPON1": "Katana of the Wyvern",
+  "WEAPON2": "Greatsword of the Fairy",
+  "WEAPON3": "Chakram of the Battle Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (9)",
+  "AMOUNT": 1.4,
+  "WEAPON1": "Katana of the Wyvern",
+  "WEAPON2": "Greatsword of the Fairy",
+  "WEAPON3": "Chakram of the Battle Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (9)",
+  "AMOUNT": 1.7,
+  "WEAPON1": "Katana of the Wyvern",
+  "WEAPON2": "Greatsword of the Fairy",
+  "WEAPON3": "Chakram of the Battle Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (9)",
+  "AMOUNT": 2.1,
+  "WEAPON1": "Katana of the Wyvern",
+  "WEAPON2": "Greatsword of the Fairy",
+  "WEAPON3": "Chakram of the Battle Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (9)",
+  "AMOUNT": 2.5,
+  "WEAPON1": "Katana of the Wyvern",
+  "WEAPON2": "Greatsword of the Fairy",
+  "WEAPON3": "Chakram of the Battle Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (9)",
+  "AMOUNT": 3,
+  "WEAPON1": "Katana of the Wyvern",
+  "WEAPON2": "Greatsword of the Fairy",
+  "WEAPON3": "Chakram of the Battle Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (9)",
+  "AMOUNT": 3.6,
+  "WEAPON1": "Katana of the Wyvern",
+  "WEAPON2": "Greatsword of the Fairy",
+  "WEAPON3": "Chakram of the Battle Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (9)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Katana of the Wyvern",
+  "WEAPON2": "Greatsword of the Fairy",
+  "WEAPON3": "Chakram of the Battle Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (9)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Katana of the Wyvern",
+  "WEAPON2": "Greatsword of the Fairy",
+  "WEAPON3": "Chakram of the Battle Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (10)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (10)",
+  "AMOUNT": 9,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (10)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (10)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (10)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (10)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (10)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (10)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (10)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate Attack (3)",
+  "AMOUNT": 28.8,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Rune Chakram of the Empress",
+  "WEAPON3": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Attack (3)",
+  "AMOUNT": 34.6,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Rune Chakram of the Empress",
+  "WEAPON3": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Attack (3)",
+  "AMOUNT": 41.5,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Rune Chakram of the Empress",
+  "WEAPON3": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Attack (3)",
+  "AMOUNT": 49.8,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Rune Chakram of the Empress",
+  "WEAPON3": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Attack (3)",
+  "AMOUNT": 59.7,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Rune Chakram of the Empress",
+  "WEAPON3": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Attack (3)",
+  "AMOUNT": 71.7,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Rune Chakram of the Empress",
+  "WEAPON3": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Attack (3)",
+  "AMOUNT": 86,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Rune Chakram of the Empress",
+  "WEAPON3": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Attack (3)",
+  "AMOUNT": 103.2,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Rune Chakram of the Empress",
+  "WEAPON3": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate Attack (3)",
+  "AMOUNT": 123.8,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Rune Chakram of the Empress",
+  "WEAPON3": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (11)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (11)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (11)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (11)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (11)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (11)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (11)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (11)",
+  "AMOUNT": 38.5,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (11)",
+  "AMOUNT": 46.2,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Axe of the Azure Hero",
+  "WEAPON3": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Defense (6)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate Defense (6)",
+  "AMOUNT": 9,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate Defense (6)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate Defense (6)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate Defense (6)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate Defense (6)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate Defense (6)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate Defense (6)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate Defense (6)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Guiding Sword Of Victory"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (12)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (12)",
+  "AMOUNT": 9,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (12)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (12)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (12)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (12)",
+  "AMOUNT": 18.6,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (12)",
+  "AMOUNT": 22.3,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (12)",
+  "AMOUNT": 26.7,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (12)",
+  "AMOUNT": 32.1,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (6)",
+  "AMOUNT": 19.9,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (6)",
+  "AMOUNT": 23.9,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (6)",
+  "AMOUNT": 28.7,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (6)",
+  "AMOUNT": 34.4,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (6)",
+  "AMOUNT": 41.3,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (6)",
+  "AMOUNT": 49.5,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (6)",
+  "AMOUNT": 59.4,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (6)",
+  "AMOUNT": 71.3,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate HP (6)",
+  "AMOUNT": 85.6,
+  "WEAPON1": "Twin-wing Beam Sword",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate Attack (4)",
+  "AMOUNT": 20,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate Attack (4)",
+  "AMOUNT": 28.8,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate Attack (4)",
+  "AMOUNT": 34.6,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate Attack (4)",
+  "AMOUNT": 41.5,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate Attack (4)",
+  "AMOUNT": 49.8,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate Attack (4)",
+  "AMOUNT": 59.7,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate Attack (4)",
+  "AMOUNT": 71.7,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate Attack (4)",
+  "AMOUNT": 86,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate Attack (4)",
+  "AMOUNT": 103.2,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star"
+ },
+ {
+  "STAT": "Ultimate Defense (7)",
+  "AMOUNT": 3,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Defense (7)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Defense (7)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Defense (7)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Defense (7)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Defense (7)",
+  "AMOUNT": 9,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Defense (7)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Defense (7)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Defense (7)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (13)",
+  "AMOUNT": 3,
+  "WEAPON1": "Durandal",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (13)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Durandal",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (13)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Durandal",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (13)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Durandal",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (13)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Durandal",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (13)",
+  "AMOUNT": 9,
+  "WEAPON1": "Durandal",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (13)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Durandal",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (13)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Durandal",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (13)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Durandal",
+  "WEAPON2": "Grim Reaper"
+ },
+ {
+  "STAT": "Ultimate HP (7)",
+  "AMOUNT": 8,
+  "WEAPON1": "Shooting Star",
+  "WEAPON2": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate HP (7)",
+  "AMOUNT": 11.5,
+  "WEAPON1": "Shooting Star",
+  "WEAPON2": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate HP (7)",
+  "AMOUNT": 13.8,
+  "WEAPON1": "Shooting Star",
+  "WEAPON2": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate HP (7)",
+  "AMOUNT": 16.6,
+  "WEAPON1": "Shooting Star",
+  "WEAPON2": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate HP (7)",
+  "AMOUNT": 19.9,
+  "WEAPON1": "Shooting Star",
+  "WEAPON2": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate HP (7)",
+  "AMOUNT": 23.9,
+  "WEAPON1": "Shooting Star",
+  "WEAPON2": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate HP (7)",
+  "AMOUNT": 28.7,
+  "WEAPON1": "Shooting Star",
+  "WEAPON2": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate HP (7)",
+  "AMOUNT": 34.4,
+  "WEAPON1": "Shooting Star",
+  "WEAPON2": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate HP (7)",
+  "AMOUNT": 41.3,
+  "WEAPON1": "Shooting Star",
+  "WEAPON2": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Defense (8)",
+  "AMOUNT": 3,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "World Breaker"
+ },
+ {
+  "STAT": "Ultimate Defense (8)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "World Breaker"
+ },
+ {
+  "STAT": "Ultimate Defense (8)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "World Breaker"
+ },
+ {
+  "STAT": "Ultimate Defense (8)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "World Breaker"
+ },
+ {
+  "STAT": "Ultimate Defense (8)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "World Breaker"
+ },
+ {
+  "STAT": "Ultimate Defense (8)",
+  "AMOUNT": 9,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "World Breaker"
+ },
+ {
+  "STAT": "Ultimate Defense (8)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "World Breaker"
+ },
+ {
+  "STAT": "Ultimate Defense (8)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "World Breaker"
+ },
+ {
+  "STAT": "Ultimate Defense (8)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Shadow Thorn",
+  "WEAPON2": "World Breaker"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (14)",
+  "AMOUNT": 3,
+  "WEAPON1": "Grim Reaper",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (14)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Grim Reaper",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (14)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Grim Reaper",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (14)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Grim Reaper",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (14)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Grim Reaper",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (14)",
+  "AMOUNT": 9,
+  "WEAPON1": "Grim Reaper",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (14)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Grim Reaper",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (14)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Grim Reaper",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (14)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Grim Reaper",
+  "WEAPON2": "Blaze Fury"
+ },
+ {
+  "STAT": "Ultimate HP (8)",
+  "AMOUNT": 8,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate HP (8)",
+  "AMOUNT": 11.5,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate HP (8)",
+  "AMOUNT": 13.8,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate HP (8)",
+  "AMOUNT": 16.6,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate HP (8)",
+  "AMOUNT": 19.9,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate HP (8)",
+  "AMOUNT": 23.9,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate HP (8)",
+  "AMOUNT": 28.7,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate HP (8)",
+  "AMOUNT": 34.4,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate HP (8)",
+  "AMOUNT": 41.3,
+  "WEAPON1": "Evil Moon",
+  "WEAPON2": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (5)",
+  "AMOUNT": 2.9,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Dragon's Eye",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (5)",
+  "AMOUNT": 3.5,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Dragon's Eye",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (5)",
+  "AMOUNT": 4.1,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Dragon's Eye",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (5)",
+  "AMOUNT": 5,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Dragon's Eye",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (5)",
+  "AMOUNT": 6,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Dragon's Eye",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (5)",
+  "AMOUNT": 7.2,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Dragon's Eye",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (5)",
+  "AMOUNT": 8.6,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Dragon's Eye",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (5)",
+  "AMOUNT": 10.3,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Dragon's Eye",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (5)",
+  "AMOUNT": 12.4,
+  "WEAPON1": "Caladbolg",
+  "WEAPON2": "Dragon's Eye",
+  "WEAPON3": "Frostfang"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (6)",
+  "AMOUNT": 2.9,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (6)",
+  "AMOUNT": 3.5,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (6)",
+  "AMOUNT": 4.1,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (6)",
+  "AMOUNT": 5,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (6)",
+  "AMOUNT": 6,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (6)",
+  "AMOUNT": 7.2,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (6)",
+  "AMOUNT": 8.6,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (6)",
+  "AMOUNT": 10.3,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (6)",
+  "AMOUNT": 12.4,
+  "WEAPON1": "Nidhogg",
+  "WEAPON2": "Caladbolg",
+  "WEAPON3": "Shadow Thorn"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (7)",
+  "AMOUNT": 2.9,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (7)",
+  "AMOUNT": 3.5,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (7)",
+  "AMOUNT": 4.1,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (7)",
+  "AMOUNT": 5,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (7)",
+  "AMOUNT": 6,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (7)",
+  "AMOUNT": 7.2,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (7)",
+  "AMOUNT": 8.6,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (7)",
+  "AMOUNT": 10.3,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (7)",
+  "AMOUNT": 12.4,
+  "WEAPON1": "World Breaker",
+  "WEAPON2": "Shooting Star",
+  "WEAPON3": "Evil Moon"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (8)",
+  "AMOUNT": 2.9,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (8)",
+  "AMOUNT": 3.5,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (8)",
+  "AMOUNT": 4.1,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (8)",
+  "AMOUNT": 5,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (8)",
+  "AMOUNT": 6,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (8)",
+  "AMOUNT": 7.2,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (8)",
+  "AMOUNT": 8.6,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (8)",
+  "AMOUNT": 10.3,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Damage Increase (8)",
+  "AMOUNT": 12.4,
+  "WEAPON1": "Blaze Fury",
+  "WEAPON2": "Frostfang",
+  "WEAPON3": "Durandal"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (3)",
+  "AMOUNT": 2.5,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (3)",
+  "AMOUNT": 3.6,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (3)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (3)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (3)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (3)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (3)",
+  "AMOUNT": 9,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (3)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (3)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Executioner",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Attack (5)",
+  "AMOUNT": 28.8,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Attack (5)",
+  "AMOUNT": 34.6,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Attack (5)",
+  "AMOUNT": 41.5,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Attack (5)",
+  "AMOUNT": 49.8,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Attack (5)",
+  "AMOUNT": 59.7,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Attack (5)",
+  "AMOUNT": 71.7,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Attack (5)",
+  "AMOUNT": 86,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Attack (5)",
+  "AMOUNT": 103.2,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate Attack (5)",
+  "AMOUNT": 123.8,
+  "WEAPON1": "Glacion",
+  "WEAPON2": "Solar Halo",
+  "WEAPON3": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate HP (9)",
+  "AMOUNT": 8,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate HP (9)",
+  "AMOUNT": 11.5,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate HP (9)",
+  "AMOUNT": 13.8,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate HP (9)",
+  "AMOUNT": 16.6,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate HP (9)",
+  "AMOUNT": 19.9,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate HP (9)",
+  "AMOUNT": 23.9,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate HP (9)",
+  "AMOUNT": 28.7,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate HP (9)",
+  "AMOUNT": 34.4,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate HP (9)",
+  "AMOUNT": 41.3,
+  "WEAPON1": "Muramasa",
+  "WEAPON2": "Aegis Blade"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (15)",
+  "AMOUNT": 3,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (15)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (15)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (15)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (15)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (15)",
+  "AMOUNT": 9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (15)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (15)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (15)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Axe of the Azure Hero"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (16)",
+  "AMOUNT": 3,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (16)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (16)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (16)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (16)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (16)",
+  "AMOUNT": 9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (16)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (16)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (16)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Knight's War Hammer"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (17)",
+  "AMOUNT": 3,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (17)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (17)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (17)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (17)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (17)",
+  "AMOUNT": 9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (17)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (17)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (17)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Archduke's Frost Blade"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (18)",
+  "AMOUNT": 3,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (18)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (18)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (18)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (18)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (18)",
+  "AMOUNT": 9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (18)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (18)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (18)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Whispering Shadow Dagger"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (19)",
+  "AMOUNT": 3,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (19)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (19)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (19)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (19)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (19)",
+  "AMOUNT": 9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (19)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (19)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (19)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Rune Chakram of the Empress"
+ },
+ {
+  "STAT": "Ultimate HP (10)",
+  "AMOUNT": 11.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Guiding Sword Of Victory",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (10)",
+  "AMOUNT": 13.8,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Guiding Sword Of Victory",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (10)",
+  "AMOUNT": 16.6,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Guiding Sword Of Victory",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (10)",
+  "AMOUNT": 19.9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Guiding Sword Of Victory",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (10)",
+  "AMOUNT": 23.9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Guiding Sword Of Victory",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (10)",
+  "AMOUNT": 28.7,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Guiding Sword Of Victory",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (10)",
+  "AMOUNT": 34.4,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Guiding Sword Of Victory",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (10)",
+  "AMOUNT": 41.3,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Guiding Sword Of Victory",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate HP (10)",
+  "AMOUNT": 49.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Guiding Sword Of Victory",
+  "WEAPON3": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (2)",
+  "AMOUNT": 2.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (2)",
+  "AMOUNT": 3.6,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (2)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (2)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (2)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (2)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (2)",
+  "AMOUNT": 9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (2)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Normal Attack Damage (2)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Katana of the Black Falcon"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (4)",
+  "AMOUNT": 2.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (4)",
+  "AMOUNT": 3.6,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (4)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (4)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (4)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (4)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (4)",
+  "AMOUNT": 9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (4)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate Skill Damage (4)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Sword Princess's Thunder Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (20)",
+  "AMOUNT": 3,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Twin-wing Beam Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (20)",
+  "AMOUNT": 4.3,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Twin-wing Beam Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (20)",
+  "AMOUNT": 5.2,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Twin-wing Beam Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (20)",
+  "AMOUNT": 6.2,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Twin-wing Beam Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (20)",
+  "AMOUNT": 7.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Twin-wing Beam Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (20)",
+  "AMOUNT": 9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Twin-wing Beam Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (20)",
+  "AMOUNT": 10.7,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Twin-wing Beam Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (20)",
+  "AMOUNT": 12.9,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Twin-wing Beam Sword"
+ },
+ {
+  "STAT": "Ultimate ATK/HP/DEF (20)",
+  "AMOUNT": 15.5,
+  "WEAPON1": "Avenger's Greataxe",
+  "WEAPON2": "Twin-wing Beam Sword"
+ }

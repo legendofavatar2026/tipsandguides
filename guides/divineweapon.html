@@ -1,110 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divine Weapon Combination Finder | Legend of Avatar Guide</title>
 
-<title>Legend of Avatar Divine Weapon Guide (2026) | Skills, Upgrades & Builds</title>
+<meta name="description" content="Find Divine Weapon combinations in Legend of Avatar. Select up to four Divine Weapons to discover combinations, stats, and available values.">
 
-<meta name="description" content="Complete Legend of Avatar Divine Weapon guide covering Divine Weapon skills, upgrades, recommended choices, farming methods, and strategies to maximize your power progression.">
-
-<meta name="keywords" content="Legend of Avatar Divine Weapon, Legend of Avatar Divine Weapon Guide, Legend of Avatar weapon skills, Legend of Avatar Divine Weapon upgrade, Legend of Avatar build guide, Legend of Avatar progression guide">
+<meta name="keywords" content="Legend of Avatar Divine Weapon, Divine Weapon combinations, Legend of Avatar weapon combination, Divine Weapon guide, Legend of Avatar guide">
 
 <meta name="author" content="Legend of Avatar Fan Guide">
 
-<meta property="og:title" content="Legend of Avatar Divine Weapon Guide (2026) | Skills, Upgrades & Builds">
+<meta property="og:title" content="Divine Weapon Combination Finder | Legend of Avatar Guide">
 
-<meta property="og:description" content="Learn how Divine Weapons work in Legend of Avatar, including skills, upgrades, recommendations, and progression strategies.">
+<meta property="og:description" content="Find Divine Weapon combinations and stats in Legend of Avatar by selecting up to four weapons.">
 
 <meta property="og:type" content="website">
 
-<meta property="og:url" content="https://legendofavatar2026.github.io/tipsandguides/guides/divineweapon.html">
+<meta property="og:url" content="https://legendofavatar2026.github.io/tipsandguides/guides/divineweaponfinder.html">
 
-<meta property="og:image" content="https://legendofavatar2026.github.io/tipsandguides/divineweapbanner.png">
+<meta property="og:image" content="https://legendofavatar2026.github.io/tipsandguides/giftcodesbanner.png">
 
-<link rel="canonical" href="https://legendofavatar2026.github.io/tipsandguides/guides/divineweapon.html">
+<link rel="canonical" href="https://legendofavatar2026.github.io/tipsandguides/guides/divineweaponfinder.html">
 
 <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
-<link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+
+.weapon-finder {
+    max-width: 900px;
+    margin: auto;
+}
+
+.weapon-select-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.weapon-select-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.weapon-select-box select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: white;
+    font-size: 15px;
+}
+
+.weapon-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.weapon-status {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.weapon-clear {
+    padding: 9px 16px;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.weapon-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 6px;
+    background: rgba(128, 128, 128, 0.1);
+}
+
+.weapon-message.error {
+    border: 1px solid #d9534f;
+    color: #d9534f;
+}
+
+.weapon-result {
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 8px;
+    background: rgba(128, 128, 128, 0.08);
+}
+
+.weapon-result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.weapon-stat {
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+.weapon-amounts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.weapon-amount {
+    padding: 4px 8px;
+    border-radius: 5px;
+    background: rgba(128, 128, 128, 0.15);
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.weapon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.weapon-item {
+    padding: 7px 10px;
+    border-radius: 5px;
+    background: rgba(128, 128, 128, 0.12);
+    font-size: 0.9rem;
+}
+
+.weapon-number {
+    opacity: 0.6;
+    margin-right: 4px;
+}
+
+.weapon-count {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+    .weapon-select-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .weapon-result-header {
+        flex-direction: column;
+    }
+
+    .weapon-controls {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .weapon-clear {
+        width: 100%;
+    }
+
+}
+
+</style>
 
 </head>
 
+
 <body>
 
-<div class="guide-container">
+<header>
 
-<header class="guide-header">
-
-<a href="../index.html" class="back-btn">
-← Back to Home
-</a>
-
-<h1>Guide Title</h1>
+<h1>Divine Weapon Combination Finder</h1>
 
 <p>
-Updated July 2026
+Find Divine Weapon combinations by selecting two or more weapons.
+You can select up to four weapons to narrow down the results.
 </p>
 
 </header>
 
-<section class="guide-section">
 
-<h2>Introduction</h2>
+<div class="guide-section weapon-finder">
 
-<p>
-
-Write your guide here.
-
-</p>
-
-</section>
-
-<section class="guide-section">
-
-<h2>Recommended Build</h2>
-
-<ul>
-
-<li>Avatar</li>
-
-<li>Skill</li>
-
-<li>Pet</li>
-
-<li>Relic</li>
-
-<li>Rune</li>
-
-</ul>
-
-</section>
-
-<img
-src="../images/divineweapon.png"
-class="guide-image">
-
-<section class="guide-section">
-
-<h2>Tips</h2>
+<h2>⚔️ Find a Combination</h2>
 
 <p>
-
-Add tips here.
-
+Select at least <strong>2 Divine Weapons</strong>.
+The finder will show every combination containing all selected weapons.
 </p>
 
-</section>
 
-<footer class="site-footer">
-    <p>
-        Fan-made guide. Not affiliated with the official game or publisher.
-    </p>
-</footer>
+<div class="weapon-select-grid">
+
+<div class="weapon-select-box">
+
+<label for="weapon1">
+Weapon 1
+</label>
+
+<select id="weapon1">
+
+<option value="">
+-- Select Weapon --
+</option>
+
+</select>
 
 </div>
 
-<script src="../js/guide.js"></script>
+
+<div class="weapon-select-box">
+
+<label for="weapon2">
+Weapon 2
+</label>
+
+<select id="weapon2">
+
+<option value="">
+-- Select Weapon --
+</option>
+
+</select>
+
+</div>
+
+
+<div class="weapon-select-box">
+
+<label for="weapon3">
+Weapon 3
+</label>
+
+<select id="weapon3">
+
+<option value="">
+-- Select Weapon --
+</option>
+
+</select>
+
+</div>
+
+
+<div class="weapon-select-box">
+
+<label for="weapon4">
+Weapon 4
+</label>
+
+<select id="weapon4">
+
+<option value="">
+-- Select Weapon --
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<div class="weapon-controls">
+
+<div id="status" class="weapon-status">
+
+Loading weapon data...
+
+</div>
+
+
+<button
+id="clearBtn"
+type="button"
+class="weapon-clear">
+
+Clear Selection
+
+</button>
+
+</div>
+
+
+<div
+id="message"
+class="weapon-message">
+
+Loading Divine Weapon data...
+
+</div>
+
+
+<div id="results"></div>
+
+</div>
+
+
+<div class="guide-section weapon-finder">
+
+<h2>ℹ️ How It Works</h2>
+
+<ul style="padding-left:25px;line-height:2;">
+
+<li>
+Select at least <strong>2 weapons</strong> to begin searching.
+</li>
+
+<li>
+Selecting a <strong>third or fourth weapon</strong> further narrows the results.
+</li>
+
+<li>
+Only combinations containing <strong>all selected weapons</strong> are displayed.
+</li>
+
+<li>
+The result shows the corresponding <strong>stat</strong>, available <strong>amount values</strong>, and all weapons in that combination.
+</li>
+
+<li>
+Weapon selections cannot be duplicated.
+</li>
+
+<li>
+No combination data is displayed until you make a selection.
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide-section weapon-finder">
+
+<h2>📌 Notes</h2>
+
+<ul style="padding-left:25px;line-height:2;">
+
+<li>
+The finder uses the Divine Weapon combination database.
+</li>
+
+<li>
+Some combinations may contain fewer than four weapons.
+</li>
+
+<li>
+Selecting four weapons only returns combinations containing all four selected weapons.
+</li>
+
+<li>
+Results are grouped together when the same weapon combination and stat have multiple amount values.
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide-section"
+style="max-width:900px;margin:30px auto;text-align:center;">
+
+<p>
+<strong>Last Updated:</strong> September 23, 2026
+</p>
+
+<p>
+This tool will be updated as additional Divine Weapon combinations become available.
+</p>
+
+</div>
+
+
+<footer class="site-footer">
+
+<p>
+Fan-made guide. Not affiliated with the official game or publisher.
+</p>
+
+<a href="../index.html" class="footer-btn">
+← Back to Home
+</a>
+
+</footer>
+
+
+<script src="/js/script.js"></script>
+
+
+<script>
+
+/* =========================================
+   DATABASE
+========================================= */
+
+let database = [];
+
+let weapons = [];
+
+
+/* =========================================
+   SELECTORS
+========================================= */
+
+const selects = [
+
+    document.getElementById("weapon1"),
+
+    document.getElementById("weapon2"),
+
+    document.getElementById("weapon3"),
+
+    document.getElementById("weapon4")
+
+];
+
+
+const statusEl =
+    document.getElementById("status");
+
+const messageEl =
+    document.getElementById("message");
+
+const resultsEl =
+    document.getElementById("results");
+
+
+/* =========================================
+   GET WEAPON NAMES
+========================================= */
+
+function getWeaponNames(rows) {
+
+    const set = new Set();
+
+    rows.forEach(row => {
+
+        /*
+         * The database contains up to
+         * four weapons per combination.
+         */
+
+        for (let i = 1; i <= 4; i++) {
+
+            const value =
+                row["WEAPON" + i];
+
+            if (
+                value &&
+                String(value).trim()
+            ) {
+
+                set.add(
+                    String(value).trim()
+                );
+
+            }
+
+        }
+
+    });
+
+    return [...set].sort(
+        (a, b) => a.localeCompare(b)
+    );
+
+}
+
+
+/* =========================================
+   POPULATE SELECT BOXES
+========================================= */
+
+function populateSelects() {
+
+    selects.forEach(select => {
+
+        select.innerHTML =
+            '<option value="">-- Select Weapon --</option>';
+
+        weapons.forEach(weapon => {
+
+            const option =
+                document.createElement("option");
+
+            option.value = weapon;
+
+            option.textContent = weapon;
+
+            select.appendChild(option);
+
+        });
+
+    });
+
+    updateDisabledOptions();
+
+}
+
+
+/* =========================================
+   PREVENT DUPLICATES
+========================================= */
+
+function updateDisabledOptions() {
+
+    const selected =
+        selects
+            .map(select => select.value)
+            .filter(Boolean);
+
+
+    selects.forEach(select => {
+
+        [...select.options].forEach(option => {
+
+            if (!option.value) {
+                return;
+            }
+
+            option.disabled =
+                selected.includes(option.value) &&
+                option.value !== select.value;
+
+        });
+
+    });
+
+}
+
+
+/* =========================================
+   GET SELECTED WEAPONS
+========================================= */
+
+function selectedWeapons() {
+
+    return selects
+        .map(select => select.value)
+        .filter(Boolean);
+
+}
+
+
+/* =========================================
+   GET WEAPONS FROM ROW
+========================================= */
+
+function getRowWeapons(row) {
+
+    const result = [];
+
+    for (let i = 1; i <= 4; i++) {
+
+        const value =
+            row["WEAPON" + i];
+
+        if (
+            value &&
+            String(value).trim()
+        ) {
+
+            result.push(
+                String(value).trim()
+            );
+
+        }
+
+    }
+
+    return result;
+
+}
+
+
+/* =========================================
+   CHECK MATCH
+========================================= */
+
+function combinationContains(
+    row,
+    selected
+) {
+
+    const rowWeapons =
+        getRowWeapons(row);
+
+    return selected.every(
+        weapon =>
+            rowWeapons.includes(weapon)
+    );
+
+}
+
+
+/* =========================================
+   GROUP RESULTS
+========================================= */
+
+function groupMatchingRows(rows) {
+
+    const groups = new Map();
+
+
+    rows.forEach(row => {
+
+        const rowWeapons =
+            getRowWeapons(row);
+
+
+        const key = [
+
+            row.STAT || "",
+
+            ...rowWeapons
+
+        ].join("|||");
+
+
+        if (!groups.has(key)) {
+
+            groups.set(key, {
+
+                stat:
+                    row.STAT || "",
+
+                weapons:
+                    rowWeapons,
+
+                amounts: []
+
+            });
+
+        }
+
+
+        const amount =
+            row.AMOUNT;
+
+
+        if (
+            amount !== undefined &&
+            amount !== null
+        ) {
+
+            groups
+                .get(key)
+                .amounts
+                .push(amount);
+
+        }
+
+    });
+
+
+    return [...groups.values()];
+
+}
+
+
+/* =========================================
+   FORMAT AMOUNT
+========================================= */
+
+function formatAmount(amount) {
+
+    const number =
+        Number(amount);
+
+
+    if (
+        !Number.isFinite(number)
+    ) {
+
+        return String(amount);
+
+    }
+
+
+    return `${number}%`;
+
+}
+
+
+/* =========================================
+   DISPLAY RESULTS
+========================================= */
+
+function render() {
+
+    const selected =
+        selectedWeapons();
+
+
+    updateDisabledOptions();
+
+
+    /*
+     * Don't display any combinations
+     * until at least two weapons
+     * are selected.
+     */
+
+    if (selected.length < 2) {
+
+        resultsEl.innerHTML = "";
+
+        messageEl.style.display =
+            "block";
+
+        messageEl.className =
+            "weapon-message";
+
+        messageEl.textContent =
+            "Select at least 2 weapons to search.";
+
+        statusEl.textContent =
+            `${selected.length}/2 minimum selected`;
+
+        return;
+
+    }
+
+
+    /*
+     * Find matching records.
+     */
+
+    const matchingRows =
+        database.filter(row =>
+            combinationContains(
+                row,
+                selected
+            )
+        );
+
+
+    /*
+     * Group duplicate stat/
+     * combination entries.
+     */
+
+    const groups =
+        groupMatchingRows(
+            matchingRows
+        );
+
+
+    statusEl.innerHTML =
+
+        `<span class="weapon-count">
+            ${groups.length}
+        </span>
+        matching combination(s)`;
+
+
+    /*
+     * No results.
+     */
+
+    if (!groups.length) {
+
+        resultsEl.innerHTML = "";
+
+        messageEl.style.display =
+            "block";
+
+        messageEl.className =
+            "weapon-message";
+
+        messageEl.textContent =
+            "No combination was found containing all selected weapons.";
+
+        return;
+
+    }
+
+
+    /*
+     * Results found.
+     */
+
+    messageEl.style.display =
+        "none";
+
+
+    resultsEl.innerHTML =
+        groups.map(group => {
+
+
+            const weaponHtml =
+                group.weapons
+                    .map(
+                        (weapon, index) => `
+
+                        <span class="weapon-item">
+
+                            <span class="weapon-number">
+                                ${index + 1}.
+                            </span>
+
+                            ${escapeHtml(weapon)}
+
+                        </span>
+
+                        `
+                    )
+                    .join("");
+
+
+            const amountsHtml =
+                group.amounts
+                    .map(
+                        amount => `
+
+                        <span class="weapon-amount">
+                            ${formatAmount(amount)}
+                        </span>
+
+                        `
+                    )
+                    .join("");
+
+
+            return `
+
+                <div class="weapon-result">
+
+                    <div class="weapon-result-header">
+
+                        <div class="weapon-stat">
+
+                            ${escapeHtml(
+                                group.stat
+                            )}
+
+                        </div>
+
+
+                        <div class="weapon-amounts">
+
+                            ${amountsHtml}
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="weapon-list">
+
+                        ${weaponHtml}
+
+                    </div>
+
+                </div>
+
+            `;
+
+        }).join("");
+
+}
+
+
+/* =========================================
+   ESCAPE HTML
+========================================= */
+
+function escapeHtml(value) {
+
+    return String(value)
+
+        .replaceAll(
+            "&",
+            "&amp;"
+        )
+
+        .replaceAll(
+            "<",
+            "&lt;"
+        )
+
+        .replaceAll(
+            ">",
+            "&gt;"
+        )
+
+        .replaceAll(
+            '"',
+            "&quot;"
+        )
+
+        .replaceAll(
+            "'",
+            "&#039;"
+        );
+
+}
+
+
+/* =========================================
+   LOAD DATABASE
+========================================= */
+
+async function loadData() {
+
+    try {
+
+        const response =
+            await fetch(
+                "guides/divineweapcollect_fixed.json",
+                {
+                    cache: "no-store"
+                }
+            );
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                `HTTP ${response.status}`
+            );
+
+        }
+
+
+        database =
+            await response.json();
+
+
+        weapons =
+            getWeaponNames(
+                database
+            );
+
+
+        populateSelects();
+
+
+        statusEl.textContent =
+
+            `${database.length} records • ${weapons.length} weapons loaded`;
+
+
+        messageEl.style.display =
+            "block";
+
+        messageEl.className =
+            "weapon-message";
+
+        messageEl.textContent =
+            "Select at least 2 weapons to search.";
+
+    }
+
+    catch (error) {
+
+        console.error(error);
+
+
+        messageEl.style.display =
+            "block";
+
+        messageEl.className =
+            "weapon-message error";
+
+        messageEl.textContent =
+            "Unable to load divineweapcollect_fixed.json. Make sure the HTML and JSON files are in the same folder and are being loaded through a web server.";
+
+
+        statusEl.textContent =
+            "Data loading failed";
+
+    }
+
+}
+
+
+/* =========================================
+   CHANGE EVENTS
+========================================= */
+
+selects.forEach(select => {
+
+    select.addEventListener(
+        "change",
+        render
+    );
+
+});
+
+
+/* =========================================
+   CLEAR
+========================================= */
+
+document
+    .getElementById("clearBtn")
+    .addEventListener(
+        "click",
+        () => {
+
+            selects.forEach(
+                select =>
+                    select.value = ""
+            );
+
+
+            updateDisabledOptions();
+
+            render();
+
+        }
+    );
+
+
+/* =========================================
+   START
+========================================= */
+
+loadData();
+
+</script>
 
 </body>
 
