@@ -12,7 +12,7 @@ body{
 
     background:
         linear-gradient(rgba(10,10,15,0.60), rgba(10,10,15,0.60)),
-        url("../nightwalker.png");
+        url("../halloween_bg.png");
 
     background-size:cover;
     background-position:center;
@@ -24,7 +24,7 @@ body{
     body{
         background:
             linear-gradient(rgba(10,10,15,0.60), rgba(10,10,15,0.60)),
-            url("../websitebg-NWMobile.png");
+            url("../halloween_bg_portrait.png");
 
         background-attachment:scroll;
     }
@@ -561,72 +561,69 @@ width:100%;
 
 .sparkle{
     position:absolute;
-    top:-40px;
-    width:14px;
-    height:18px;
+    left:-80px;
 
-    background:#d88932;
+    font-size:28px;
+    line-height:1;
 
-    border-radius:70% 0 70% 0;
+    color:#111;
 
     opacity:0;
-    animation:fall-leaf 15s linear forwards;
+
+    animation:fly-bat var(--duration) linear forwards;
 }
 
-/* Leaf vein */
-.sparkle::before{
-    content:"";
-    position:absolute;
-    width:2px;
-    height:14px;
-    background:rgba(90,45,15,.45);
-
-    left:50%;
-    top:2px;
-
-    transform:translateX(-50%) rotate(25deg);
-}
-
-/* Small stem */
-.sparkle::after{
-    content:"";
-    position:absolute;
-    width:5px;
-    height:2px;
-    background:#76502d;
-
-    top:-2px;
-    right:-2px;
-
-    transform:rotate(-25deg);
-}
-
-@keyframes fall-leaf{
+@keyframes fly-bat{
 
     0%{
-        transform:translateY(-30px) translateX(0) rotate(0deg);
+        transform:
+            translateX(-80px)
+            translateY(0)
+            scale(var(--size))
+            rotate(-5deg);
+
         opacity:0;
     }
 
-    10%{
-        opacity:.9;
+    8%{
+        opacity:.95;
     }
 
-    30%{
-        transform:translateY(30vh) translateX(25px) rotate(100deg);
+    25%{
+        transform:
+            translateX(25vw)
+            translateY(-40px)
+            scale(var(--size))
+            rotate(5deg);
     }
 
-    55%{
-        transform:translateY(55vh) translateX(-25px) rotate(200deg);
+    50%{
+        transform:
+            translateX(50vw)
+            translateY(35px)
+            scale(var(--size))
+            rotate(-4deg);
     }
 
-    80%{
-        transform:translateY(80vh) translateX(30px) rotate(300deg);
+    75%{
+        transform:
+            translateX(75vw)
+            translateY(-30px)
+            scale(var(--size))
+            rotate(4deg);
+    }
+
+    92%{
+        opacity:.95;
     }
 
     100%{
-        transform:translateY(110vh) translateX(-15px) rotate(360deg);
+        transform:
+            translateX(110vw)
+            translateY(20px)
+            scale(var(--size))
+            rotate(-2deg);
+
         opacity:0;
     }
-
 }

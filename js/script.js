@@ -41,28 +41,36 @@ window.addEventListener("click", (e) => {
     }
 });
 
-const sparkleContainer = document.getElementById("sparkle-container");
+const batContainer = document.getElementById("sparkle-container");
 
-function createSparkle(){
+function createBat(){
 
-    const sparkle = document.createElement("div");
-    sparkle.className = "sparkle";
+    const bat = document.createElement("div");
 
-    sparkle.style.left = Math.random() * window.innerWidth + "px";
-    sparkle.style.top = Math.random() * window.innerHeight + "px";
+    bat.className = "sparkle";
+    bat.textContent = "🦇";
 
-    const size = Math.random() * 4 + 4;
-    sparkle.style.width = size + "px";
-    sparkle.style.height = size + "px";
+    const size = 0.6 + Math.random() * 0.9;
+    const top = 5 + Math.random() * 85;
+    const duration = 7 + Math.random() * 8;
 
-    sparkle.style.animationDuration = (Math.random() * 1.5 + 2) + "s";
+    bat.style.top = `${top}vh`;
+    bat.style.setProperty("--size", size);
+    bat.style.setProperty("--duration", `${duration}s`);
 
-    sparkleContainer.appendChild(sparkle);
+    batContainer.appendChild(bat);
 
-    sparkle.addEventListener("animationend", () => {
-        sparkle.remove();
-    });
-
+    setTimeout(() => {
+        bat.remove();
+    }, duration * 1000);
 }
 
-setInterval(createSparkle, 500);
+setInterval(() => {
+
+    createBat();
+
+    if(Math.random() < 0.35){
+        setTimeout(createBat, 150 + Math.random() * 500);
+    }
+
+}, 900);
