@@ -20,7 +20,7 @@ const popup = document.getElementById("updatePopup");
 const closeBtn = document.querySelector(".close-popup");
 
 // Change this whenever you update the popup
-const popupVersion = "LOA-V1.27.0_live2";
+const popupVersion = "October Update Preview";
 
 // Show popup only if this version hasn't been seen
 if (localStorage.getItem("popupVersion") !== popupVersion) {

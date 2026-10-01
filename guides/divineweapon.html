@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -121,11 +122,21 @@
     gap: 6px;
 }
 
+/* =========================================
+   COLLECTION BONUS / STAR
+========================================= */
+
 .weapon-amount {
-    padding: 4px 8px;
+    padding: 5px 9px;
     border-radius: 5px;
     background: rgba(128, 128, 128, 0.15);
     font-size: 0.85rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.weapon-star {
+    margin-right: 4px;
     font-weight: bold;
 }
 
@@ -328,7 +339,15 @@ Only combinations containing <strong>all selected weapons</strong> are displayed
 </li>
 
 <li>
-The result shows the corresponding <strong>stat</strong>, available <strong>amount values</strong>, and all weapons in that combination.
+The result shows the corresponding <strong>stat</strong>, collection bonus values from <strong>0★ to 8★</strong>, and all weapons in that combination.
+</li>
+
+<li>
+The <strong>0★</strong> value represents the base collection bonus.
+</li>
+
+<li>
+Each upgrade increases the collection level by one star, up to <strong>8★</strong>.
 </li>
 
 <li>
@@ -355,6 +374,14 @@ The finder uses the Divine Weapon combination database.
 </li>
 
 <li>
+Each weapon combination/stat group contains its collection bonuses in database order.
+</li>
+
+<li>
+The first collection bonus is displayed as <strong>0★</strong>, followed by <strong>1★</strong> through <strong>8★</strong>.
+</li>
+
+<li>
 Some combinations may contain fewer than four weapons.
 </li>
 
@@ -363,7 +390,7 @@ Selecting four weapons only returns combinations containing all four selected we
 </li>
 
 <li>
-Results are grouped together when the same weapon combination and stat have multiple amount values.
+Results are grouped together when the same weapon combination and stat have multiple collection bonus values.
 </li>
 
 </ul>
@@ -384,6 +411,7 @@ This tool will be updated as additional Divine Weapon combinations become availa
 
 </div>
 
+
 <div class="guide-section contributor-section"
 style="max-width:900px;margin:20px auto 30px;text-align:center;">
 
@@ -393,7 +421,7 @@ style="max-width:900px;margin:20px auto 30px;text-align:center;">
 
 <p style="margin:0;">
 Contributed by
-<a 
+<a
 href="https://discord.com/channels/1406867040823935117/1406937304257269830/1473602485506674849"
 style="color: orangered; text-decoration: none;"
 target="_blank"
@@ -403,6 +431,7 @@ Denial 048[S10 C100]
 </p>
 
 </div>
+
 
 <footer class="site-footer">
 
@@ -676,6 +705,16 @@ function groupMatchingRows(rows) {
             amount !== null
         ) {
 
+            /*
+             * IMPORTANT:
+             * Keep the database order.
+             *
+             * First amount = 0★
+             * Second amount = 1★
+             * ...
+             * Ninth amount = 8★
+             */
+
             groups
                 .get(key)
                 .amounts
@@ -821,6 +860,10 @@ function render() {
         groups.map(group => {
 
 
+            /*
+             * Display weapons.
+             */
+
             const weaponHtml =
                 group.weapons
                     .map(
@@ -841,13 +884,31 @@ function render() {
                     .join("");
 
 
+            /*
+             * Display collection bonuses.
+             *
+             * Database order:
+             *
+             * index 0 = 0★ Base
+             * index 1 = 1★
+             * index 2 = 2★
+             * ...
+             * index 8 = 8★
+             */
+
             const amountsHtml =
                 group.amounts
                     .map(
-                        amount => `
+                        (amount, index) => `
 
                         <span class="weapon-amount">
+
+                            <span class="weapon-star">
+                                ${index}★
+                            </span>
+
                             ${formatAmount(amount)}
+
                         </span>
 
                         `
@@ -936,21 +997,51 @@ function escapeHtml(value) {
 
 async function loadData() {
 
-    const jsonFile = "./divineweapcollect_fixed.json";
+    const jsonFile =
+        "./divineweapcollect_fixed.json";
+
 
     try {
 
-        statusEl.textContent = "Loading weapon data...";
+        statusEl.textContent =
+            "Loading weapon data...";
 
-        console.log("HTML location:", window.location.href);
-        console.log("Trying to load:", new URL(jsonFile, window.location.href).href);
 
-        const response = await fetch(jsonFile, {
-            cache: "no-store"
-        });
+        console.log(
+            "HTML location:",
+            window.location.href
+        );
 
-        console.log("Response status:", response.status);
-        console.log("Response URL:", response.url);
+
+        console.log(
+            "Trying to load:",
+            new URL(
+                jsonFile,
+                window.location.href
+            ).href
+        );
+
+
+        const response =
+            await fetch(
+                jsonFile,
+                {
+                    cache: "no-store"
+                }
+            );
+
+
+        console.log(
+            "Response status:",
+            response.status
+        );
+
+
+        console.log(
+            "Response URL:",
+            response.url
+        );
+
 
         if (!response.ok) {
 
@@ -960,15 +1051,25 @@ async function loadData() {
 
         }
 
-        const text = await response.text();
 
-        console.log("JSON response:", text.substring(0, 200));
+        const text =
+            await response.text();
+
+
+        console.log(
+            "JSON response:",
+            text.substring(0, 200)
+        );
+
 
         try {
 
-            database = JSON.parse(text);
+            database =
+                JSON.parse(text);
 
-        } catch (jsonError) {
+        }
+
+        catch (jsonError) {
 
             throw new Error(
                 "The JSON file was found, but it contains invalid JSON. " +
@@ -976,6 +1077,7 @@ async function loadData() {
             );
 
         }
+
 
         if (!Array.isArray(database)) {
 
@@ -985,52 +1087,106 @@ async function loadData() {
 
         }
 
-        weapons = getWeaponNames(database);
+
+        weapons =
+            getWeaponNames(
+                database
+            );
+
 
         populateSelects();
+
 
         statusEl.textContent =
             `${database.length} records • ${weapons.length} weapons loaded`;
 
-        messageEl.style.display = "block";
+
+        messageEl.style.display =
+            "block";
+
 
         messageEl.className =
             "weapon-message";
 
+
         messageEl.textContent =
             "Select at least 2 weapons to search.";
 
-        console.log("Divine Weapon database loaded successfully.");
-        console.log("Records:", database.length);
-        console.log("Weapons:", weapons.length);
+
+        console.log(
+            "Divine Weapon database loaded successfully."
+        );
+
+
+        console.log(
+            "Records:",
+            database.length
+        );
+
+
+        console.log(
+            "Weapons:",
+            weapons.length
+        );
 
     }
 
+
     catch (error) {
 
-        console.error("DIVINE WEAPON DATABASE ERROR:", error);
+        console.error(
+            "DIVINE WEAPON DATABASE ERROR:",
+            error
+        );
 
-        messageEl.style.display = "block";
+
+        messageEl.style.display =
+            "block";
+
 
         messageEl.className =
             "weapon-message error";
 
+
         messageEl.innerHTML = `
-            <strong>Unable to load Divine Weapon database.</strong>
+
+            <strong>
+                Unable to load Divine Weapon database.
+            </strong>
+
             <br><br>
-            <strong>Error:</strong>
+
+            <strong>
+                Error:
+            </strong>
+
             ${escapeHtml(error.message)}
+
             <br><br>
-            <strong>Expected JSON location:</strong>
+
+            <strong>
+                Expected JSON location:
+            </strong>
+
             <br>
+
             ${escapeHtml(
-                new URL(jsonFile, window.location.href).href
+                new URL(
+                    jsonFile,
+                    window.location.href
+                ).href
             )}
+
             <br><br>
+
             Open the browser console with
-            <strong>F12 → Console</strong>
+            <strong>
+                F12 → Console
+            </strong>
             for more information.
+
         `;
+
 
         statusEl.textContent =
             "Data loading failed";
@@ -1089,3 +1245,4 @@ loadData();
 </body>
 
 </html>
+```
