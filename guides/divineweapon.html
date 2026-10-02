@@ -38,6 +38,8 @@
     margin: auto;
 }
 
+
+
 .weapon-select-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -212,6 +214,15 @@ Select at least <strong>2 Divine Weapons</strong>.
 The finder will show every combination containing all selected weapons.
 </p>
 
+<div class="weapon-select-box" style="margin-top:20px;">
+    <label for="statSelect">
+        📊 Browse by Stat
+    </label>
+
+    <select id="statSelect">
+        <option value="">-- Select Stat --</option>
+    </select>
+</div>
 
 <div class="weapon-select-grid">
 
@@ -486,6 +497,42 @@ const messageEl =
 const resultsEl =
     document.getElementById("results");
 
+const statSelect =
+    document.getElementById("statSelect");
+
+/* =========================================
+   GET STAT NAMES
+========================================= */
+
+function normalizeStatName(stat) {
+
+    return String(stat || "")
+        .trim()
+        .replace(/\s*\(\d+\)\s*$/, "");
+
+}
+
+
+function getStatNames(rows) {
+
+    const set = new Set();
+
+    rows.forEach(row => {
+
+        const stat =
+            normalizeStatName(row.STAT);
+
+        if (stat) {
+            set.add(stat);
+        }
+
+    });
+
+    return [...set].sort(
+        (a, b) => a.localeCompare(b)
+    );
+
+}
 
 /* =========================================
    GET WEAPON NAMES
@@ -532,6 +579,28 @@ function getWeaponNames(rows) {
 /* =========================================
    POPULATE SELECT BOXES
 ========================================= */
+
+function populateStats() {
+
+    const stats =
+        getStatNames(database);
+
+    statSelect.innerHTML =
+        '<option value="">-- Select Stat --</option>';
+
+    stats.forEach(stat => {
+
+        const option =
+            document.createElement("option");
+
+        option.value = stat;
+        option.textContent = stat;
+
+        statSelect.appendChild(option);
+
+    });
+
+}
 
 function populateSelects() {
 
@@ -758,13 +827,127 @@ function formatAmount(amount) {
    DISPLAY RESULTS
 ========================================= */
 
+function renderByStat(stat) {
+
+    const matchingRows =
+    database.filter(row =>
+        normalizeStatName(row.STAT) === stat
+    );
+
+    const groups =
+        groupMatchingRows(
+            matchingRows
+        );
+
+    statusEl.innerHTML =
+        `<span class="weapon-count">
+            ${groups.length}
+        </span>
+        combination(s) for ${escapeHtml(stat)}`;
+
+    if (!groups.length) {
+
+        resultsEl.innerHTML = "";
+
+        messageEl.style.display = "block";
+        messageEl.className = "weapon-message";
+
+        messageEl.textContent =
+            "No combinations were found for this stat.";
+
+        return;
+    }
+
+    messageEl.style.display = "none";
+
+    resultsEl.innerHTML =
+        groups.map(group => {
+
+            const weaponHtml =
+                group.weapons
+                    .map(
+                        (weapon, index) => `
+
+                        <span class="weapon-item">
+
+                            <span class="weapon-number">
+                                ${index + 1}.
+                            </span>
+
+                            ${escapeHtml(weapon)}
+
+                        </span>
+
+                    `
+                    )
+                    .join("");
+
+            const amountsHtml =
+                group.amounts
+                    .map(
+                        (amount, index) => `
+
+                        <span class="weapon-amount">
+
+                            <span class="weapon-star">
+                                ${index}★
+                            </span>
+
+                            ${formatAmount(amount)}
+
+                        </span>
+
+                    `
+                    )
+                    .join("");
+
+            return `
+
+                <div class="weapon-result">
+
+                    <div class="weapon-result-header">
+
+                        <div class="weapon-stat">
+                            ${escapeHtml(normalizeStatName(group.stat))}
+                        </div>
+
+                        <div class="weapon-amounts">
+                            ${amountsHtml}
+                        </div>
+
+                    </div>
+
+                    <div class="weapon-list">
+                        ${weaponHtml}
+                    </div>
+
+                </div>
+
+            `;
+
+        }).join("");
+
+}
+
 function render() {
+
+    const selectedStat =
+        statSelect.value;
 
     const selected =
         selectedWeapons();
 
+    /*
+     * If a stat is selected,
+     * show every combination for that stat.
+     */
 
-    updateDisabledOptions();
+    if (selectedStat) {
+
+        renderByStat(selectedStat);
+
+        return;
+    }
 
 
     /*
@@ -816,6 +999,8 @@ function render() {
         groupMatchingRows(
             matchingRows
         );
+
+        
 
 
     statusEl.innerHTML =
@@ -1089,12 +1274,12 @@ async function loadData() {
 
 
         weapons =
-            getWeaponNames(
-                database
-            );
+    getWeaponNames(
+        database
+    );
 
-
-        populateSelects();
+populateStats();
+populateSelects();
 
 
         statusEl.textContent =
@@ -1209,6 +1394,11 @@ selects.forEach(select => {
 
 });
 
+statSelect.addEventListener(
+    "change",
+    render
+);
+
 
 /* =========================================
    CLEAR
@@ -1221,10 +1411,11 @@ document
         () => {
 
             selects.forEach(
-                select =>
-                    select.value = ""
-            );
+    select =>
+        select.value = ""
+);
 
+statSelect.value = "";
 
             updateDisabledOptions();
 
